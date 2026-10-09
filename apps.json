@@ -192,15 +192,6 @@
   ],
   "news": [
     {
-      "title": "In development: altstore-source",
-      "identifier": "upcoming-altstore-source",
-      "caption": "AltStore / SideStore source for all of DevZer0D4Y's iOS ports, updated automatically from GitHub releases",
-      "date": "2026-10-09T21:42:29Z",
-      "url": "https://github.com/DevZer0D4Y/altstore-source",
-      "notify": false,
-      "tintColor": "#2F6FEB"
-    },
-    {
       "title": "The Simpsons Game First Release",
       "identifier": "release-TheSimpsonsGame-iOS-v0.2.4",
       "caption": "First release, the port has got enhanced improvements, that's why it's release got delayed.",

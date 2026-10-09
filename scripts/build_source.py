@@ -367,8 +367,10 @@ def main() -> int:
     used_cache_keys = set()
     ICONS.mkdir(exist_ok=True)
 
+    this_repository = os.environ.get("GITHUB_REPOSITORY", "").split("/")[-1]
     repos = [r for r in api_list(f"/users/{owner}/repos?type=owner&sort=pushed")
              if not r.get("private") and r["name"] not in config.get("exclude_repos", [])
+             and r["name"] != this_repository
              and (config.get("include_forks", True) or not r.get("fork"))
              and not overrides.get(r["name"], {}).get("exclude")]
     log(f"{len(repos)} repositories of {owner}")

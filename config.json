@@ -22,7 +22,14 @@
     "developerName": "DevZer0D4Y"
   },
   "apps": {
-    "mcpe-psvita-edition": {"exclude": true},
-    "plume": {"exclude": true}
+    "mcpe-psvita-edition": {
+      "exclude": true
+    },
+    "plume": {
+      "exclude": true
+    },
+    "altstore-source": {
+      "exclude": true
+    }
   }
 }
