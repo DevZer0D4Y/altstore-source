@@ -1,0 +1,264 @@
+{
+  "name": "DevZer0D4Y's Ports",
+  "identifier": "io.github.devzer0d4y.altstore-source",
+  "subtitle": "Console games, ported to iPhone and iPad.",
+  "description": "Every iOS port DevZer0D4Y publishes on GitHub, kept up to date automatically: a new release, or a new project, shows up here within the hour.\n\nThe games are not included: each port explains how to install your own copy of the game.",
+  "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+  "website": "https://github.com/DevZer0D4Y",
+  "tintColor": "#2F6FEB",
+  "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
+  "featuredApps": [
+    "com.devz.simpsons",
+    "com.devz.sonic2006",
+    "com.devz.cod4ios",
+    "com.devz.sonicunleashed",
+    "com.devz.mc360"
+  ],
+  "apps": [
+    {
+      "name": "The Simpsons Game",
+      "bundleIdentifier": "com.devz.simpsons",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "A recomp of the The Simpsons Game (2007) from the Xbox 360 using RexGlue for iOS",
+      "localizedDescription": "A recomp of the The Simpsons Game (2007) from the Xbox 360 using RexGlue for iOS\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.simpsons-66623a082aff.png",
+      "tintColor": "#E3A75D",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.2.4",
+          "buildVersion": "6",
+          "marketingVersion": "First Release",
+          "date": "2026-10-08T17:06:44Z",
+          "localizedDescription": "First release, the port has got enhanced improvements, that's why it's release got delayed.",
+          "downloadURL": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS/releases/download/v0.2.4/TheSimpsonsGame-v0.2.4.ipa",
+          "size": 30273313,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.2.4",
+      "versionDate": "2026-10-08T17:06:44Z",
+      "versionDescription": "First release, the port has got enhanced improvements, that's why it's release got delayed.",
+      "downloadURL": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS/releases/download/v0.2.4/TheSimpsonsGame-v0.2.4.ipa",
+      "size": 30273313
+    },
+    {
+      "name": "Sonic (2006)",
+      "bundleIdentifier": "com.devz.sonic2006",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+      "tintColor": "#304278",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.5",
+          "marketingVersion": "v1.0",
+          "date": "2026-10-05T18:29:37Z",
+          "localizedDescription": "First release!",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
+          "size": 35609295,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-05T18:29:37Z",
+      "versionDescription": "First release!",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
+      "size": 35609295
+    },
+    {
+      "name": "COD4iOS",
+      "bundleIdentifier": "com.devz.cod4ios",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tintColor": "#4F5634",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.3",
+          "buildVersion": "4",
+          "marketingVersion": "Call of Duty 4 for iOS first release!!",
+          "date": "2026-10-03T06:49:12Z",
+          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
+          "size": 9596607,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.3",
+      "versionDate": "2026-10-03T06:49:12Z",
+      "versionDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
+      "size": 9596607
+    },
+    {
+      "name": "Sonic Unleashed",
+      "bundleIdentifier": "com.devz.sonicunleashed",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
+      "localizedDescription": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UnleashedRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonicunleashed-e1264917d7ab.png",
+      "tintColor": "#77857C",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "v1.0.3",
+          "buildVersion": "v1.0.3",
+          "marketingVersion": "Sonic Unleashed for iOS v1.0.3",
+          "date": "2026-09-27T17:19:04Z",
+          "localizedDescription": "First release",
+          "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/R1/SonicUnleashed_Release.ipa",
+          "size": 61370785,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "get-task-allow"
+        ],
+        "privacy": {}
+      },
+      "version": "v1.0.3",
+      "versionDate": "2026-09-27T17:19:04Z",
+      "versionDescription": "First release",
+      "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/R1/SonicUnleashed_Release.ipa",
+      "size": 61370785
+    },
+    {
+      "name": "MCX360 Edition",
+      "bundleIdentifier": "com.devz.mc360",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "A recomp (using the RexGlue SDK) of Minecraft Xbox 360 Edition for iOS.",
+      "localizedDescription": "A recomp (using the RexGlue SDK) of Minecraft Xbox 360 Edition for iOS.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MCX360-EDITION",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.mc360-48721662c479.png",
+      "tintColor": "#869E8C",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.1",
+          "buildVersion": "2",
+          "marketingVersion": "MCX360 Edition 1.1",
+          "date": "2026-09-26T07:36:36Z",
+          "localizedDescription": "## MCX360 Edition 1.1\n\n### New\n- **On-screen touch controls**, using the layout from the XeniOS emulator. They show when no controller is connected and hide when one connects. Adjust them with `touch_controls`, `touch_controls_opacity` and `touch_haptics` in `mc360.toml`.\n- **Save thumbnails**: your worlds now show a picture in the world list.\n- **Exit Game** now closes the app instead of leaving a black screen.\n\n### Performance\n- Much lower CPU load while playing. The game's threads no longer queue up on a shared lock, calls inside the game run directly, and waits end as soon as the GPU is ready instead of sleeping in whole milliseconds.\n- Frame rate capped at a steady, evenly paced 60 FPS (`framerate_limit`, default 60).\n- The game's main thread and GPU thread now get priority on the iPhone's performance cores.\n- Less heat: the game no longer spins a core at full power while waiting for the GPU, and no longer copies the whole screen image back and forth several times per frame.\n\n### Fixes\n- Fixed random crashes after playing for a while.\n- Fixed choppy audio.\n- Fixed \"ghost\" blocks and old terrain showing where the world had changed.\n- Devices with 3 GB of RAM now show an explanation at launch instead of crashing.\n\n### Known issues\n- Long sessions heat the phone, and iOS then slows it down, so the frame rate can drop over time. Playing unplugged and without a case helps.\n- The on-screen D-pad's up arrow sits over the first world's thumbnail in the Load menu. It's part of the controls, not the save.\n- Devices with 3 GB of RAM (iPhone 8 Plus, iPhone X, iPad 8th gen) can't run the game with a normal sideload. They need TrollStore, or a signing method that grants the Extended Virtual Addressing entitlement.\n\nInstalling over 1.0 keeps your worlds and settings.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/download/R2/MCX360Edition.ipa",
+          "size": 27602175,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.0",
+          "buildVersion": "1",
+          "marketingVersion": "MCX360 Edition 1.0",
+          "date": "2026-09-13T05:51:10Z",
+          "localizedDescription": "First iOS release.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/download/R1/MCX360Edition.ipa",
+          "size": 28067835,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing"
+        ],
+        "privacy": {}
+      },
+      "version": "1.1",
+      "versionDate": "2026-09-26T07:36:36Z",
+      "versionDescription": "## MCX360 Edition 1.1\n\n### New\n- **On-screen touch controls**, using the layout from the XeniOS emulator. They show when no controller is connected and hide when one connects. Adjust them with `touch_controls`, `touch_controls_opacity` and `touch_haptics` in `mc360.toml`.\n- **Save thumbnails**: your worlds now show a picture in the world list.\n- **Exit Game** now closes the app instead of leaving a black screen.\n\n### Performance\n- Much lower CPU load while playing. The game's threads no longer queue up on a shared lock, calls inside the game run directly, and waits end as soon as the GPU is ready instead of sleeping in whole milliseconds.\n- Frame rate capped at a steady, evenly paced 60 FPS (`framerate_limit`, default 60).\n- The game's main thread and GPU thread now get priority on the iPhone's performance cores.\n- Less heat: the game no longer spins a core at full power while waiting for the GPU, and no longer copies the whole screen image back and forth several times per frame.\n\n### Fixes\n- Fixed random crashes after playing for a while.\n- Fixed choppy audio.\n- Fixed \"ghost\" blocks and old terrain showing where the world had changed.\n- Devices with 3 GB of RAM now show an explanation at launch instead of crashing.\n\n### Known issues\n- Long sessions heat the phone, and iOS then slows it down, so the frame rate can drop over time. Playing unplugged and without a case helps.\n- The on-screen D-pad's up arrow sits over the first world's thumbnail in the Load menu. It's part of the controls, not the save.\n- Devices with 3 GB of RAM (iPhone 8 Plus, iPhone X, iPad 8th gen) can't run the game with a normal sideload. They need TrollStore, or a signing method that grants the Extended Virtual Addressing entitlement.\n\nInstalling over 1.0 keeps your worlds and settings.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/download/R2/MCX360Edition.ipa",
+      "size": 27602175
+    }
+  ],
+  "news": [
+    {
+      "title": "The Simpsons Game First Release",
+      "identifier": "release-TheSimpsonsGame-iOS-v0.2.4",
+      "caption": "First release, the port has got enhanced improvements, that's why it's release got delayed.",
+      "date": "2026-10-08T17:06:44Z",
+      "url": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS/releases/tag/v0.2.4",
+      "appID": "com.devz.simpsons",
+      "notify": false,
+      "tintColor": "#E3A75D"
+    },
+    {
+      "title": "Sonic (2006) v1.0",
+      "identifier": "release-MarathonRecompilediOS-R1",
+      "caption": "First release!",
+      "date": "2026-10-05T18:29:37Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/R1",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
+      "title": "In development: NFSMW-iOS",
+      "identifier": "upcoming-NFSMW-iOS",
+      "caption": "A static native recompilation of Need for Speed: Most Wanted (2005) Xbox 360 for iOS",
+      "date": "2026-10-04T13:53:03Z",
+      "url": "https://github.com/DevZer0D4Y/NFSMW-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
+      "title": "COD4iOS Call of Duty 4 for iOS first release!!",
+      "identifier": "release-COD4iOS-COD4NS-R1",
+      "caption": "Multiplayer works too, you can play with PC users by joining the same servers.",
+      "date": "2026-10-03T06:49:12Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R1",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "Sonic Unleashed Sonic Unleashed for iOS v1.0.3",
+      "identifier": "release-UnleashedRecompilediOS-R1",
+      "caption": "First release",
+      "date": "2026-09-27T17:19:04Z",
+      "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/R1",
+      "appID": "com.devz.sonicunleashed",
+      "notify": false,
+      "tintColor": "#77857C"
+    },
+    {
+      "title": "MCX360 Edition MCX360 Edition 1.1",
+      "identifier": "release-MCX360-EDITION-R2",
+      "caption": "MCX360 Edition 1.1",
+      "date": "2026-09-26T07:36:36Z",
+      "url": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/tag/R2",
+      "appID": "com.devz.mc360",
+      "notify": false,
+      "tintColor": "#869E8C"
+    },
+    {
+      "title": "MCX360 Edition MCX360 Edition 1.0",
+      "identifier": "release-MCX360-EDITION-R1",
+      "caption": "First iOS release.",
+      "date": "2026-09-13T05:51:10Z",
+      "url": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/tag/R1",
+      "appID": "com.devz.mc360",
+      "notify": false,
+      "tintColor": "#869E8C"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "owner": "DevZer0D4Y",
+  "baseURL": "https://devzer0d4y.github.io/altstore-source",
+  "include_forks": true,
+  "include_prereleases": true,
+  "exclude_repos": [],
+  "max_versions": 10,
+  "max_news": 20,
+  "news_per_app": 3,
+  "upcoming": {
+    "enabled": true,
+    "match": "(?i)\\bios\\b|-ios|ios-|iphone"
+  },
+  "source": {
+    "name": "DevZer0D4Y's Ports",
+    "identifier": "io.github.devzer0d4y.altstore-source",
+    "subtitle": "Console games, ported to iPhone and iPad.",
+    "description": "Every iOS port DevZer0D4Y publishes on GitHub, kept up to date automatically: a new release, or a new project, shows up here within the hour.\n\nThe games are not included: each port explains how to install your own copy of the game.",
+    "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+    "website": "https://github.com/DevZer0D4Y",
+    "tintColor": "#2F6FEB",
+    "developerName": "DevZer0D4Y"
+  },
+  "apps": {
+    "mcpe-psvita-edition": {"exclude": true},
+    "plume": {"exclude": true}
+  }
+}

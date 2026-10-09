@@ -1,0 +1,96 @@
+{
+  "560664874:2026-09-13T05:50:53Z:28067835": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.devz.mc360",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.mc360-48721662c479.png",
+      "tint": "#869E8C",
+      "width": 512
+    },
+    "minOSVersion": "16.0",
+    "name": "MCX360 Edition",
+    "privacy": {},
+    "version": "1.0"
+  },
+  "590182601:2026-09-26T07:36:33Z:27602175": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.mc360",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.extended-virtual-addressing"
+    ],
+    "icon": {
+      "file": "com.devz.mc360-48721662c479.png",
+      "tint": "#869E8C",
+      "width": 512
+    },
+    "minOSVersion": "16.0",
+    "name": "MCX360 Edition",
+    "privacy": {},
+    "version": "1.1"
+  },
+  "593378562:2026-09-27T17:12:57Z:61370785": {
+    "buildVersion": "v1.0.3",
+    "bundleIdentifier": "com.devz.sonicunleashed",
+    "cacheVersion": 4,
+    "entitlements": [
+      "get-task-allow"
+    ],
+    "icon": {
+      "file": "com.devz.sonicunleashed-e1264917d7ab.png",
+      "tint": "#77857C",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "Sonic Unleashed",
+    "privacy": {},
+    "version": "v1.0.3"
+  },
+  "607313294:2026-10-03T06:48:30Z:9596607": {
+    "buildVersion": "4",
+    "bundleIdentifier": "com.devz.cod4ios",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tint": "#4F5634",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "COD4iOS",
+    "privacy": {},
+    "version": "1.0.3"
+  },
+  "613351221:2026-10-05T18:29:16Z:35609295": {
+    "buildVersion": "1.0.5",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {},
+    "version": "1.0.0"
+  },
+  "622457429:2026-10-08T17:05:51Z:30273313": {
+    "buildVersion": "6",
+    "bundleIdentifier": "com.devz.simpsons",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.simpsons-66623a082aff.png",
+      "tint": "#E3A75D",
+      "width": 512
+    },
+    "minOSVersion": "16.0",
+    "name": "The Simpsons Game",
+    "privacy": {},
+    "version": "0.2.4"
+  }
+}

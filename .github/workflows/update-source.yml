@@ -1,0 +1,51 @@
+# Rebuilds apps.json from the owner's GitHub releases: every public
+# repository with an .ipa in a release becomes an app, so new releases and
+# new projects appear without editing anything here. GitHub Pages serves the
+# committed files.
+name: Update source
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [config.json, scripts/**, .github/workflows/**]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build apps.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_OWNER: ${{ github.repository_owner }}
+        run: python scripts/build_source.py
+      - name: Publish changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A apps.json index.html icons cache
+          # GitHub stops scheduled workflows in a repository without activity
+          # for 60 days: record a run now and then even when nothing changed.
+          last=$(git log -1 --format=%ct)
+          if git diff --cached --quiet && [ $(( $(date +%s) - last )) -gt $(( 45 * 86400 )) ]; then
+            date -u +%FT%TZ > cache/last-run.txt
+            git add cache/last-run.txt
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update source"
+            git push
+          fi
