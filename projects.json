@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-10T19:08:59.881039Z",
+  "generated": "2026-10-10T22:49:48.601616Z",
   "projects": [
     {
       "repo": "NBAHangtime-iOS",
@@ -13,10 +13,10 @@
       "created": "2026-10-10T15:09:14Z",
       "firstRelease": "2026-10-10T15:13:26Z",
       "latestRelease": {
-        "tag": "R1",
-        "name": "First release!!",
-        "date": "2026-10-10T15:13:26Z",
-        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R1"
+        "tag": "R2",
+        "name": "Release v0.4.2",
+        "date": "2026-10-10T21:04:19Z",
+        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R2"
       },
       "released": "2026-10-10T15:13:26Z",
       "app": {

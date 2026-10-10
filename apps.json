@@ -27,6 +27,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.4.2",
+          "buildVersion": "7",
+          "marketingVersion": "Release v0.4.2",
+          "date": "2026-10-10T21:04:19Z",
+          "localizedDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
+          "size": 5895580,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "0.4.0",
           "buildVersion": "5",
           "marketingVersion": "First release!!",
@@ -41,11 +51,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.4.0",
-      "versionDate": "2026-10-10T15:13:26Z",
-      "versionDescription": "First release",
-      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
-      "size": 5968054
+      "version": "0.4.2",
+      "versionDate": "2026-10-10T21:04:19Z",
+      "versionDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
+      "size": 5895580
     },
     {
       "name": "The Simpsons Game",
@@ -223,6 +233,16 @@
     }
   ],
   "news": [
+    {
+      "title": "NBA Hangtime Release v0.4.2",
+      "identifier": "release-NBAHangtime-iOS-R2",
+      "caption": "Changelog v0.4.2",
+      "date": "2026-10-10T21:04:19Z",
+      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R2",
+      "appID": "com.devz.nbahangtime",
+      "notify": false,
+      "tintColor": "#C45629"
+    },
     {
       "title": "NBA Hangtime First release!!",
       "identifier": "release-NBAHangtime-iOS-R1",
