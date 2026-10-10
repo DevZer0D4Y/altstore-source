@@ -8,13 +8,45 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.nbahangtime",
     "com.devz.simpsons",
     "com.devz.sonic2006",
     "com.devz.cod4ios",
-    "com.devz.sonicunleashed",
-    "com.devz.mc360"
+    "com.devz.sonicunleashed"
   ],
   "apps": [
+    {
+      "name": "NBA Hangtime",
+      "bundleIdentifier": "com.devz.nbahangtime",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlaySta",
+      "localizedDescription": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlayStation controller support. Bring your own ROMs.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NBAHangtime-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
+      "tintColor": "#C45629",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.4.0",
+          "buildVersion": "5",
+          "marketingVersion": "First release!!",
+          "date": "2026-10-10T15:13:26Z",
+          "localizedDescription": "First release",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
+          "size": 5968054,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.4.0",
+      "versionDate": "2026-10-10T15:13:26Z",
+      "versionDescription": "First release",
+      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
+      "size": 5968054
+    },
     {
       "name": "The Simpsons Game",
       "bundleIdentifier": "com.devz.simpsons",
@@ -191,6 +223,16 @@
     }
   ],
   "news": [
+    {
+      "title": "NBA Hangtime First release!!",
+      "identifier": "release-NBAHangtime-iOS-R1",
+      "caption": "First release",
+      "date": "2026-10-10T15:13:26Z",
+      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R1",
+      "appID": "com.devz.nbahangtime",
+      "notify": false,
+      "tintColor": "#C45629"
+    },
     {
       "title": "The Simpsons Game First Release",
       "identifier": "release-TheSimpsonsGame-iOS-v0.2.4",

@@ -92,5 +92,20 @@
     "name": "The Simpsons Game",
     "privacy": {},
     "version": "0.2.4"
+  },
+  "628264286:2026-10-10T15:12:07Z:5968054": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.nbahangtime",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nbahangtime-935432208d3c.png",
+      "tint": "#C45629",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NBA Hangtime",
+    "privacy": {},
+    "version": "0.4.0"
   }
 }
