@@ -10,6 +10,9 @@ from the source). A new repository shows up on the next run with no change
 here, and repositories that match the "upcoming" pattern but have no IPA yet
 are announced as news.
 
+It also writes projects.json, every public repository newest first, which the
+owner's website reads to list new projects at the top.
+
 Only the Python standard library is used. Environment:
   GITHUB_TOKEN   optional, raises the API rate limit
   SOURCE_OWNER   overrides "owner" in config.json
@@ -368,8 +371,11 @@ def main() -> int:
     ICONS.mkdir(exist_ok=True)
 
     this_repository = os.environ.get("GITHUB_REPOSITORY", "").split("/")[-1]
-    repos = [r for r in api_list(f"/users/{owner}/repos?type=owner&sort=pushed")
-             if not r.get("private") and r["name"] not in config.get("exclude_repos", [])
+    all_repos = [r for r in api_list(f"/users/{owner}/repos?type=owner&sort=pushed")
+                 if not r.get("private")]
+    releases_of: dict[str, list] = {}  # repository -> its published releases
+    repos = [r for r in all_repos
+             if r["name"] not in config.get("exclude_repos", [])
              and r["name"] != this_repository
              and (config.get("include_forks", True) or not r.get("fork"))
              and not overrides.get(r["name"], {}).get("exclude")]
@@ -389,6 +395,7 @@ def main() -> int:
         releases = [r for r in releases if not r.get("draft") and
                     (config.get("include_prereleases", True) or not r.get("prerelease"))]
         releases.sort(key=lambda r: r.get("published_at") or r["created_at"], reverse=True)
+        releases_of[name] = releases
         found_ipa = False
         for release in releases:
             for asset in release.get("assets", []):
@@ -463,6 +470,7 @@ def main() -> int:
 
     source_tint = config["source"].get("tintColor", "#3478F6")
     entries = []
+    app_of_repo: dict[str, dict] = {}  # repository -> its newest app, for projects.json
     for bundle, app in apps.items():
         repo, settings, meta = app["repo"], app["settings"], app["meta"]
         versions = sorted(app["versions"], key=lambda v: v["date"], reverse=True)[:config.get("max_versions", 10)]
@@ -504,6 +512,10 @@ def main() -> int:
             "size": latest["size"],
         }
         entries.append(entry)
+        known = app_of_repo.get(repo["name"])
+        if not known or known["date"] < latest["date"]:
+            app_of_repo[repo["name"]] = {"name": entry["name"], "bundleIdentifier": bundle,
+                                         "iconURL": icon_url, "tintColor": tint, "date": latest["date"]}
         for item in news:
             if item.get("appID") == bundle:
                 item["tintColor"] = tint
@@ -531,8 +543,67 @@ def main() -> int:
             icon.unlink()
 
     write_index(source, base_url)
-    log(f"{len(entries)} apps, {len(news)} news items")
+    projects = write_projects(owner, all_repos, releases_of, app_of_repo, config, this_repository)
+    log(f"{len(entries)} apps, {len(news)} news items, {projects} projects")
     return 0
+
+
+def write_projects(owner: str, all_repos: list, releases_of: dict, app_of_repo: dict,
+                   config: dict, this_repository: str) -> int:
+    """Writes projects.json, every public repository of the owner newest first,
+    for the owner's website. A project's date is its first release, or the day
+    its repository was made while it has none, so a new port comes first and an
+    update to an older project does not reorder the list."""
+    excluded = set(config.get("projects", {}).get("exclude", [])) | {this_repository, owner}
+    projects = []
+    for repo in all_repos:
+        name = repo["name"]
+        if name in excluded or repo.get("archived"):
+            continue
+        releases = releases_of.get(name)
+        if releases is None:  # left out of the source; the site still lists it
+            try:
+                releases = [r for r in api_list(f"/repos/{owner}/{name}/releases") if not r.get("draft")]
+            except urllib.error.HTTPError as error:
+                log(f"{name}: releases unavailable ({error.code})")
+                releases = []
+        dated = sorted(releases, key=lambda r: r.get("published_at") or r["created_at"])
+        first = iso(dated[0].get("published_at") or dated[0]["created_at"]) if dated else None
+        latest = None
+        if dated:
+            newest = dated[-1]
+            latest = {"tag": newest["tag_name"], "name": newest.get("name") or newest["tag_name"],
+                      "date": iso(newest.get("published_at") or newest["created_at"]),
+                      "url": newest["html_url"]}
+        parent = None
+        if repo.get("fork"):
+            try:
+                details = json.loads(request(f"{API}/repos/{owner}/{name}"))
+                if details.get("parent"):
+                    parent = {"name": details["parent"]["full_name"], "url": details["parent"]["html_url"]}
+            except urllib.error.HTTPError as error:
+                log(f"{name}: fork details unavailable ({error.code})")
+        app = app_of_repo.get(name)
+        projects.append({
+            "repo": name,
+            "url": repo["html_url"],
+            "description": repo.get("description") or "",
+            "language": repo.get("language"),
+            "topics": repo.get("topics", []),
+            "fork": bool(repo.get("fork")),
+            "parent": parent,
+            "created": iso(repo["created_at"]),
+            "firstRelease": first,
+            "latestRelease": latest,
+            "released": first or iso(repo["created_at"]),
+            "app": {k: v for k, v in app.items() if k != "date"} if app else None,
+        })
+    projects.sort(key=lambda p: p["released"], reverse=True)
+    feed = {"owner": owner, "generated": iso(dt.datetime.now(dt.timezone.utc).isoformat()),
+            "projects": projects}
+    (ROOT / "projects.json").write_text(json.dumps(feed, indent=2, ensure_ascii=False) + "\n",
+                                        encoding="utf-8")
+    return len(projects)
 
 
 def write_index(source: dict, base_url: str):

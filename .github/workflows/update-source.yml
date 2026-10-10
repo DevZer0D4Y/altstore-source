@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A apps.json index.html icons cache
+          git add -A apps.json projects.json index.html icons cache
           # GitHub stops scheduled workflows in a repository without activity
           # for 60 days: record a run now and then even when nothing changed.
           last=$(git log -1 --format=%ct)

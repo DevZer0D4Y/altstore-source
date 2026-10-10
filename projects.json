@@ -1,0 +1,215 @@
+{
+  "owner": "DevZer0D4Y",
+  "generated": "2026-10-10T15:36:28.353094Z",
+  "projects": [
+    {
+      "repo": "NBAHangtime-iOS",
+      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS",
+      "description": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlayStation controller support. Bring your own ROMs.",
+      "language": "Swift",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-10T15:09:14Z",
+      "firstRelease": "2026-10-10T15:13:26Z",
+      "latestRelease": {
+        "tag": "R1",
+        "name": "First release!!",
+        "date": "2026-10-10T15:13:26Z",
+        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R1"
+      },
+      "released": "2026-10-10T15:13:26Z",
+      "app": {
+        "name": "NBA Hangtime",
+        "bundleIdentifier": "com.devz.nbahangtime",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
+        "tintColor": "#C45629"
+      }
+    },
+    {
+      "repo": "TheSimpsonsGame-iOS",
+      "url": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS",
+      "description": "A recomp of the The Simpsons Game (2007) from the Xbox 360 using RexGlue for iOS",
+      "language": "C++",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "YesterMester/TheSimpsonsGameRecomp",
+        "url": "https://github.com/YesterMester/TheSimpsonsGameRecomp"
+      },
+      "created": "2026-10-04T13:59:13Z",
+      "firstRelease": "2026-10-08T17:06:44Z",
+      "latestRelease": {
+        "tag": "v0.2.4",
+        "name": "First Release",
+        "date": "2026-10-08T17:06:44Z",
+        "url": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS/releases/tag/v0.2.4"
+      },
+      "released": "2026-10-08T17:06:44Z",
+      "app": {
+        "name": "The Simpsons Game",
+        "bundleIdentifier": "com.devz.simpsons",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.simpsons-66623a082aff.png",
+        "tintColor": "#E3A75D"
+      }
+    },
+    {
+      "repo": "MarathonRecompilediOS",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "description": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation",
+      "language": "C++",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "sonicnext-dev/MarathonRecomp",
+        "url": "https://github.com/sonicnext-dev/MarathonRecomp"
+      },
+      "created": "2026-10-03T13:06:04Z",
+      "firstRelease": "2026-10-05T18:29:37Z",
+      "latestRelease": {
+        "tag": "R1",
+        "name": "v1.0",
+        "date": "2026-10-05T18:29:37Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/R1"
+      },
+      "released": "2026-10-05T18:29:37Z",
+      "app": {
+        "name": "Sonic (2006)",
+        "bundleIdentifier": "com.devz.sonic2006",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+        "tintColor": "#304278"
+      }
+    },
+    {
+      "repo": "NFSMW-iOS",
+      "url": "https://github.com/DevZer0D4Y/NFSMW-iOS",
+      "description": "A static native recompilation of Need for Speed: Most Wanted (2005) Xbox 360 for iOS",
+      "language": "Python",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "madelrandel-blip/NFSMW-Recompiled",
+        "url": "https://github.com/madelrandel-blip/NFSMW-Recompiled"
+      },
+      "created": "2026-10-04T13:53:03Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-04T13:53:03Z",
+      "app": null
+    },
+    {
+      "repo": "COD4iOS-COD4NS",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
+      "description": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "language": "C++",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "SwagSoftware/KisakCOD",
+        "url": "https://github.com/SwagSoftware/KisakCOD"
+      },
+      "created": "2026-09-09T09:59:59Z",
+      "firstRelease": "2026-10-03T06:49:12Z",
+      "latestRelease": {
+        "tag": "R1",
+        "name": "Call of Duty 4 for iOS first release!!",
+        "date": "2026-10-03T06:49:12Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R1"
+      },
+      "released": "2026-10-03T06:49:12Z",
+      "app": {
+        "name": "COD4iOS",
+        "bundleIdentifier": "com.devz.cod4ios",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
+        "tintColor": "#4F5634"
+      }
+    },
+    {
+      "repo": "UnleashedRecompilediOS",
+      "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS",
+      "description": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
+      "language": "C++",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "Loganbogan9/UnleashedRecompiOS",
+        "url": "https://github.com/Loganbogan9/UnleashedRecompiOS"
+      },
+      "created": "2026-09-21T14:32:41Z",
+      "firstRelease": "2026-09-27T17:19:04Z",
+      "latestRelease": {
+        "tag": "R1",
+        "name": "Sonic Unleashed for iOS v1.0.3",
+        "date": "2026-09-27T17:19:04Z",
+        "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/R1"
+      },
+      "released": "2026-09-27T17:19:04Z",
+      "app": {
+        "name": "Sonic Unleashed",
+        "bundleIdentifier": "com.devz.sonicunleashed",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonicunleashed-e1264917d7ab.png",
+        "tintColor": "#77857C"
+      }
+    },
+    {
+      "repo": "plume",
+      "url": "https://github.com/DevZer0D4Y/plume",
+      "description": "Low-level rendering hardware interface (RHI) written in C++.",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "renderbag/plume",
+        "url": "https://github.com/renderbag/plume"
+      },
+      "created": "2026-09-25T18:50:40Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-09-25T18:50:40Z",
+      "app": null
+    },
+    {
+      "repo": "MCX360-EDITION",
+      "url": "https://github.com/DevZer0D4Y/MCX360-EDITION",
+      "description": "A recomp (using the RexGlue SDK) of Minecraft Xbox 360 Edition for iOS.",
+      "language": "C++",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-09-11T07:12:24Z",
+      "firstRelease": "2026-09-13T05:51:10Z",
+      "latestRelease": {
+        "tag": "R2",
+        "name": "MCX360 Edition 1.1",
+        "date": "2026-09-26T07:36:36Z",
+        "url": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/tag/R2"
+      },
+      "released": "2026-09-13T05:51:10Z",
+      "app": {
+        "name": "MCX360 Edition",
+        "bundleIdentifier": "com.devz.mc360",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.mc360-48721662c479.png",
+        "tintColor": "#869E8C"
+      }
+    },
+    {
+      "repo": "mcpe-psvita-edition",
+      "url": "https://github.com/DevZer0D4Y/mcpe-psvita-edition",
+      "description": "A MCPE (v0.9.0 ALPHA) port for PS VITA",
+      "language": "C++",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-08-03T14:37:51Z",
+      "firstRelease": "2026-09-01T13:53:49Z",
+      "latestRelease": {
+        "tag": "release_smallfix",
+        "name": "Controller small fix",
+        "date": "2026-09-02T06:03:34Z",
+        "url": "https://github.com/DevZer0D4Y/mcpe-psvita-edition/releases/tag/release_smallfix"
+      },
+      "released": "2026-09-01T13:53:49Z",
+      "app": null
+    }
+  ]
+}
