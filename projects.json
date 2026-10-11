@@ -1,7 +1,34 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-11T15:01:11.898030Z",
+  "generated": "2026-10-11T18:29:02.132535Z",
   "projects": [
+    {
+      "repo": "SegaSuperstarsTennis-iOS",
+      "url": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS",
+      "description": "SEGA Superstars Tennis (Xbox 360) for iPhone and iPad, recompiled with ReXGlue",
+      "language": "C",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "m1ndcrap/Sega-Superstars-Tennis-ReMatch",
+        "url": "https://github.com/m1ndcrap/Sega-Superstars-Tennis-ReMatch"
+      },
+      "created": "2026-10-11T18:25:31Z",
+      "firstRelease": "2026-10-11T18:28:33Z",
+      "latestRelease": {
+        "tag": "1.0.0",
+        "name": "SEGA Superstars Tennis 1.0.0",
+        "date": "2026-10-11T18:28:33Z",
+        "url": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS/releases/tag/1.0.0"
+      },
+      "released": "2026-10-11T18:28:33Z",
+      "app": {
+        "name": "Superstars Tennis",
+        "bundleIdentifier": "com.devz.sstrematch",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sstrematch-377a5eed7ff2.png",
+        "tintColor": "#818C85"
+      }
+    },
     {
       "repo": "NBAHangtime-iOS",
       "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS",
@@ -13,10 +40,10 @@
       "created": "2026-10-10T15:09:14Z",
       "firstRelease": "2026-10-10T15:13:26Z",
       "latestRelease": {
-        "tag": "R2",
-        "name": "Release v0.4.2",
-        "date": "2026-10-10T21:04:19Z",
-        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R2"
+        "tag": "v0.4.3",
+        "name": "NBA Hangtime 0.4.3 - CRT filter",
+        "date": "2026-10-11T15:37:59Z",
+        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.3"
       },
       "released": "2026-10-10T15:13:26Z",
       "app": {

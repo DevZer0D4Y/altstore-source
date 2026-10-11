@@ -8,13 +8,47 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.sstrematch",
     "com.devz.nbahangtime",
     "com.devz.simpsons",
     "com.devz.sonic2006",
-    "com.devz.cod4ios",
-    "com.devz.sonicunleashed"
+    "com.devz.cod4ios"
   ],
   "apps": [
+    {
+      "name": "Superstars Tennis",
+      "bundleIdentifier": "com.devz.sstrematch",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "SEGA Superstars Tennis (Xbox 360) for iPhone and iPad, recompiled with ReXGlue",
+      "localizedDescription": "SEGA Superstars Tennis (Xbox 360) for iPhone and iPad, recompiled with ReXGlue\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sstrematch-377a5eed7ff2.png",
+      "tintColor": "#818C85",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "3",
+          "marketingVersion": "SEGA Superstars Tennis 1.0.0",
+          "date": "2026-10-11T18:28:33Z",
+          "localizedDescription": "# Changelog\n\n## 1.0.0 (build 3)\n\nFirst release.\n\n- SEGA Superstars Tennis (Xbox 360) on iPhone and iPad, recompiled with the iOS port of ReXGlue and drawn through Vulkan on Metal (MoltenVK). iOS 15 or later.\n- Direct Xbox 360 ISO/XISO loading with **Choose ISO**, or extracted disc files in the app's `game` folder.\n- Matches at up to 60 FPS, capped at 60. CPU readback of the shaders' memory exports is off by default: it made the GPU thread wait for the GPU 30-50 times a frame (12-14 FPS in a match on an iPhone 14 Pro Max).\n- The game's busy waits (Direct3D's wait for the GPU, the audio threads' barrier) sleep briefly instead of spinning a core, which keeps the phone cooler during long sessions.\n- The picture stays landscape and sharp after Notification Center, Control Center, screenshots and app switches. iOS lays the window out in portrait for its background snapshot, and the swap chain used to stay portrait afterwards.\n- On-screen touch controls when no controller is connected; MFi, Xbox and PlayStation controllers.\n- Pause and resume on app switches and locking; game language from the device; shader and pipeline caches kept across launches; Apple Game Mode.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS/releases/download/1.0.0/SEGA-Superstars-Tennis-iOS.ipa",
+          "size": 18208145,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-11T18:28:33Z",
+      "versionDescription": "# Changelog\n\n## 1.0.0 (build 3)\n\nFirst release.\n\n- SEGA Superstars Tennis (Xbox 360) on iPhone and iPad, recompiled with the iOS port of ReXGlue and drawn through Vulkan on Metal (MoltenVK). iOS 15 or later.\n- Direct Xbox 360 ISO/XISO loading with **Choose ISO**, or extracted disc files in the app's `game` folder.\n- Matches at up to 60 FPS, capped at 60. CPU readback of the shaders' memory exports is off by default: it made the GPU thread wait for the GPU 30-50 times a frame (12-14 FPS in a match on an iPhone 14 Pro Max).\n- The game's busy waits (Direct3D's wait for the GPU, the audio threads' barrier) sleep briefly instead of spinning a core, which keeps the phone cooler during long sessions.\n- The picture stays landscape and sharp after Notification Center, Control Center, screenshots and app switches. iOS lays the window out in portrait for its background snapshot, and the swap chain used to stay portrait afterwards.\n- On-screen touch controls when no controller is connected; MFi, Xbox and PlayStation controllers.\n- Pause and resume on app switches and locking; game language from the device; shader and pipeline caches kept across launches; Apple Game Mode.",
+      "downloadURL": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS/releases/download/1.0.0/SEGA-Superstars-Tennis-iOS.ipa",
+      "size": 18208145
+    },
     {
       "name": "NBA Hangtime",
       "bundleIdentifier": "com.devz.nbahangtime",
@@ -26,6 +60,16 @@
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.4.3",
+          "buildVersion": "8",
+          "marketingVersion": "NBA Hangtime 0.4.3 - CRT filter",
+          "date": "2026-10-11T15:37:59Z",
+          "localizedDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
+          "size": 5911243,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.4.2",
           "buildVersion": "7",
@@ -51,11 +95,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.4.2",
-      "versionDate": "2026-10-10T21:04:19Z",
-      "versionDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
-      "size": 5895580
+      "version": "0.4.3",
+      "versionDate": "2026-10-11T15:37:59Z",
+      "versionDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
+      "size": 5911243
     },
     {
       "name": "The Simpsons Game",
@@ -233,6 +277,26 @@
     }
   ],
   "news": [
+    {
+      "title": "Superstars Tennis SEGA Superstars Tennis 1.0.0",
+      "identifier": "release-SegaSuperstarsTennis-iOS-1.0.0",
+      "caption": "Changelog",
+      "date": "2026-10-11T18:28:33Z",
+      "url": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS/releases/tag/1.0.0",
+      "appID": "com.devz.sstrematch",
+      "notify": false,
+      "tintColor": "#818C85"
+    },
+    {
+      "title": "NBA Hangtime NBA Hangtime 0.4.3 - CRT filter",
+      "identifier": "release-NBAHangtime-iOS-v0.4.3",
+      "caption": "NBA Hangtime 0.4.3",
+      "date": "2026-10-11T15:37:59Z",
+      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.3",
+      "appID": "com.devz.nbahangtime",
+      "notify": false,
+      "tintColor": "#C45629"
+    },
     {
       "title": "NBA Hangtime Release v0.4.2",
       "identifier": "release-NBAHangtime-iOS-R2",

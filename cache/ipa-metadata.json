@@ -122,5 +122,37 @@
     "name": "NBA Hangtime",
     "privacy": {},
     "version": "0.4.2"
+  },
+  "631114246:2026-10-11T15:37:58Z:5911243": {
+    "buildVersion": "8",
+    "bundleIdentifier": "com.devz.nbahangtime",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nbahangtime-935432208d3c.png",
+      "tint": "#C45629",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NBA Hangtime",
+    "privacy": {},
+    "version": "0.4.3"
+  },
+  "631481831:2026-10-11T18:28:32Z:18208145": {
+    "buildVersion": "3",
+    "bundleIdentifier": "com.devz.sstrematch",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.sstrematch-377a5eed7ff2.png",
+      "tint": "#818C85",
+      "width": 512
+    },
+    "minOSVersion": "15.0",
+    "name": "Superstars Tennis",
+    "privacy": {},
+    "version": "1.0.0"
   }
 }
