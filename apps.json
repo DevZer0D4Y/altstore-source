@@ -8,13 +8,141 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
-    "com.devz.sstrematch",
-    "com.devz.nbahangtime",
-    "com.devz.simpsons",
-    "com.devz.sonic2006",
-    "com.devz.cod4ios"
+    "com.devz.slamjam96",
+    "com.devz.ssf2t",
+    "com.devz.thps2",
+    "com.devz.umk3",
+    "com.devz.sstrematch"
   ],
   "apps": [
+    {
+      "name": "Slam’n’Jam 96",
+      "bundleIdentifier": "com.devz.slamjam96",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-4aee023a6428.png",
+      "tintColor": "#32A2DC",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.1",
+          "buildVersion": "2",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SlamJam96-0.1.1-unsigned.ipa",
+          "size": 557591,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.1",
+      "versionDate": "2026-10-11T18:40:05Z",
+      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SlamJam96-0.1.1-unsigned.ipa",
+      "size": 557591
+    },
+    {
+      "name": "Super Street Fighter II Turbo",
+      "bundleIdentifier": "com.devz.ssf2t",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ssf2t-35d1d1d6cec0.png",
+      "tintColor": "#ECAE28",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.1",
+          "buildVersion": "1",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SSF2T-0.1.1-unsigned.ipa",
+          "size": 762641,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.1",
+      "versionDate": "2026-10-11T18:40:05Z",
+      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SSF2T-0.1.1-unsigned.ipa",
+      "size": 762641
+    },
+    {
+      "name": "Tony Hawk’s Pro Skater 2",
+      "bundleIdentifier": "com.devz.thps2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thps2-8406301f36b0.png",
+      "tintColor": "#56C984",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.9",
+          "buildVersion": "10",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/THPS2-0.1.9-unsigned.ipa",
+          "size": 1025659,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.9",
+      "versionDate": "2026-10-11T18:40:05Z",
+      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/THPS2-0.1.9-unsigned.ipa",
+      "size": 1025659
+    },
+    {
+      "name": "Ultimate Mortal Kombat 3",
+      "bundleIdentifier": "com.devz.umk3",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.umk3-db7b4e826c9a.png",
+      "tintColor": "#C52930",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.1",
+          "buildVersion": "2",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/UMK3-0.1.1-unsigned.ipa",
+          "size": 870528,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.1",
+      "versionDate": "2026-10-11T18:40:05Z",
+      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/UMK3-0.1.1-unsigned.ipa",
+      "size": 870528
+    },
     {
       "name": "Superstars Tennis",
       "bundleIdentifier": "com.devz.sstrematch",
@@ -277,6 +405,46 @@
     }
   ],
   "news": [
+    {
+      "title": "Slam’n’Jam 96 NativePorts v1.0",
+      "identifier": "release-NativePorts-v1.0",
+      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
+      "date": "2026-10-11T18:40:05Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
+      "appID": "com.devz.slamjam96",
+      "notify": false,
+      "tintColor": "#32A2DC"
+    },
+    {
+      "title": "Super Street Fighter II Turbo NativePorts v1.0",
+      "identifier": "release-NativePorts-v1.0",
+      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
+      "date": "2026-10-11T18:40:05Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
+      "appID": "com.devz.ssf2t",
+      "notify": false,
+      "tintColor": "#ECAE28"
+    },
+    {
+      "title": "Tony Hawk’s Pro Skater 2 NativePorts v1.0",
+      "identifier": "release-NativePorts-v1.0",
+      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
+      "date": "2026-10-11T18:40:05Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
+      "appID": "com.devz.thps2",
+      "notify": false,
+      "tintColor": "#56C984"
+    },
+    {
+      "title": "Ultimate Mortal Kombat 3 NativePorts v1.0",
+      "identifier": "release-NativePorts-v1.0",
+      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
+      "date": "2026-10-11T18:40:05Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
+      "appID": "com.devz.umk3",
+      "notify": false,
+      "tintColor": "#C52930"
+    },
     {
       "title": "Superstars Tennis SEGA Superstars Tennis 1.0.0",
       "identifier": "release-SegaSuperstarsTennis-iOS-1.0.0",

@@ -154,5 +154,65 @@
     "name": "Superstars Tennis",
     "privacy": {},
     "version": "1.0.0"
+  },
+  "631505985:2026-10-11T18:40:03Z:557591": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-4aee023a6428.png",
+      "tint": "#32A2DC",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.1.1"
+  },
+  "631505986:2026-10-11T18:40:03Z:870528": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.umk3",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.umk3-db7b4e826c9a.png",
+      "tint": "#C52930",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Ultimate Mortal Kombat 3",
+    "privacy": {},
+    "version": "0.1.1"
+  },
+  "631505989:2026-10-11T18:40:03Z:1025659": {
+    "buildVersion": "10",
+    "bundleIdentifier": "com.devz.thps2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thps2-8406301f36b0.png",
+      "tint": "#56C984",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Tony Hawk\u2019s Pro Skater 2",
+    "privacy": {},
+    "version": "0.1.9"
+  },
+  "631505992:2026-10-11T18:40:03Z:762641": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-35d1d1d6cec0.png",
+      "tint": "#ECAE28",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.1.1"
   }
 }
