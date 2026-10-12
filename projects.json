@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-12T10:22:32.398511Z",
+  "generated": "2026-10-12T19:57:55.541648Z",
   "projects": [
+    {
+      "repo": "SSF2-iOS",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS",
+      "description": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.",
+      "language": "JavaScript",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-12T12:45:13Z",
+      "firstRelease": "2026-10-12T17:13:41Z",
+      "latestRelease": {
+        "tag": "v1.1.3",
+        "name": "Super Smash Flash 2 for iOS 1.1.3",
+        "date": "2026-10-12T19:07:47Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.3"
+      },
+      "released": "2026-10-12T17:13:41Z",
+      "app": {
+        "name": "Super Smash Flash 2",
+        "bundleIdentifier": "com.devz.supersmashflash2",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
+        "tintColor": "#AF0F02"
+      }
+    },
     {
       "repo": "NativePorts",
       "url": "https://github.com/DevZer0D4Y/NativePorts",
@@ -13,17 +37,17 @@
       "created": "2026-10-11T18:37:49Z",
       "firstRelease": "2026-10-11T18:40:05Z",
       "latestRelease": {
-        "tag": "v1.0",
-        "name": "NativePorts v1.0",
-        "date": "2026-10-11T18:40:05Z",
-        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0"
+        "tag": "v0.2.1",
+        "name": "NativePorts 0.2.1",
+        "date": "2026-10-12T16:56:38Z",
+        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1"
       },
       "released": "2026-10-11T18:40:05Z",
       "app": {
         "name": "Slam’n’Jam 96",
         "bundleIdentifier": "com.devz.slamjam96",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-4aee023a6428.png",
-        "tintColor": "#32A2DC"
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-7ae02dd0f6c2.png",
+        "tintColor": "#4E4A69"
       }
     },
     {

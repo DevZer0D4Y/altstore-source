@@ -214,5 +214,155 @@
     "name": "Super Street Fighter II Turbo",
     "privacy": {},
     "version": "0.1.1"
+  },
+  "633755170:2026-10-12T12:40:04Z:5182733": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-a56d0136807b.png",
+      "tint": "#AF4A58",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.2.0"
+  },
+  "633755172:2026-10-12T12:40:05Z:6260720": {
+    "buildVersion": "11",
+    "bundleIdentifier": "com.devz.thps2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thps2-8f65bb588040.png",
+      "tint": "#687185",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Tony Hawk\u2019s Pro Skater 2",
+    "privacy": {},
+    "version": "0.2.0"
+  },
+  "633755173:2026-10-12T12:40:03Z:3076233": {
+    "buildVersion": "3",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tint": "#4E4A69",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.2.0"
+  },
+  "633755175:2026-10-12T12:40:04Z:3935444": {
+    "buildVersion": "3",
+    "bundleIdentifier": "com.devz.umk3",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.umk3-a623eb6cace8.png",
+      "tint": "#C36810",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Ultimate Mortal Kombat 3",
+    "privacy": {},
+    "version": "0.2.0"
+  },
+  "634389411:2026-10-12T16:56:37Z:3935408": {
+    "buildVersion": "4",
+    "bundleIdentifier": "com.devz.umk3",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.umk3-a623eb6cace8.png",
+      "tint": "#C36810",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Ultimate Mortal Kombat 3",
+    "privacy": {},
+    "version": "0.2.1"
+  },
+  "634389412:2026-10-12T16:56:37Z:3076204": {
+    "buildVersion": "4",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tint": "#4E4A69",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.2.1"
+  },
+  "634389416:2026-10-12T16:56:37Z:6262171": {
+    "buildVersion": "12",
+    "bundleIdentifier": "com.devz.thps2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thps2-8f65bb588040.png",
+      "tint": "#687185",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Tony Hawk\u2019s Pro Skater 2",
+    "privacy": {},
+    "version": "0.2.1"
+  },
+  "634389417:2026-10-12T16:56:37Z:5183220": {
+    "buildVersion": "3",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-a56d0136807b.png",
+      "tint": "#AF4A58",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.2.1"
+  },
+  "634428110:2026-10-12T17:13:03Z:802667400": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.2"
+  },
+  "634706030:2026-10-12T19:07:46Z:802669662": {
+    "buildVersion": "6",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.3"
   }
 }

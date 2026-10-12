@@ -8,24 +8,86 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.supersmashflash2",
     "com.devz.slamjam96",
     "com.devz.ssf2t",
     "com.devz.thps2",
-    "com.devz.umk3",
-    "com.devz.sstrematch"
+    "com.devz.umk3"
   ],
   "apps": [
+    {
+      "name": "Super Smash Flash 2",
+      "bundleIdentifier": "com.devz.supersmashflash2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad",
+      "localizedDescription": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SSF2-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
+      "tintColor": "#AF0F02",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.1.3",
+          "buildVersion": "6",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.3",
+          "date": "2026-10-12T19:07:47Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
+          "size": 802669662,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.2",
+          "buildVersion": "5",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.2",
+          "date": "2026-10-12T17:13:41Z",
+          "localizedDescription": "First public release of the Super Smash Flash 2 iPhone and iPad port.\n\n- Offline Super Smash Flash 2 v1.3.1.2 Portable, with bundled Ruffle 0.6.0.\n- Matching multitouch control deck, adjustable size and opacity, and separate customizable portrait/landscape layouts.\n- Native gamepad support and remappable touch, keyboard, and controller actions.\n- Deferred compressed texture uploads to reduce GPU memory use.\n- Clean public source with checksum-pinned asset downloads and reproducible unsigned IPA packaging.\n- Release builds exclude the device test command channel, diagnostic files, source maps, signing files, and embedded local build paths.\n\n**Installation:** Requires iOS/iPadOS 16 or later. Download the unsigned IPA, sign it with your preferred sideloading tool, and install. Preserve the bundle identifier and signing identity when updating to keep app data.\n\nThe game runs offline; online multiplayer is unsupported. Performance and Flash compatibility depend on the device and Ruffle.\n\n**Validation:** Xcode Release build, touch/controller/layout tests, texture memory tests, source privacy audit, and final IPA integrity/privacy audit passed. The SHA-256 checksum is attached.\n\nSee the README for controls, installation, building, credits, and licenses.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.2/SuperSmashFlash2-1.1.2-unsigned.ipa",
+          "size": 802667400,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.1.3",
+      "versionDate": "2026-10-12T19:07:47Z",
+      "versionDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
+      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
+      "size": 802669662
+    },
     {
       "name": "Slam’n’Jam 96",
       "bundleIdentifier": "com.devz.slamjam96",
       "developerName": "DevZer0D4Y",
       "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
       "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-4aee023a6428.png",
-      "tintColor": "#32A2DC",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tintColor": "#4E4A69",
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "4",
+          "marketingVersion": "NativePorts 0.2.1",
+          "date": "2026-10-12T16:56:38Z",
+          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/SlamJam96-0.2.1-unsigned.ipa",
+          "size": 3076204,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "3",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/SlamJam96-0.2.0-unsigned.ipa",
+          "size": 3076233,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.1.1",
           "buildVersion": "2",
@@ -41,11 +103,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.1.1",
-      "versionDate": "2026-10-11T18:40:05Z",
-      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SlamJam96-0.1.1-unsigned.ipa",
-      "size": 557591
+      "version": "0.2.1",
+      "versionDate": "2026-10-12T16:56:38Z",
+      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/SlamJam96-0.2.1-unsigned.ipa",
+      "size": 3076204
     },
     {
       "name": "Super Street Fighter II Turbo",
@@ -53,11 +115,31 @@
       "developerName": "DevZer0D4Y",
       "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
       "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ssf2t-35d1d1d6cec0.png",
-      "tintColor": "#ECAE28",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ssf2t-a56d0136807b.png",
+      "tintColor": "#AF4A58",
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "3",
+          "marketingVersion": "NativePorts 0.2.1",
+          "date": "2026-10-12T16:56:38Z",
+          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/SSF2T-0.2.1-unsigned.ipa",
+          "size": 5183220,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "2",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/SSF2T-0.2.0-unsigned.ipa",
+          "size": 5182733,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.1.1",
           "buildVersion": "1",
@@ -73,11 +155,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.1.1",
-      "versionDate": "2026-10-11T18:40:05Z",
-      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/SSF2T-0.1.1-unsigned.ipa",
-      "size": 762641
+      "version": "0.2.1",
+      "versionDate": "2026-10-12T16:56:38Z",
+      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/SSF2T-0.2.1-unsigned.ipa",
+      "size": 5183220
     },
     {
       "name": "Tony Hawk’s Pro Skater 2",
@@ -85,11 +167,31 @@
       "developerName": "DevZer0D4Y",
       "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
       "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thps2-8406301f36b0.png",
-      "tintColor": "#56C984",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thps2-8f65bb588040.png",
+      "tintColor": "#687185",
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "12",
+          "marketingVersion": "NativePorts 0.2.1",
+          "date": "2026-10-12T16:56:38Z",
+          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/THPS2-0.2.1-unsigned.ipa",
+          "size": 6262171,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "11",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/THPS2-0.2.0-unsigned.ipa",
+          "size": 6260720,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.1.9",
           "buildVersion": "10",
@@ -105,11 +207,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.1.9",
-      "versionDate": "2026-10-11T18:40:05Z",
-      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/THPS2-0.1.9-unsigned.ipa",
-      "size": 1025659
+      "version": "0.2.1",
+      "versionDate": "2026-10-12T16:56:38Z",
+      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/THPS2-0.2.1-unsigned.ipa",
+      "size": 6262171
     },
     {
       "name": "Ultimate Mortal Kombat 3",
@@ -117,11 +219,31 @@
       "developerName": "DevZer0D4Y",
       "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
       "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.umk3-db7b4e826c9a.png",
-      "tintColor": "#C52930",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.umk3-a623eb6cace8.png",
+      "tintColor": "#C36810",
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "4",
+          "marketingVersion": "NativePorts 0.2.1",
+          "date": "2026-10-12T16:56:38Z",
+          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/UMK3-0.2.1-unsigned.ipa",
+          "size": 3935408,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "3",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/UMK3-0.2.0-unsigned.ipa",
+          "size": 3935444,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.1.1",
           "buildVersion": "2",
@@ -137,11 +259,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.1.1",
-      "versionDate": "2026-10-11T18:40:05Z",
-      "versionDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/UMK3-0.1.1-unsigned.ipa",
-      "size": 870528
+      "version": "0.2.1",
+      "versionDate": "2026-10-12T16:56:38Z",
+      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/UMK3-0.2.1-unsigned.ipa",
+      "size": 3935408
     },
     {
       "name": "Superstars Tennis",
@@ -406,6 +528,106 @@
   ],
   "news": [
     {
+      "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.3",
+      "identifier": "release-SSF2-iOS-v1.1.3",
+      "caption": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.",
+      "date": "2026-10-12T19:07:47Z",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.3",
+      "appID": "com.devz.supersmashflash2",
+      "notify": false,
+      "tintColor": "#AF0F02"
+    },
+    {
+      "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.2",
+      "identifier": "release-SSF2-iOS-v1.1.2",
+      "caption": "First public release of the Super Smash Flash 2 iPhone and iPad port.",
+      "date": "2026-10-12T17:13:41Z",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.2",
+      "appID": "com.devz.supersmashflash2",
+      "notify": false,
+      "tintColor": "#AF0F02"
+    },
+    {
+      "title": "Slam’n’Jam 96 NativePorts 0.2.1",
+      "identifier": "release-NativePorts-v0.2.1",
+      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
+      "date": "2026-10-12T16:56:38Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
+      "appID": "com.devz.slamjam96",
+      "notify": false,
+      "tintColor": "#4E4A69"
+    },
+    {
+      "title": "Super Street Fighter II Turbo NativePorts 0.2.1",
+      "identifier": "release-NativePorts-v0.2.1",
+      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
+      "date": "2026-10-12T16:56:38Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
+      "appID": "com.devz.ssf2t",
+      "notify": false,
+      "tintColor": "#AF4A58"
+    },
+    {
+      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.2.1",
+      "identifier": "release-NativePorts-v0.2.1",
+      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
+      "date": "2026-10-12T16:56:38Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
+      "appID": "com.devz.thps2",
+      "notify": false,
+      "tintColor": "#687185"
+    },
+    {
+      "title": "Ultimate Mortal Kombat 3 NativePorts 0.2.1",
+      "identifier": "release-NativePorts-v0.2.1",
+      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
+      "date": "2026-10-12T16:56:38Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
+      "appID": "com.devz.umk3",
+      "notify": false,
+      "tintColor": "#C36810"
+    },
+    {
+      "title": "Slam’n’Jam 96 NativePorts 0.2.0",
+      "identifier": "release-NativePorts-v0.2.0",
+      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
+      "date": "2026-10-12T12:40:28Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
+      "appID": "com.devz.slamjam96",
+      "notify": false,
+      "tintColor": "#4E4A69"
+    },
+    {
+      "title": "Super Street Fighter II Turbo NativePorts 0.2.0",
+      "identifier": "release-NativePorts-v0.2.0",
+      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
+      "date": "2026-10-12T12:40:28Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
+      "appID": "com.devz.ssf2t",
+      "notify": false,
+      "tintColor": "#AF4A58"
+    },
+    {
+      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.2.0",
+      "identifier": "release-NativePorts-v0.2.0",
+      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
+      "date": "2026-10-12T12:40:28Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
+      "appID": "com.devz.thps2",
+      "notify": false,
+      "tintColor": "#687185"
+    },
+    {
+      "title": "Ultimate Mortal Kombat 3 NativePorts 0.2.0",
+      "identifier": "release-NativePorts-v0.2.0",
+      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
+      "date": "2026-10-12T12:40:28Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
+      "appID": "com.devz.umk3",
+      "notify": false,
+      "tintColor": "#C36810"
+    },
+    {
       "title": "Slam’n’Jam 96 NativePorts v1.0",
       "identifier": "release-NativePorts-v1.0",
       "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
@@ -413,7 +635,7 @@
       "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
       "appID": "com.devz.slamjam96",
       "notify": false,
-      "tintColor": "#32A2DC"
+      "tintColor": "#4E4A69"
     },
     {
       "title": "Super Street Fighter II Turbo NativePorts v1.0",
@@ -423,7 +645,7 @@
       "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
       "appID": "com.devz.ssf2t",
       "notify": false,
-      "tintColor": "#ECAE28"
+      "tintColor": "#AF4A58"
     },
     {
       "title": "Tony Hawk’s Pro Skater 2 NativePorts v1.0",
@@ -433,7 +655,7 @@
       "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
       "appID": "com.devz.thps2",
       "notify": false,
-      "tintColor": "#56C984"
+      "tintColor": "#687185"
     },
     {
       "title": "Ultimate Mortal Kombat 3 NativePorts v1.0",
@@ -443,7 +665,7 @@
       "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
       "appID": "com.devz.umk3",
       "notify": false,
-      "tintColor": "#C52930"
+      "tintColor": "#C36810"
     },
     {
       "title": "Superstars Tennis SEGA Superstars Tennis 1.0.0",
@@ -504,55 +726,6 @@
       "appID": "com.devz.sonic2006",
       "notify": false,
       "tintColor": "#304278"
-    },
-    {
-      "title": "In development: NFSMW-iOS",
-      "identifier": "upcoming-NFSMW-iOS",
-      "caption": "A static native recompilation of Need for Speed: Most Wanted (2005) Xbox 360 for iOS",
-      "date": "2026-10-04T13:53:03Z",
-      "url": "https://github.com/DevZer0D4Y/NFSMW-iOS",
-      "notify": false,
-      "tintColor": "#2F6FEB"
-    },
-    {
-      "title": "COD4iOS Call of Duty 4 for iOS first release!!",
-      "identifier": "release-COD4iOS-COD4NS-R1",
-      "caption": "Multiplayer works too, you can play with PC users by joining the same servers.",
-      "date": "2026-10-03T06:49:12Z",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R1",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
-    },
-    {
-      "title": "Sonic Unleashed Sonic Unleashed for iOS v1.0.3",
-      "identifier": "release-UnleashedRecompilediOS-R1",
-      "caption": "First release",
-      "date": "2026-09-27T17:19:04Z",
-      "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/R1",
-      "appID": "com.devz.sonicunleashed",
-      "notify": false,
-      "tintColor": "#77857C"
-    },
-    {
-      "title": "MCX360 Edition MCX360 Edition 1.1",
-      "identifier": "release-MCX360-EDITION-R2",
-      "caption": "MCX360 Edition 1.1",
-      "date": "2026-09-26T07:36:36Z",
-      "url": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/tag/R2",
-      "appID": "com.devz.mc360",
-      "notify": false,
-      "tintColor": "#869E8C"
-    },
-    {
-      "title": "MCX360 Edition MCX360 Edition 1.0",
-      "identifier": "release-MCX360-EDITION-R1",
-      "caption": "First iOS release.",
-      "date": "2026-09-13T05:51:10Z",
-      "url": "https://github.com/DevZer0D4Y/MCX360-EDITION/releases/tag/R1",
-      "appID": "com.devz.mc360",
-      "notify": false,
-      "tintColor": "#869E8C"
     }
   ]
 }
