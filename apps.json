@@ -8,13 +8,58 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.sonicunleashed",
     "com.devz.supersmashflash2",
     "com.devz.slamjam96",
     "com.devz.ssf2t",
-    "com.devz.thps2",
-    "com.devz.umk3"
+    "com.devz.thps2"
   ],
   "apps": [
+    {
+      "name": "Sonic Unleashed",
+      "bundleIdentifier": "com.devz.sonicunleashed",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
+      "localizedDescription": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UnleashedRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonicunleashed-e1264917d7ab.png",
+      "tintColor": "#77857C",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.1.0",
+          "buildVersion": "1.1.0",
+          "marketingVersion": "Sonic Unleashed for iOS v1.1.0 — Native Mod Manager",
+          "date": "2026-10-12T19:57:45Z",
+          "localizedDescription": "# Sonic Unleashed for iOS v1.1.0 — Native Mod Manager\n\n## Changelog\n\n- Added a native startup mod manager with folder import through Files.\n- Enable or disable mods, reorder priority, and preserve selections across launches.\n- Check dependency IDs and minimum numeric versions before starting.\n- Toggle the built-in game codes from the manager.\n- Connect selections to the existing asset replacements, append archives, loose files, UMM merges, and mod save redirection.\n- Display unsupported DLL and custom HMM script requirements.\n- Confine mod include/save paths and reject symbolic links.\n- Compile the game Metal shader cache for iOS 15 with the iPhone SDK.\n- Target iOS 15 for bundled dependencies and use numeric bundle versions.\n- Add an IPA packaging helper for builds made with the Ninja preset.\n\n## Install and use\n\nDownload `SonicUnleashed_iOS_v1.1.0.ipa` and re-sign it with your sideloading tool before installation. This IPA has an ad-hoc signature and no Apple provisioning profile. Supply your own runtime game assets through Files.\n\nExtract an Unleashed Recompiled mod, launch the app, tap **Import folder**, and select the folder containing `mod.ini`. Enable it, set its priority, and tap **Play**. New imports start disabled. The first mod wins file replacement conflicts.\n\n## Compatibility and validation\n\nARM64 iPhone/iPad build targeting iOS 15 or later. DLL plugins and arbitrary HMM scripts need individual iOS ports; this release does not promise compatibility with every mod. There is no online mod catalog or automatic downloading.\n\nThe complete app compiled and linked successfully. Mod backend tests passed with AddressSanitizer and UndefinedBehaviorSanitizer, and the native UI passed ARM64 iOS SDK syntax checks. The packaged IPA passed ZIP integrity, bundle metadata, and ad-hoc signature checks. Physical-device gameplay and individual mod packages have not been verified.\n\nSource: `5625afe81d2f9f2bac947087034260dc8c87dcc1`.",
+          "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/v1.1.0/SonicUnleashed_iOS_v1.1.0.ipa",
+          "size": 55943360,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "v1.0.3",
+          "buildVersion": "v1.0.3",
+          "marketingVersion": "Sonic Unleashed for iOS v1.0.3",
+          "date": "2026-09-27T17:19:04Z",
+          "localizedDescription": "First release",
+          "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/R1/SonicUnleashed_Release.ipa",
+          "size": 61370785,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "1.1.0",
+      "versionDate": "2026-10-12T19:57:45Z",
+      "versionDescription": "# Sonic Unleashed for iOS v1.1.0 — Native Mod Manager\n\n## Changelog\n\n- Added a native startup mod manager with folder import through Files.\n- Enable or disable mods, reorder priority, and preserve selections across launches.\n- Check dependency IDs and minimum numeric versions before starting.\n- Toggle the built-in game codes from the manager.\n- Connect selections to the existing asset replacements, append archives, loose files, UMM merges, and mod save redirection.\n- Display unsupported DLL and custom HMM script requirements.\n- Confine mod include/save paths and reject symbolic links.\n- Compile the game Metal shader cache for iOS 15 with the iPhone SDK.\n- Target iOS 15 for bundled dependencies and use numeric bundle versions.\n- Add an IPA packaging helper for builds made with the Ninja preset.\n\n## Install and use\n\nDownload `SonicUnleashed_iOS_v1.1.0.ipa` and re-sign it with your sideloading tool before installation. This IPA has an ad-hoc signature and no Apple provisioning profile. Supply your own runtime game assets through Files.\n\nExtract an Unleashed Recompiled mod, launch the app, tap **Import folder**, and select the folder containing `mod.ini`. Enable it, set its priority, and tap **Play**. New imports start disabled. The first mod wins file replacement conflicts.\n\n## Compatibility and validation\n\nARM64 iPhone/iPad build targeting iOS 15 or later. DLL plugins and arbitrary HMM scripts need individual iOS ports; this release does not promise compatibility with every mod. There is no online mod catalog or automatic downloading.\n\nThe complete app compiled and linked successfully. Mod backend tests passed with AddressSanitizer and UndefinedBehaviorSanitizer, and the native UI passed ARM64 iOS SDK syntax checks. The packaged IPA passed ZIP integrity, bundle metadata, and ad-hoc signature checks. Physical-device gameplay and individual mod packages have not been verified.\n\nSource: `5625afe81d2f9f2bac947087034260dc8c87dcc1`.",
+      "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/v1.1.0/SonicUnleashed_iOS_v1.1.0.ipa",
+      "size": 55943360
+    },
     {
       "name": "Super Smash Flash 2",
       "bundleIdentifier": "com.devz.supersmashflash2",
@@ -448,40 +493,6 @@
       "size": 9596607
     },
     {
-      "name": "Sonic Unleashed",
-      "bundleIdentifier": "com.devz.sonicunleashed",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.",
-      "localizedDescription": "An iOS port of the Xbox 360 version of Sonic Unleashed created through the process of static recompilation.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UnleashedRecompilediOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonicunleashed-e1264917d7ab.png",
-      "tintColor": "#77857C",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "v1.0.3",
-          "buildVersion": "v1.0.3",
-          "marketingVersion": "Sonic Unleashed for iOS v1.0.3",
-          "date": "2026-09-27T17:19:04Z",
-          "localizedDescription": "First release",
-          "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/R1/SonicUnleashed_Release.ipa",
-          "size": 61370785,
-          "minOSVersion": "15.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "get-task-allow"
-        ],
-        "privacy": {}
-      },
-      "version": "v1.0.3",
-      "versionDate": "2026-09-27T17:19:04Z",
-      "versionDescription": "First release",
-      "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/R1/SonicUnleashed_Release.ipa",
-      "size": 61370785
-    },
-    {
       "name": "MCX360 Edition",
       "bundleIdentifier": "com.devz.mc360",
       "developerName": "DevZer0D4Y",
@@ -527,6 +538,16 @@
     }
   ],
   "news": [
+    {
+      "title": "Sonic Unleashed Sonic Unleashed for iOS v1.1.0 — Native Mod Manager",
+      "identifier": "release-UnleashedRecompilediOS-v1.1.0",
+      "caption": "Sonic Unleashed for iOS v1.1.0 — Native Mod Manager",
+      "date": "2026-10-12T19:57:45Z",
+      "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/v1.1.0",
+      "appID": "com.devz.sonicunleashed",
+      "notify": false,
+      "tintColor": "#77857C"
+    },
     {
       "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.3",
       "identifier": "release-SSF2-iOS-v1.1.3",
@@ -716,16 +737,6 @@
       "appID": "com.devz.simpsons",
       "notify": false,
       "tintColor": "#E3A75D"
-    },
-    {
-      "title": "Sonic (2006) v1.0",
-      "identifier": "release-MarathonRecompilediOS-R1",
-      "caption": "First release!",
-      "date": "2026-10-05T18:29:37Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/R1",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
     }
   ]
 }

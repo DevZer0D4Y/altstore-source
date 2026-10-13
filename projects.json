@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-12T19:57:55.541648Z",
+  "generated": "2026-10-13T01:56:42.373456Z",
   "projects": [
     {
       "repo": "SSF2-iOS",
@@ -213,10 +213,10 @@
       "created": "2026-09-21T14:32:41Z",
       "firstRelease": "2026-09-27T17:19:04Z",
       "latestRelease": {
-        "tag": "R1",
-        "name": "Sonic Unleashed for iOS v1.0.3",
-        "date": "2026-09-27T17:19:04Z",
-        "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/R1"
+        "tag": "v1.1.0",
+        "name": "Sonic Unleashed for iOS v1.1.0 — Native Mod Manager",
+        "date": "2026-10-12T19:57:45Z",
+        "url": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/tag/v1.1.0"
       },
       "released": "2026-09-27T17:19:04Z",
       "app": {
