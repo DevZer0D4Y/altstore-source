@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-13T01:56:42.373456Z",
+  "generated": "2026-10-13T09:09:47.592371Z",
   "projects": [
     {
       "repo": "SSF2-iOS",
@@ -13,10 +13,10 @@
       "created": "2026-10-12T12:45:13Z",
       "firstRelease": "2026-10-12T17:13:41Z",
       "latestRelease": {
-        "tag": "v1.1.3",
-        "name": "Super Smash Flash 2 for iOS 1.1.3",
-        "date": "2026-10-12T19:07:47Z",
-        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.3"
+        "tag": "v1.1.4",
+        "name": "Super Smash Flash 2 for iOS 1.1.4",
+        "date": "2026-10-13T05:35:55Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.4"
       },
       "released": "2026-10-12T17:13:41Z",
       "app": {
@@ -88,10 +88,10 @@
       "created": "2026-10-10T15:09:14Z",
       "firstRelease": "2026-10-10T15:13:26Z",
       "latestRelease": {
-        "tag": "v0.4.3",
-        "name": "NBA Hangtime 0.4.3 - CRT filter",
-        "date": "2026-10-11T15:37:59Z",
-        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.3"
+        "tag": "v0.4.4",
+        "name": "NBA Hangtime 0.4.4",
+        "date": "2026-10-13T05:39:25Z",
+        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.4"
       },
       "released": "2026-10-10T15:13:26Z",
       "app": {

@@ -382,5 +382,35 @@
     "name": "Sonic Unleashed",
     "privacy": {},
     "version": "1.1.0"
+  },
+  "636011714:2026-10-13T05:35:54Z:802682431": {
+    "buildVersion": "7",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.4"
+  },
+  "636020906:2026-10-13T05:39:23Z:5910890": {
+    "buildVersion": "9",
+    "bundleIdentifier": "com.devz.nbahangtime",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nbahangtime-935432208d3c.png",
+      "tint": "#C45629",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NBA Hangtime",
+    "privacy": {},
+    "version": "0.4.4"
   }
 }

@@ -8,13 +8,127 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
-    "com.devz.sonicunleashed",
+    "com.devz.nbahangtime",
     "com.devz.supersmashflash2",
+    "com.devz.sonicunleashed",
     "com.devz.slamjam96",
-    "com.devz.ssf2t",
-    "com.devz.thps2"
+    "com.devz.ssf2t"
   ],
   "apps": [
+    {
+      "name": "NBA Hangtime",
+      "bundleIdentifier": "com.devz.nbahangtime",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlaySta",
+      "localizedDescription": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlayStation controller support. Bring your own ROMs.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NBAHangtime-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
+      "tintColor": "#C45629",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.4.4",
+          "buildVersion": "9",
+          "marketingVersion": "NBA Hangtime 0.4.4",
+          "date": "2026-10-13T05:39:25Z",
+          "localizedDescription": "# NBA Hangtime 0.4.4\n\niOS build 9 · Windows x64 · iOS 16 or later\n\n## Changes\n\n- Match CRT curvature to the corrected ports: CURVATURE 1.0 with a 40% blend toward the flat image.\n- Remove frame-artwork overscan and prevent outermost pixels from smearing beyond the curved screen.\n- Fade the tube boundary into black with a 1.5-pixel edge mask.\n- Generate the iOS and Windows CRT shaders from the same math.\n\n## Downloads\n\n- `NBA-Hangtime-iOS.ipa` — unsigned; sign with your sideloading tool.\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-0.4.4-source.zip` — matching port and patched core source.\n\nCompanion SHA-256 checksums are included. Game ROMs are not included; the complete L1.1 arcade set is required. See `SOURCE.md` for source and license notices.\n\n## Validation\n\nGeometry regression checks cover the curvature values, symmetry, all four borders and edge fade. Windows and iOS release builds passed. OpenGL and Metal GPU tests passed shader compilation, rendering passes, black corners, image orientation, toggles and resizing. Package integrity and privacy checks passed before publication.\n\nGPU tests ran on the Mac host. Visual confirmation on physical iOS and Windows devices remains pending.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.4/NBA-Hangtime-iOS.ipa",
+          "size": 5910890,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.4.3",
+          "buildVersion": "8",
+          "marketingVersion": "NBA Hangtime 0.4.3 - CRT filter",
+          "date": "2026-10-11T15:37:59Z",
+          "localizedDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
+          "size": 5911243,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.4.2",
+          "buildVersion": "7",
+          "marketingVersion": "Release v0.4.2",
+          "date": "2026-10-10T21:04:19Z",
+          "localizedDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
+          "size": 5895580,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.4.0",
+          "buildVersion": "5",
+          "marketingVersion": "First release!!",
+          "date": "2026-10-10T15:13:26Z",
+          "localizedDescription": "First release",
+          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
+          "size": 5968054,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.4.4",
+      "versionDate": "2026-10-13T05:39:25Z",
+      "versionDescription": "# NBA Hangtime 0.4.4\n\niOS build 9 · Windows x64 · iOS 16 or later\n\n## Changes\n\n- Match CRT curvature to the corrected ports: CURVATURE 1.0 with a 40% blend toward the flat image.\n- Remove frame-artwork overscan and prevent outermost pixels from smearing beyond the curved screen.\n- Fade the tube boundary into black with a 1.5-pixel edge mask.\n- Generate the iOS and Windows CRT shaders from the same math.\n\n## Downloads\n\n- `NBA-Hangtime-iOS.ipa` — unsigned; sign with your sideloading tool.\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-0.4.4-source.zip` — matching port and patched core source.\n\nCompanion SHA-256 checksums are included. Game ROMs are not included; the complete L1.1 arcade set is required. See `SOURCE.md` for source and license notices.\n\n## Validation\n\nGeometry regression checks cover the curvature values, symmetry, all four borders and edge fade. Windows and iOS release builds passed. OpenGL and Metal GPU tests passed shader compilation, rendering passes, black corners, image orientation, toggles and resizing. Package integrity and privacy checks passed before publication.\n\nGPU tests ran on the Mac host. Visual confirmation on physical iOS and Windows devices remains pending.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.4/NBA-Hangtime-iOS.ipa",
+      "size": 5910890
+    },
+    {
+      "name": "Super Smash Flash 2",
+      "bundleIdentifier": "com.devz.supersmashflash2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad",
+      "localizedDescription": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SSF2-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
+      "tintColor": "#AF0F02",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.1.4",
+          "buildVersion": "7",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.4",
+          "date": "2026-10-13T05:35:55Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.4 (build 7) reduces memory pressure during startup and character/stage changes.\n\n- Compressed sprites move to temporary native disk storage instead of staying in the JavaScript heap. The WebKit integration test paged approximately 326 MB of compressed sprites to disk.\n- Inactive static sprite textures leave a bounded GPU working set and restore through stable logical handles. The target is 128 MB normally, 96 MB on low-memory startup and 64 MB after a memory warning; active draw inputs and modified render targets are preserved.\n- Sampler settings, texture-unit bindings and pixel-store state survive restoration.\n- Local asset responses use no-store to avoid retaining response bodies in the browser cache.\n- The native cache is session-only, reuses freed storage and disappears on app exit.\n\nKeep at least 1 GB of device storage free for normal play; long sessions can require more. If temporary storage cannot be used, compressed sprites fall back to RAM.\n\nValidation: 48-sprite cache stress tests with both RAM and native paging, exact pixel restoration, multiple WebGL contexts, native storage tests, touch/rendering checks, source and IPA audits, and an unsigned iOS Release build. A native macOS WebKit test started a Ness battle, switched to Link and another stage, and reached the next battle without a process termination or sprite-cache read error.\n\nThis addresses identified memory pressure, but all crashes on affected iPhones have not yet been verified as resolved. Ruffle can still retain other movie resources.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.4/SuperSmashFlash2-1.1.4-unsigned.ipa",
+          "size": 802682431,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.3",
+          "buildVersion": "6",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.3",
+          "date": "2026-10-12T19:07:47Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
+          "size": 802669662,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.2",
+          "buildVersion": "5",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.2",
+          "date": "2026-10-12T17:13:41Z",
+          "localizedDescription": "First public release of the Super Smash Flash 2 iPhone and iPad port.\n\n- Offline Super Smash Flash 2 v1.3.1.2 Portable, with bundled Ruffle 0.6.0.\n- Matching multitouch control deck, adjustable size and opacity, and separate customizable portrait/landscape layouts.\n- Native gamepad support and remappable touch, keyboard, and controller actions.\n- Deferred compressed texture uploads to reduce GPU memory use.\n- Clean public source with checksum-pinned asset downloads and reproducible unsigned IPA packaging.\n- Release builds exclude the device test command channel, diagnostic files, source maps, signing files, and embedded local build paths.\n\n**Installation:** Requires iOS/iPadOS 16 or later. Download the unsigned IPA, sign it with your preferred sideloading tool, and install. Preserve the bundle identifier and signing identity when updating to keep app data.\n\nThe game runs offline; online multiplayer is unsupported. Performance and Flash compatibility depend on the device and Ruffle.\n\n**Validation:** Xcode Release build, touch/controller/layout tests, texture memory tests, source privacy audit, and final IPA integrity/privacy audit passed. The SHA-256 checksum is attached.\n\nSee the README for controls, installation, building, credits, and licenses.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.2/SuperSmashFlash2-1.1.2-unsigned.ipa",
+          "size": 802667400,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.1.4",
+      "versionDate": "2026-10-13T05:35:55Z",
+      "versionDescription": "Super Smash Flash 2 for iOS 1.1.4 (build 7) reduces memory pressure during startup and character/stage changes.\n\n- Compressed sprites move to temporary native disk storage instead of staying in the JavaScript heap. The WebKit integration test paged approximately 326 MB of compressed sprites to disk.\n- Inactive static sprite textures leave a bounded GPU working set and restore through stable logical handles. The target is 128 MB normally, 96 MB on low-memory startup and 64 MB after a memory warning; active draw inputs and modified render targets are preserved.\n- Sampler settings, texture-unit bindings and pixel-store state survive restoration.\n- Local asset responses use no-store to avoid retaining response bodies in the browser cache.\n- The native cache is session-only, reuses freed storage and disappears on app exit.\n\nKeep at least 1 GB of device storage free for normal play; long sessions can require more. If temporary storage cannot be used, compressed sprites fall back to RAM.\n\nValidation: 48-sprite cache stress tests with both RAM and native paging, exact pixel restoration, multiple WebGL contexts, native storage tests, touch/rendering checks, source and IPA audits, and an unsigned iOS Release build. A native macOS WebKit test started a Ness battle, switched to Link and another stage, and reached the next battle without a process termination or sprite-cache read error.\n\nThis addresses identified memory pressure, but all crashes on affected iPhones have not yet been verified as resolved. Ruffle can still retain other movie resources.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
+      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.4/SuperSmashFlash2-1.1.4-unsigned.ipa",
+      "size": 802682431
+    },
     {
       "name": "Sonic Unleashed",
       "bundleIdentifier": "com.devz.sonicunleashed",
@@ -59,48 +173,6 @@
       "versionDescription": "# Sonic Unleashed for iOS v1.1.0 — Native Mod Manager\n\n## Changelog\n\n- Added a native startup mod manager with folder import through Files.\n- Enable or disable mods, reorder priority, and preserve selections across launches.\n- Check dependency IDs and minimum numeric versions before starting.\n- Toggle the built-in game codes from the manager.\n- Connect selections to the existing asset replacements, append archives, loose files, UMM merges, and mod save redirection.\n- Display unsupported DLL and custom HMM script requirements.\n- Confine mod include/save paths and reject symbolic links.\n- Compile the game Metal shader cache for iOS 15 with the iPhone SDK.\n- Target iOS 15 for bundled dependencies and use numeric bundle versions.\n- Add an IPA packaging helper for builds made with the Ninja preset.\n\n## Install and use\n\nDownload `SonicUnleashed_iOS_v1.1.0.ipa` and re-sign it with your sideloading tool before installation. This IPA has an ad-hoc signature and no Apple provisioning profile. Supply your own runtime game assets through Files.\n\nExtract an Unleashed Recompiled mod, launch the app, tap **Import folder**, and select the folder containing `mod.ini`. Enable it, set its priority, and tap **Play**. New imports start disabled. The first mod wins file replacement conflicts.\n\n## Compatibility and validation\n\nARM64 iPhone/iPad build targeting iOS 15 or later. DLL plugins and arbitrary HMM scripts need individual iOS ports; this release does not promise compatibility with every mod. There is no online mod catalog or automatic downloading.\n\nThe complete app compiled and linked successfully. Mod backend tests passed with AddressSanitizer and UndefinedBehaviorSanitizer, and the native UI passed ARM64 iOS SDK syntax checks. The packaged IPA passed ZIP integrity, bundle metadata, and ad-hoc signature checks. Physical-device gameplay and individual mod packages have not been verified.\n\nSource: `5625afe81d2f9f2bac947087034260dc8c87dcc1`.",
       "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/v1.1.0/SonicUnleashed_iOS_v1.1.0.ipa",
       "size": 55943360
-    },
-    {
-      "name": "Super Smash Flash 2",
-      "bundleIdentifier": "com.devz.supersmashflash2",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad",
-      "localizedDescription": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SSF2-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
-      "tintColor": "#AF0F02",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.1.3",
-          "buildVersion": "6",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.3",
-          "date": "2026-10-12T19:07:47Z",
-          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
-          "size": 802669662,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.2",
-          "buildVersion": "5",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.2",
-          "date": "2026-10-12T17:13:41Z",
-          "localizedDescription": "First public release of the Super Smash Flash 2 iPhone and iPad port.\n\n- Offline Super Smash Flash 2 v1.3.1.2 Portable, with bundled Ruffle 0.6.0.\n- Matching multitouch control deck, adjustable size and opacity, and separate customizable portrait/landscape layouts.\n- Native gamepad support and remappable touch, keyboard, and controller actions.\n- Deferred compressed texture uploads to reduce GPU memory use.\n- Clean public source with checksum-pinned asset downloads and reproducible unsigned IPA packaging.\n- Release builds exclude the device test command channel, diagnostic files, source maps, signing files, and embedded local build paths.\n\n**Installation:** Requires iOS/iPadOS 16 or later. Download the unsigned IPA, sign it with your preferred sideloading tool, and install. Preserve the bundle identifier and signing identity when updating to keep app data.\n\nThe game runs offline; online multiplayer is unsupported. Performance and Flash compatibility depend on the device and Ruffle.\n\n**Validation:** Xcode Release build, touch/controller/layout tests, texture memory tests, source privacy audit, and final IPA integrity/privacy audit passed. The SHA-256 checksum is attached.\n\nSee the README for controls, installation, building, credits, and licenses.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.2/SuperSmashFlash2-1.1.2-unsigned.ipa",
-          "size": 802667400,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.1.3",
-      "versionDate": "2026-10-12T19:07:47Z",
-      "versionDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
-      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
-      "size": 802669662
     },
     {
       "name": "Slam’n’Jam 96",
@@ -345,58 +417,6 @@
       "size": 18208145
     },
     {
-      "name": "NBA Hangtime",
-      "bundleIdentifier": "com.devz.nbahangtime",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlaySta",
-      "localizedDescription": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlayStation controller support. Bring your own ROMs.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NBAHangtime-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
-      "tintColor": "#C45629",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.4.3",
-          "buildVersion": "8",
-          "marketingVersion": "NBA Hangtime 0.4.3 - CRT filter",
-          "date": "2026-10-11T15:37:59Z",
-          "localizedDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
-          "size": 5911243,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.4.2",
-          "buildVersion": "7",
-          "marketingVersion": "Release v0.4.2",
-          "date": "2026-10-10T21:04:19Z",
-          "localizedDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
-          "size": 5895580,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.4.0",
-          "buildVersion": "5",
-          "marketingVersion": "First release!!",
-          "date": "2026-10-10T15:13:26Z",
-          "localizedDescription": "First release",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
-          "size": 5968054,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.4.3",
-      "versionDate": "2026-10-11T15:37:59Z",
-      "versionDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
-      "size": 5911243
-    },
-    {
       "name": "The Simpsons Game",
       "bundleIdentifier": "com.devz.simpsons",
       "developerName": "DevZer0D4Y",
@@ -538,6 +558,26 @@
     }
   ],
   "news": [
+    {
+      "title": "NBA Hangtime NBA Hangtime 0.4.4",
+      "identifier": "release-NBAHangtime-iOS-v0.4.4",
+      "caption": "NBA Hangtime 0.4.4",
+      "date": "2026-10-13T05:39:25Z",
+      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.4",
+      "appID": "com.devz.nbahangtime",
+      "notify": false,
+      "tintColor": "#C45629"
+    },
+    {
+      "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.4",
+      "identifier": "release-SSF2-iOS-v1.1.4",
+      "caption": "Super Smash Flash 2 for iOS 1.1.4 (build 7) reduces memory pressure during startup and character/stage changes.",
+      "date": "2026-10-13T05:35:55Z",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.4",
+      "appID": "com.devz.supersmashflash2",
+      "notify": false,
+      "tintColor": "#AF0F02"
+    },
     {
       "title": "Sonic Unleashed Sonic Unleashed for iOS v1.1.0 — Native Mod Manager",
       "identifier": "release-UnleashedRecompilediOS-v1.1.0",
@@ -717,26 +757,6 @@
       "appID": "com.devz.nbahangtime",
       "notify": false,
       "tintColor": "#C45629"
-    },
-    {
-      "title": "NBA Hangtime First release!!",
-      "identifier": "release-NBAHangtime-iOS-R1",
-      "caption": "First release",
-      "date": "2026-10-10T15:13:26Z",
-      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R1",
-      "appID": "com.devz.nbahangtime",
-      "notify": false,
-      "tintColor": "#C45629"
-    },
-    {
-      "title": "The Simpsons Game First Release",
-      "identifier": "release-TheSimpsonsGame-iOS-v0.2.4",
-      "caption": "First release, the port has got enhanced improvements, that's why it's release got delayed.",
-      "date": "2026-10-08T17:06:44Z",
-      "url": "https://github.com/DevZer0D4Y/TheSimpsonsGame-iOS/releases/tag/v0.2.4",
-      "appID": "com.devz.simpsons",
-      "notify": false,
-      "tintColor": "#E3A75D"
     }
   ]
 }
