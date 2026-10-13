@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-13T17:05:03.266004Z",
+  "generated": "2026-10-13T21:56:06.299427Z",
   "projects": [
+    {
+      "repo": "MegaMan64Recompiled-Mobile",
+      "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile",
+      "description": "Unofficial Mega Man 64 Recompiled mobile port for Android and iOS, with editable touch controls and controller support. Bring your own USA ROM.",
+      "language": "C++",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-13T17:44:09Z",
+      "firstRelease": "2026-10-13T17:45:33Z",
+      "latestRelease": {
+        "tag": "v0.9.1-mobile.1",
+        "name": "Mega Man 64 Mobile 0.9.1 — Android and iOS",
+        "date": "2026-10-13T17:45:33Z",
+        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-mobile.1"
+      },
+      "released": "2026-10-13T17:45:33Z",
+      "app": {
+        "name": "Mega Man 64",
+        "bundleIdentifier": "com.devz.megaman64",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.megaman64-56121012bc88.png",
+        "tintColor": "#BF8640"
+      }
+    },
     {
       "repo": "SSF2-iOS",
       "url": "https://github.com/DevZer0D4Y/SSF2-iOS",
@@ -142,17 +166,17 @@
       "created": "2026-10-03T13:06:04Z",
       "firstRelease": "2026-10-05T18:29:37Z",
       "latestRelease": {
-        "tag": "R1",
-        "name": "v1.0",
-        "date": "2026-10-05T18:29:37Z",
-        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/R1"
+        "tag": "ios-mods-2026-10-13",
+        "name": "iOS native mod manager — experimental 2026-10-13",
+        "date": "2026-10-13T19:37:05Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-13"
       },
       "released": "2026-10-05T18:29:37Z",
       "app": {
-        "name": "Sonic (2006)",
-        "bundleIdentifier": "com.devz.sonic2006",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
-        "tintColor": "#304278"
+        "name": "Marathon Recompiled",
+        "bundleIdentifier": "com.devz.MarathonRecomp",
+        "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+        "tintColor": "#2F6FEB"
       }
     },
     {
@@ -169,10 +193,10 @@
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",
       "latestRelease": {
-        "tag": "R1",
-        "name": "Call of Duty 4 for iOS first release!!",
-        "date": "2026-10-03T06:49:12Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R1"
+        "tag": "R2",
+        "name": "Better Stability Release",
+        "date": "2026-10-13T19:57:59Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R2"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {

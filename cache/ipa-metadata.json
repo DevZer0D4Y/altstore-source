@@ -472,5 +472,45 @@
     "name": "Super Smash Flash 2",
     "privacy": {},
     "version": "1.1.6"
+  },
+  "637789967:2026-10-13T17:45:31Z:15317212": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.megaman64",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.megaman64-56121012bc88.png",
+      "tint": "#BF8640",
+      "width": 512
+    },
+    "minOSVersion": "16.0",
+    "name": "Mega Man 64",
+    "privacy": {},
+    "version": "0.9.1"
+  },
+  "638048359:2026-10-13T19:37:04Z:46855442": {
+    "buildVersion": "v1.0.0",
+    "bundleIdentifier": "com.devz.MarathonRecomp",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "minOSVersion": "17.0",
+    "name": "Marathon Recompiled",
+    "privacy": {},
+    "version": "v1.0.0"
+  },
+  "638098581:2026-10-13T19:57:32Z:9665598": {
+    "buildVersion": "7",
+    "bundleIdentifier": "com.devz.cod4ios",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tint": "#4F5634",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "COD4iOS",
+    "privacy": {},
+    "version": "1.0.4"
   }
 }

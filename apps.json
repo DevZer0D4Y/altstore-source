@@ -8,13 +8,119 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.cod4ios",
+    "com.devz.MarathonRecomp",
+    "com.devz.megaman64",
     "com.devz.supersmashflash2",
-    "com.devz.slamjam96",
-    "com.devz.ssf2t",
-    "com.devz.nbahangtime",
-    "com.devz.sonicunleashed"
+    "com.devz.slamjam96"
   ],
   "apps": [
+    {
+      "name": "COD4iOS",
+      "bundleIdentifier": "com.devz.cod4ios",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tintColor": "#4F5634",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.4",
+          "buildVersion": "7",
+          "marketingVersion": "Better Stability Release",
+          "date": "2026-10-13T19:57:59Z",
+          "localizedDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
+          "size": 9665598,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.3",
+          "buildVersion": "4",
+          "marketingVersion": "Call of Duty 4 for iOS first release!!",
+          "date": "2026-10-03T06:49:12Z",
+          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
+          "size": 9596607,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.4",
+      "versionDate": "2026-10-13T19:57:59Z",
+      "versionDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
+      "size": 9665598
+    },
+    {
+      "name": "Marathon Recompiled",
+      "bundleIdentifier": "com.devz.MarathonRecomp",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+      "tintColor": "#2F6FEB",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "v1.0.0",
+          "buildVersion": "v1.0.0",
+          "marketingVersion": "iOS native mod manager — experimental 2026-10-13",
+          "date": "2026-10-13T19:37:05Z",
+          "localizedDescription": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reorder priority, and select built-in codes before playing.\n\nAssets:\n- `MarathonRecomp-mods.ipa`: unsigned Release arm64 app, iOS 17+, approximately 44.7 MiB. Sign it before installation.\n- SHA-256 checksum, package manifest, validation report and resolved source patch bundle.\n\nXcode 27.0 compilation and linking succeeded. Mod, portable port, touch/fade and read-only input regressions passed. Package integrity, architecture and absence of signing/provisioning data were checked. Original game files are not included.\n\nThis prerelease was built from the local iOS port snapshot on `ios-mod-integration-20261013`; newer changes on `main` are not included. Dev Zero's mod-support authorship is preserved. No device installation or gameplay/performance testing was performed for this build.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-13/MarathonRecomp-mods.ipa",
+          "size": 46855442,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "v1.0.0",
+      "versionDate": "2026-10-13T19:37:05Z",
+      "versionDescription": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reorder priority, and select built-in codes before playing.\n\nAssets:\n- `MarathonRecomp-mods.ipa`: unsigned Release arm64 app, iOS 17+, approximately 44.7 MiB. Sign it before installation.\n- SHA-256 checksum, package manifest, validation report and resolved source patch bundle.\n\nXcode 27.0 compilation and linking succeeded. Mod, portable port, touch/fade and read-only input regressions passed. Package integrity, architecture and absence of signing/provisioning data were checked. Original game files are not included.\n\nThis prerelease was built from the local iOS port snapshot on `ios-mod-integration-20261013`; newer changes on `main` are not included. Dev Zero's mod-support authorship is preserved. No device installation or gameplay/performance testing was performed for this build.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-13/MarathonRecomp-mods.ipa",
+      "size": 46855442
+    },
+    {
+      "name": "Mega Man 64",
+      "bundleIdentifier": "com.devz.megaman64",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial Mega Man 64 Recompiled mobile port for Android and iOS, with editable touch controls and controller support. ",
+      "localizedDescription": "Unofficial Mega Man 64 Recompiled mobile port for Android and iOS, with editable touch controls and controller support. Bring your own USA ROM.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.megaman64-56121012bc88.png",
+      "tintColor": "#BF8640",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.9.1",
+          "buildVersion": "2",
+          "marketingVersion": "Mega Man 64 Mobile 0.9.1 — Android and iOS",
+          "date": "2026-10-13T17:45:33Z",
+          "localizedDescription": "Android and iOS mobile builds of Mega Man 64: Recompiled.\n\n- Editable gameplay and menu touch pads: movement stick, N64 buttons, position/size/opacity/color controls, and GAME PAD / MENU PAD switching.\n- SDL USB/Bluetooth controller support and configurable bindings.\n- Mobile renderer fixes, Android Vulkan surface/descriptor handling, and iOS screenshot/notification size restoration.\n- Persistent USA FlashRAM saves, atomic replacement, backup writes, and background save flushing.\n- The supplied Mega Man 64 artwork is now the app icon on both platforms.\n- Both application IDs are `com.devz.megaman64`, matching the other ports' naming convention.\n\n**Downloads:** install the ARM64 APK on Android 8.0+ with a compatible Vulkan GPU. Sign the ARM64 IPA for your own iOS 16+ device using eSign or another signing tool. The IPA contains no personal certificate or provisioning profile. `SHA256SUMS.txt` covers both downloads.\n\n**ROM:** supply your own Mega Man 64 USA ROM through the launcher. `.z64`, `.v64`, and `.n64` byte orders are accepted. Japanese Rockman DASH gameplay is not supported by this USA recompilation; the loader reports that limitation. No ROM or save data is bundled.\n\n**Existing saves:** the new IDs create separate app storage. Back up the old app's `config/saves` folder before changing builds, preserve filenames, and keep the old app installed until the backup is safe. Storage locations and restoration limits are described in MOBILE.md. Saves are not automatically migrated between different IDs.\n\nThe repository starts with a clean source history and pinned dependencies. It excludes ROM-derived generated sources, ROMs, saves, logs, SDKs, local build folders, personal paths, and signing keys. Required build scripts, application assets, licenses, and upstream attribution remain available.\n\nValidation: source privacy and whitespace checks; dependency patches applied against pinned revisions; APK signature and 16 KB alignment; ARM64 package structure; ROM/private-path scans; icon pixel checks, application IDs, Android Java class and all renamed JNI entry points. Rendering/gameplay had been confirmed on iOS and Adreno 710 Android before these icon/ID/publication changes. Installation of this newly packaged release still needs verification on devices.\n\nUpstream: https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
+          "downloadURL": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/download/v0.9.1-mobile.1/MegaMan64-iOS-v0.9.1-mobile.1.ipa",
+          "size": 15317212,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.9.1",
+      "versionDate": "2026-10-13T17:45:33Z",
+      "versionDescription": "Android and iOS mobile builds of Mega Man 64: Recompiled.\n\n- Editable gameplay and menu touch pads: movement stick, N64 buttons, position/size/opacity/color controls, and GAME PAD / MENU PAD switching.\n- SDL USB/Bluetooth controller support and configurable bindings.\n- Mobile renderer fixes, Android Vulkan surface/descriptor handling, and iOS screenshot/notification size restoration.\n- Persistent USA FlashRAM saves, atomic replacement, backup writes, and background save flushing.\n- The supplied Mega Man 64 artwork is now the app icon on both platforms.\n- Both application IDs are `com.devz.megaman64`, matching the other ports' naming convention.\n\n**Downloads:** install the ARM64 APK on Android 8.0+ with a compatible Vulkan GPU. Sign the ARM64 IPA for your own iOS 16+ device using eSign or another signing tool. The IPA contains no personal certificate or provisioning profile. `SHA256SUMS.txt` covers both downloads.\n\n**ROM:** supply your own Mega Man 64 USA ROM through the launcher. `.z64`, `.v64`, and `.n64` byte orders are accepted. Japanese Rockman DASH gameplay is not supported by this USA recompilation; the loader reports that limitation. No ROM or save data is bundled.\n\n**Existing saves:** the new IDs create separate app storage. Back up the old app's `config/saves` folder before changing builds, preserve filenames, and keep the old app installed until the backup is safe. Storage locations and restoration limits are described in MOBILE.md. Saves are not automatically migrated between different IDs.\n\nThe repository starts with a clean source history and pinned dependencies. It excludes ROM-derived generated sources, ROMs, saves, logs, SDKs, local build folders, personal paths, and signing keys. Required build scripts, application assets, licenses, and upstream attribution remain available.\n\nValidation: source privacy and whitespace checks; dependency patches applied against pinned revisions; APK signature and 16 KB alignment; ARM64 package structure; ROM/private-path scans; icon pixel checks, application IDs, Android Java class and all renamed JNI entry points. Rendering/gameplay had been confirmed on iOS and Adreno 710 Android before these icon/ID/publication changes. Installation of this newly packaged release still needs verification on devices.\n\nUpstream: https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
+      "downloadURL": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/download/v0.9.1-mobile.1/MegaMan64-iOS-v0.9.1-mobile.1.ipa",
+      "size": 15317212
+    },
     {
       "name": "Super Smash Flash 2",
       "bundleIdentifier": "com.devz.supersmashflash2",
@@ -521,38 +627,6 @@
       "size": 35609295
     },
     {
-      "name": "COD4iOS",
-      "bundleIdentifier": "com.devz.cod4ios",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
-      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
-      "tintColor": "#4F5634",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.3",
-          "buildVersion": "4",
-          "marketingVersion": "Call of Duty 4 for iOS first release!!",
-          "date": "2026-10-03T06:49:12Z",
-          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
-          "size": 9596607,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.0.3",
-      "versionDate": "2026-10-03T06:49:12Z",
-      "versionDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
-      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
-      "size": 9596607
-    },
-    {
       "name": "MCX360 Edition",
       "bundleIdentifier": "com.devz.mc360",
       "developerName": "DevZer0D4Y",
@@ -598,6 +672,36 @@
     }
   ],
   "news": [
+    {
+      "title": "COD4iOS Better Stability Release",
+      "identifier": "release-COD4iOS-COD4NS-R2",
+      "caption": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
+      "date": "2026-10-13T19:57:59Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R2",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "Marathon Recompiled iOS native mod manager — experimental 2026-10-13",
+      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-13",
+      "caption": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reor",
+      "date": "2026-10-13T19:37:05Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-13",
+      "appID": "com.devz.MarathonRecomp",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
+      "title": "Mega Man 64 Mega Man 64 Mobile 0.9.1 — Android and iOS",
+      "identifier": "release-MegaMan64Recompiled-Mobile-v0.9.1-mobile.1",
+      "caption": "Android and iOS mobile builds of Mega Man 64: Recompiled.",
+      "date": "2026-10-13T17:45:33Z",
+      "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-mobile.1",
+      "appID": "com.devz.megaman64",
+      "notify": false,
+      "tintColor": "#BF8640"
+    },
     {
       "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.6",
       "identifier": "release-SSF2-iOS-v1.1.6",
@@ -767,36 +871,6 @@
       "appID": "com.devz.umk3",
       "notify": false,
       "tintColor": "#C36810"
-    },
-    {
-      "title": "Superstars Tennis SEGA Superstars Tennis 1.0.0",
-      "identifier": "release-SegaSuperstarsTennis-iOS-1.0.0",
-      "caption": "Changelog",
-      "date": "2026-10-11T18:28:33Z",
-      "url": "https://github.com/DevZer0D4Y/SegaSuperstarsTennis-iOS/releases/tag/1.0.0",
-      "appID": "com.devz.sstrematch",
-      "notify": false,
-      "tintColor": "#818C85"
-    },
-    {
-      "title": "NBA Hangtime NBA Hangtime 0.4.3 - CRT filter",
-      "identifier": "release-NBAHangtime-iOS-v0.4.3",
-      "caption": "NBA Hangtime 0.4.3",
-      "date": "2026-10-11T15:37:59Z",
-      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.3",
-      "appID": "com.devz.nbahangtime",
-      "notify": false,
-      "tintColor": "#C45629"
-    },
-    {
-      "title": "NBA Hangtime Release v0.4.2",
-      "identifier": "release-NBAHangtime-iOS-R2",
-      "caption": "Changelog v0.4.2",
-      "date": "2026-10-10T21:04:19Z",
-      "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/R2",
-      "appID": "com.devz.nbahangtime",
-      "notify": false,
-      "tintColor": "#C45629"
     }
   ]
 }
