@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-13T09:09:47.592371Z",
+  "generated": "2026-10-13T17:05:03.266004Z",
   "projects": [
     {
       "repo": "SSF2-iOS",
@@ -13,10 +13,10 @@
       "created": "2026-10-12T12:45:13Z",
       "firstRelease": "2026-10-12T17:13:41Z",
       "latestRelease": {
-        "tag": "v1.1.4",
-        "name": "Super Smash Flash 2 for iOS 1.1.4",
-        "date": "2026-10-13T05:35:55Z",
-        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.4"
+        "tag": "v1.1.6",
+        "name": "Super Smash Flash 2 for iOS 1.1.6",
+        "date": "2026-10-13T15:23:01Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.6"
       },
       "released": "2026-10-12T17:13:41Z",
       "app": {
@@ -37,10 +37,10 @@
       "created": "2026-10-11T18:37:49Z",
       "firstRelease": "2026-10-11T18:40:05Z",
       "latestRelease": {
-        "tag": "v0.2.1",
-        "name": "NativePorts 0.2.1",
-        "date": "2026-10-12T16:56:38Z",
-        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1"
+        "tag": "v0.2.2",
+        "name": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
+        "date": "2026-10-13T12:32:12Z",
+        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.2"
       },
       "released": "2026-10-11T18:40:05Z",
       "app": {
@@ -154,23 +154,6 @@
         "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
         "tintColor": "#304278"
       }
-    },
-    {
-      "repo": "NFSMW-iOS",
-      "url": "https://github.com/DevZer0D4Y/NFSMW-iOS",
-      "description": "A static native recompilation of Need for Speed: Most Wanted (2005) Xbox 360 for iOS",
-      "language": "Python",
-      "topics": [],
-      "fork": true,
-      "parent": {
-        "name": "madelrandel-blip/NFSMW-Recompiled",
-        "url": "https://github.com/madelrandel-blip/NFSMW-Recompiled"
-      },
-      "created": "2026-10-04T13:53:03Z",
-      "firstRelease": null,
-      "latestRelease": null,
-      "released": "2026-10-04T13:53:03Z",
-      "app": null
     },
     {
       "repo": "COD4iOS-COD4NS",

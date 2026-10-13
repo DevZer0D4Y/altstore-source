@@ -412,5 +412,65 @@
     "name": "NBA Hangtime",
     "privacy": {},
     "version": "0.4.4"
+  },
+  "636976621:2026-10-13T12:32:10Z:5183087": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-a56d0136807b.png",
+      "tint": "#AF4A58",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.2.2"
+  },
+  "636976629:2026-10-13T12:32:10Z:3076669": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tint": "#4E4A69",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.2.2"
+  },
+  "636981620:2026-10-13T12:34:56Z:802685484": {
+    "buildVersion": "8",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.5"
+  },
+  "637423266:2026-10-13T15:22:59Z:802692291": {
+    "buildVersion": "9",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.6"
   }
 }
