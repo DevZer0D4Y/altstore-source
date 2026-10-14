@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-14T11:41:41.791569Z",
+  "generated": "2026-10-14T16:42:35.964304Z",
   "projects": [
     {
       "repo": "MegaMan64Recompiled-Mobile",
@@ -166,10 +166,10 @@
       "created": "2026-10-03T13:06:04Z",
       "firstRelease": "2026-10-05T18:29:37Z",
       "latestRelease": {
-        "tag": "ios-mods-2026-10-13",
-        "name": "iOS native mod manager — experimental 2026-10-13",
-        "date": "2026-10-13T19:37:05Z",
-        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-13"
+        "tag": "ios-mods-2026-10-14-launchfix",
+        "name": "iOS mod manager — launch crash fix",
+        "date": "2026-10-14T12:00:12Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-14-launchfix"
       },
       "released": "2026-10-05T18:29:37Z",
       "app": {
@@ -193,10 +193,10 @@
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",
       "latestRelease": {
-        "tag": "R2",
-        "name": "Better Stability Release",
-        "date": "2026-10-13T19:57:59Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R2"
+        "tag": "R3",
+        "name": "Release 3 (Campaign crash fix)",
+        "date": "2026-10-14T12:20:08Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R3"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {

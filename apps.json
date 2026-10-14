@@ -8,13 +8,97 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
-    "com.devz.supersmashflash2",
     "com.devz.cod4ios",
     "com.devz.MarathonRecomp",
+    "com.devz.supersmashflash2",
     "com.devz.megaman64",
     "com.devz.slamjam96"
   ],
   "apps": [
+    {
+      "name": "COD4iOS",
+      "bundleIdentifier": "com.devz.cod4ios",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tintColor": "#4F5634",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.4",
+          "buildVersion": "8",
+          "marketingVersion": "Release 3 (Campaign crash fix)",
+          "date": "2026-10-14T12:20:08Z",
+          "localizedDescription": "What's fixed in this build:\n- Confirmed checkpoints used to remain in RAM; they are now immediately written to disk.\n- \"Resume\" now retrieves the save reference even if it is missing from config.cfg.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R3/COD4iOS-1.0.4.ipa",
+          "size": 9675463,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.4",
+          "buildVersion": "7",
+          "marketingVersion": "Better Stability Release",
+          "date": "2026-10-13T19:57:59Z",
+          "localizedDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
+          "size": 9665598,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.3",
+          "buildVersion": "4",
+          "marketingVersion": "Call of Duty 4 for iOS first release!!",
+          "date": "2026-10-03T06:49:12Z",
+          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
+          "size": 9596607,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.4",
+      "versionDate": "2026-10-14T12:20:08Z",
+      "versionDescription": "What's fixed in this build:\n- Confirmed checkpoints used to remain in RAM; they are now immediately written to disk.\n- \"Resume\" now retrieves the save reference even if it is missing from config.cfg.",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R3/COD4iOS-1.0.4.ipa",
+      "size": 9675463
+    },
+    {
+      "name": "Marathon Recompiled",
+      "bundleIdentifier": "com.devz.MarathonRecomp",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+      "tintColor": "#2F6FEB",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "v1.0.0",
+          "buildVersion": "v1.0.0",
+          "marketingVersion": "iOS mod manager — launch crash fix",
+          "date": "2026-10-14T12:00:12Z",
+          "localizedDescription": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
+          "size": 46869337,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "v1.0.0",
+      "versionDate": "2026-10-14T12:00:12Z",
+      "versionDescription": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
+      "size": 46869337
+    },
     {
       "name": "Super Smash Flash 2",
       "bundleIdentifier": "com.devz.supersmashflash2",
@@ -98,80 +182,6 @@
       "size": 802689251
     },
     {
-      "name": "COD4iOS",
-      "bundleIdentifier": "com.devz.cod4ios",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
-      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
-      "tintColor": "#4F5634",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.4",
-          "buildVersion": "7",
-          "marketingVersion": "Better Stability Release",
-          "date": "2026-10-13T19:57:59Z",
-          "localizedDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
-          "size": 9665598,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.3",
-          "buildVersion": "4",
-          "marketingVersion": "Call of Duty 4 for iOS first release!!",
-          "date": "2026-10-03T06:49:12Z",
-          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
-          "size": 9596607,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.0.4",
-      "versionDate": "2026-10-13T19:57:59Z",
-      "versionDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
-      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
-      "size": 9665598
-    },
-    {
-      "name": "Marathon Recompiled",
-      "bundleIdentifier": "com.devz.MarathonRecomp",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
-      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
-      "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
-      "tintColor": "#2F6FEB",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "v1.0.0",
-          "buildVersion": "v1.0.0",
-          "marketingVersion": "iOS native mod manager — experimental 2026-10-13",
-          "date": "2026-10-13T19:37:05Z",
-          "localizedDescription": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reorder priority, and select built-in codes before playing.\n\nAssets:\n- `MarathonRecomp-mods.ipa`: unsigned Release arm64 app, iOS 17+, approximately 44.7 MiB. Sign it before installation.\n- SHA-256 checksum, package manifest, validation report and resolved source patch bundle.\n\nXcode 27.0 compilation and linking succeeded. Mod, portable port, touch/fade and read-only input regressions passed. Package integrity, architecture and absence of signing/provisioning data were checked. Original game files are not included.\n\nThis prerelease was built from the local iOS port snapshot on `ios-mod-integration-20261013`; newer changes on `main` are not included. Dev Zero's mod-support authorship is preserved. No device installation or gameplay/performance testing was performed for this build.",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-13/MarathonRecomp-mods.ipa",
-          "size": 46855442,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "v1.0.0",
-      "versionDate": "2026-10-13T19:37:05Z",
-      "versionDescription": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reorder priority, and select built-in codes before playing.\n\nAssets:\n- `MarathonRecomp-mods.ipa`: unsigned Release arm64 app, iOS 17+, approximately 44.7 MiB. Sign it before installation.\n- SHA-256 checksum, package manifest, validation report and resolved source patch bundle.\n\nXcode 27.0 compilation and linking succeeded. Mod, portable port, touch/fade and read-only input regressions passed. Package integrity, architecture and absence of signing/provisioning data were checked. Original game files are not included.\n\nThis prerelease was built from the local iOS port snapshot on `ios-mod-integration-20261013`; newer changes on `main` are not included. Dev Zero's mod-support authorship is preserved. No device installation or gameplay/performance testing was performed for this build.",
-      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-13/MarathonRecomp-mods.ipa",
-      "size": 46855442
-    },
-    {
       "name": "Mega Man 64",
       "bundleIdentifier": "com.devz.megaman64",
       "developerName": "DevZer0D4Y",
@@ -219,7 +229,7 @@
           "buildVersion": "5",
           "marketingVersion": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
           "date": "2026-10-13T12:32:12Z",
-          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. This release updates SSF2T and Slam n Jam only. THPS2 and UMK3 remain available in release 0.2.1.",
+          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
           "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/SlamJam96-0.2.2-unsigned.ipa",
           "size": 3076669,
           "minOSVersion": "16.0"
@@ -261,7 +271,7 @@
       },
       "version": "0.2.2",
       "versionDate": "2026-10-13T12:32:12Z",
-      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. This release updates SSF2T and Slam n Jam only. THPS2 and UMK3 remain available in release 0.2.1.",
+      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
       "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/SlamJam96-0.2.2-unsigned.ipa",
       "size": 3076669
     },
@@ -281,7 +291,7 @@
           "buildVersion": "2",
           "marketingVersion": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
           "date": "2026-10-13T12:32:12Z",
-          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. This release updates SSF2T and Slam n Jam only. THPS2 and UMK3 remain available in release 0.2.1.",
+          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
           "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/SSF2T-0.2.2-unsigned.ipa",
           "size": 5183087,
           "minOSVersion": "16.0"
@@ -323,9 +333,113 @@
       },
       "version": "0.2.2",
       "versionDate": "2026-10-13T12:32:12Z",
-      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. This release updates SSF2T and Slam n Jam only. THPS2 and UMK3 remain available in release 0.2.1.",
+      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
       "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/SSF2T-0.2.2-unsigned.ipa",
       "size": 5183087
+    },
+    {
+      "name": "Tony Hawk’s Pro Skater 2",
+      "bundleIdentifier": "com.devz.thps2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thps2-8f65bb588040.png",
+      "tintColor": "#687185",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "12",
+          "marketingVersion": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
+          "date": "2026-10-13T12:32:12Z",
+          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/THPS2-0.2.1-unsigned.ipa",
+          "size": 6262171,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "11",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/THPS2-0.2.0-unsigned.ipa",
+          "size": 6260720,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.9",
+          "buildVersion": "10",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/THPS2-0.1.9-unsigned.ipa",
+          "size": 1025659,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.2.1",
+      "versionDate": "2026-10-13T12:32:12Z",
+      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/THPS2-0.2.1-unsigned.ipa",
+      "size": 6262171
+    },
+    {
+      "name": "Ultimate Mortal Kombat 3",
+      "bundleIdentifier": "com.devz.umk3",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
+      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.umk3-a623eb6cace8.png",
+      "tintColor": "#C36810",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.2.1",
+          "buildVersion": "4",
+          "marketingVersion": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
+          "date": "2026-10-13T12:32:12Z",
+          "localizedDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/UMK3-0.2.1-unsigned.ipa",
+          "size": 3935408,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "3",
+          "marketingVersion": "NativePorts 0.2.0",
+          "date": "2026-10-12T12:40:28Z",
+          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/UMK3-0.2.0-unsigned.ipa",
+          "size": 3935444,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.1",
+          "buildVersion": "2",
+          "marketingVersion": "NativePorts v1.0",
+          "date": "2026-10-11T18:40:05Z",
+          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
+          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/UMK3-0.1.1-unsigned.ipa",
+          "size": 870528,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.2.1",
+      "versionDate": "2026-10-13T12:32:12Z",
+      "versionDescription": "SSF2T and Slam n Jam 0.2.2\n\niOS and Windows builds passed. iOS IPAs are unsigned; sign/install with ESign, keeping the existing bundle identifiers.\n\nSlam n Jam: startup asks for keyboard 1 or controller Start, with no coin prompt. Restart reads RESTART GAME. PS1 Select is available as Select (keyboard Tab, controller View); old settings migrate. Native gameplay canvas expands from 320 to 426 columns instead of stretching. Original-size sprites, text and HUD remain centered; textures live in original VRAM and expanded framebuffers use separate banks. CRT behavior is unchanged.\n\nSSF2T: reflected edge artwork removed. The visible gameplay window narrows symmetrically as the camera approaches finite stage boundaries, returning to the original 384 columns at either limit. It expands away from those limits. Menus keep their original proportions centered in a 512-column frame with colored sides.\n\nValidation: iOS and Windows builds, controller suite, canvas isolation and stage-boundary tests passed. Real Slam gameplay toggled 320 -> 426 -> 320 columns; all 81,920 pixels of the central original view matched the same saved frame exactly. Real SSF2T gameplay captures returned to 384 columns at both edges, and menu captures were 512 columns with colored margins. Device-specific iPhone and Windows gameplay still needs retesting.\n\nNo game files or game screenshots are included. SSF2T and Slam n Jam are version 0.2.2. The unchanged THPS2 and UMK3 version 0.2.1 builds are also included here. Download NativePorts-Windows-x64.zip for all four current Windows builds; the smaller SSF2T-SlamJam96 ZIP contains only those two games. BUILD-VERSIONS.txt inside the complete ZIP identifies every game version.",
+      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.2/UMK3-0.2.1-unsigned.ipa",
+      "size": 3935408
     },
     {
       "name": "NBA Hangtime",
@@ -433,110 +547,6 @@
       "versionDescription": "# Sonic Unleashed for iOS v1.1.0 — Native Mod Manager\n\n## Changelog\n\n- Added a native startup mod manager with folder import through Files.\n- Enable or disable mods, reorder priority, and preserve selections across launches.\n- Check dependency IDs and minimum numeric versions before starting.\n- Toggle the built-in game codes from the manager.\n- Connect selections to the existing asset replacements, append archives, loose files, UMM merges, and mod save redirection.\n- Display unsupported DLL and custom HMM script requirements.\n- Confine mod include/save paths and reject symbolic links.\n- Compile the game Metal shader cache for iOS 15 with the iPhone SDK.\n- Target iOS 15 for bundled dependencies and use numeric bundle versions.\n- Add an IPA packaging helper for builds made with the Ninja preset.\n\n## Install and use\n\nDownload `SonicUnleashed_iOS_v1.1.0.ipa` and re-sign it with your sideloading tool before installation. This IPA has an ad-hoc signature and no Apple provisioning profile. Supply your own runtime game assets through Files.\n\nExtract an Unleashed Recompiled mod, launch the app, tap **Import folder**, and select the folder containing `mod.ini`. Enable it, set its priority, and tap **Play**. New imports start disabled. The first mod wins file replacement conflicts.\n\n## Compatibility and validation\n\nARM64 iPhone/iPad build targeting iOS 15 or later. DLL plugins and arbitrary HMM scripts need individual iOS ports; this release does not promise compatibility with every mod. There is no online mod catalog or automatic downloading.\n\nThe complete app compiled and linked successfully. Mod backend tests passed with AddressSanitizer and UndefinedBehaviorSanitizer, and the native UI passed ARM64 iOS SDK syntax checks. The packaged IPA passed ZIP integrity, bundle metadata, and ad-hoc signature checks. Physical-device gameplay and individual mod packages have not been verified.\n\nSource: `5625afe81d2f9f2bac947087034260dc8c87dcc1`.",
       "downloadURL": "https://github.com/DevZer0D4Y/UnleashedRecompilediOS/releases/download/v1.1.0/SonicUnleashed_iOS_v1.1.0.ipa",
       "size": 55943360
-    },
-    {
-      "name": "Tony Hawk’s Pro Skater 2",
-      "bundleIdentifier": "com.devz.thps2",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
-      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thps2-8f65bb588040.png",
-      "tintColor": "#687185",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.2.1",
-          "buildVersion": "12",
-          "marketingVersion": "NativePorts 0.2.1",
-          "date": "2026-10-12T16:56:38Z",
-          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/THPS2-0.2.1-unsigned.ipa",
-          "size": 6262171,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.2.0",
-          "buildVersion": "11",
-          "marketingVersion": "NativePorts 0.2.0",
-          "date": "2026-10-12T12:40:28Z",
-          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/THPS2-0.2.0-unsigned.ipa",
-          "size": 6260720,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.1.9",
-          "buildVersion": "10",
-          "marketingVersion": "NativePorts v1.0",
-          "date": "2026-10-11T18:40:05Z",
-          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/THPS2-0.1.9-unsigned.ipa",
-          "size": 1025659,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.2.1",
-      "versionDate": "2026-10-12T16:56:38Z",
-      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/THPS2-0.2.1-unsigned.ipa",
-      "size": 6262171
-    },
-    {
-      "name": "Ultimate Mortal Kombat 3",
-      "bundleIdentifier": "com.devz.umk3",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2",
-      "localizedDescription": "Native iOS and Windows ports of SSF2T, UMK3, Slam 'n Jam 96 and THPS2\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NativePorts",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.umk3-a623eb6cace8.png",
-      "tintColor": "#C36810",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.2.1",
-          "buildVersion": "4",
-          "marketingVersion": "NativePorts 0.2.1",
-          "date": "2026-10-12T16:56:38Z",
-          "localizedDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/UMK3-0.2.1-unsigned.ipa",
-          "size": 3935408,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.2.0",
-          "buildVersion": "3",
-          "marketingVersion": "NativePorts 0.2.0",
-          "date": "2026-10-12T12:40:28Z",
-          "localizedDescription": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and Windows.\n\n- Uses the supplied game artwork for each iOS app and Windows executable/window icon. Keeps unique bundle IDs unchanged to preserve installed game data.\n- Adds game-specific widescreen patches for SSF2T, UMK3 and Slam ’n Jam ’96, alongside the existing Flycast widescreen patch for THPS2. Widescreen can be toggled in display settings.\n- Updates aspect-ratio handling and NewPixie CRT rendering to preserve picture edges. CRT filtering remains enabled by default and can be disabled.\n- Refreshes cached core sources before builds so source changes rebuild the embedded engine.\n- Includes touch controls and remappable multiplayer controller support on both platforms.\n\nDownload one unsigned IPA per game and sign it with your sideloading tool. For Windows, extract NativePorts-Windows-x64.zip and keep each EXE beside its SDL2.dll. Use your own game files; ROMs, disc images and signing credentials are not included.\n\nKnown limitations: THPS2 on iOS uses an interpreter and may run below full speed. Slam ’n Jam ’96 can leave dark corners in some widescreen camera angles. NBA Showtime remains frontend-only and is not included.\n\nValidation: all four iOS build logs report success; Windows binaries were packaged from the latest local builds. Virtual controller tests passed for all five frontends, along with ROM-import checks, basketball action tests and both THPS2 texture-cache configurations. These checks do not establish full-speed performance or physical multiplayer operation on every device. SHA256SUMS.txt contains asset checksums.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.0/UMK3-0.2.0-unsigned.ipa",
-          "size": 3935444,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.1.1",
-          "buildVersion": "2",
-          "marketingVersion": "NativePorts v1.0",
-          "date": "2026-10-11T18:40:05Z",
-          "localizedDescription": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Windows. Unsigned IPAs for sideloading (ESign, AltStore, SideStore, Sideloadly) and a Windows x64 package. No game files are included; see the README for what you need.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v1.0/UMK3-0.1.1-unsigned.ipa",
-          "size": 870528,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.2.1",
-      "versionDate": "2026-10-12T16:56:38Z",
-      "versionDescription": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustment to keep flat HUD overlays in the central 4:3 area. The iOS CPU interpreter also has a faster RAM instruction-fetch path.\n\nSlam ’n Jam widescreen projection now runs before guest clipping and preserves native sprite/text rendering. SSF2T extends finite scenery edges with mirrored backgrounds while preserving sprite priority. UMK3 extends mixed background tile bands with safeguards for unrelated props.\n\n### Downloads\n\n- Four unsigned iOS IPAs: sign and install using ESign.\n- Windows x64 ZIP: contains all four games and required SDL libraries.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nExisting bundle identifiers are preserved. Game files are not included. NBA Showtime remains unfinished and is not included.\n\n### Validation and remaining checks\n\nAll four iOS and Windows builds passed. Controller, VRAM, GTE projection and stage-edge regression checks passed; 92 Dreamcast shader variants compiled and linked. A local Slam ’n Jam gameplay capture showed complete crowd rendering in one tested camera.\n\nTHPS2 iPhone frame-rate improvement and HUD placement still need device confirmation. Slam ’n Jam shot-clock readability and other cameras, plus affected SSF2T and UMK3 stages, still need gameplay retesting. Native PS1 resolution is unchanged. SSF2T edge scenery uses reflected existing artwork.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.2.1/UMK3-0.2.1-unsigned.ipa",
-      "size": 3935408
     },
     {
       "name": "Superstars Tennis",
@@ -683,6 +693,26 @@
   ],
   "news": [
     {
+      "title": "COD4iOS Release 3 (Campaign crash fix)",
+      "identifier": "release-COD4iOS-COD4NS-R3",
+      "caption": "What's fixed in this build:",
+      "date": "2026-10-14T12:20:08Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R3",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "Marathon Recompiled iOS mod manager — launch crash fix",
+      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-14-launchfix",
+      "caption": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:",
+      "date": "2026-10-14T12:00:12Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-14-launchfix",
+      "appID": "com.devz.MarathonRecomp",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
       "title": "Super Smash Flash 2 SSF2 iOS 1.1.7 — Resume loop fix and lower startup memory",
       "identifier": "release-SSF2-iOS-v1.1.7",
       "caption": "Fixes the repeated Game suspended / RESUME interruptions reported after the audio update, and reduces startup memory pressure.",
@@ -701,16 +731,6 @@
       "appID": "com.devz.cod4ios",
       "notify": false,
       "tintColor": "#4F5634"
-    },
-    {
-      "title": "Marathon Recompiled iOS native mod manager — experimental 2026-10-13",
-      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-13",
-      "caption": "Experimental iOS build with a native mod manager for Sonic (2006) asset overlays. Import extracted mod folders, enable or disable mods, reor",
-      "date": "2026-10-13T19:37:05Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-13",
-      "appID": "com.devz.MarathonRecomp",
-      "notify": false,
-      "tintColor": "#2F6FEB"
     },
     {
       "title": "Mega Man 64 Mega Man 64 Mobile 0.9.1 — Android and iOS",
@@ -763,6 +783,26 @@
       "tintColor": "#AF4A58"
     },
     {
+      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
+      "identifier": "release-NativePorts-v0.2.2",
+      "caption": "SSF2T and Slam n Jam 0.2.2",
+      "date": "2026-10-13T12:32:12Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.2",
+      "appID": "com.devz.thps2",
+      "notify": false,
+      "tintColor": "#687185"
+    },
+    {
+      "title": "Ultimate Mortal Kombat 3 NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
+      "identifier": "release-NativePorts-v0.2.2",
+      "caption": "SSF2T and Slam n Jam 0.2.2",
+      "date": "2026-10-13T12:32:12Z",
+      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.2",
+      "appID": "com.devz.umk3",
+      "notify": false,
+      "tintColor": "#C36810"
+    },
+    {
       "title": "NBA Hangtime NBA Hangtime 0.4.4",
       "identifier": "release-NBAHangtime-iOS-v0.4.4",
       "caption": "NBA Hangtime 0.4.4",
@@ -801,26 +841,6 @@
       "appID": "com.devz.ssf2t",
       "notify": false,
       "tintColor": "#AF4A58"
-    },
-    {
-      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.2.1",
-      "identifier": "release-NativePorts-v0.2.1",
-      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
-      "date": "2026-10-12T16:56:38Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
-      "appID": "com.devz.thps2",
-      "notify": false,
-      "tintColor": "#687185"
-    },
-    {
-      "title": "Ultimate Mortal Kombat 3 NativePorts 0.2.1",
-      "identifier": "release-NativePorts-v0.2.1",
-      "caption": "THPS2 now has a direct CRT ON/OFF button during iPhone gameplay, black top/bottom letterbox bars on iOS and Windows, and a renderer adjustme",
-      "date": "2026-10-12T16:56:38Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.1",
-      "appID": "com.devz.umk3",
-      "notify": false,
-      "tintColor": "#C36810"
     },
     {
       "title": "Slam’n’Jam 96 NativePorts 0.2.0",
@@ -871,16 +891,6 @@
       "appID": "com.devz.thps2",
       "notify": false,
       "tintColor": "#687185"
-    },
-    {
-      "title": "Ultimate Mortal Kombat 3 NativePorts v1.0",
-      "identifier": "release-NativePorts-v1.0",
-      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
-      "date": "2026-10-11T18:40:05Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
-      "appID": "com.devz.umk3",
-      "notify": false,
-      "tintColor": "#C36810"
     }
   ]
 }
