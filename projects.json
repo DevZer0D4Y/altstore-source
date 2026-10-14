@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-14T00:57:41.919691Z",
+  "generated": "2026-10-14T06:00:08.479027Z",
   "projects": [
     {
       "repo": "MegaMan64Recompiled-Mobile",
@@ -37,10 +37,10 @@
       "created": "2026-10-12T12:45:13Z",
       "firstRelease": "2026-10-12T17:13:41Z",
       "latestRelease": {
-        "tag": "v1.1.6",
-        "name": "Super Smash Flash 2 for iOS 1.1.6",
-        "date": "2026-10-13T15:23:01Z",
-        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.6"
+        "tag": "v1.1.7",
+        "name": "SSF2 iOS 1.1.7 — Resume loop fix and lower startup memory",
+        "date": "2026-10-14T05:00:20Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.7"
       },
       "released": "2026-10-12T17:13:41Z",
       "app": {

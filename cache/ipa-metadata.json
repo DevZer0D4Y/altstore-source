@@ -512,5 +512,20 @@
     "name": "COD4iOS",
     "privacy": {},
     "version": "1.0.4"
+  },
+  "639277873:2026-10-14T05:00:19Z:802689251": {
+    "buildVersion": "10",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.7"
   }
 }
