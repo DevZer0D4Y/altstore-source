@@ -8,13 +8,105 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.supersmashflash2",
     "com.devz.cod4ios",
     "com.devz.MarathonRecomp",
-    "com.devz.supersmashflash2",
     "com.devz.megaman64",
     "com.devz.slamjam96"
   ],
   "apps": [
+    {
+      "name": "Super Smash Flash 2",
+      "bundleIdentifier": "com.devz.supersmashflash2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad",
+      "localizedDescription": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SSF2-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
+      "tintColor": "#AF0F02",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.1.8",
+          "buildVersion": "11",
+          "marketingVersion": "SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
+          "date": "2026-10-15T04:48:31Z",
+          "localizedDescription": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.\n\n- Sprite storage now uses binary requests over the existing offline URL scheme. It no longer uses JavaScript prompts, which interrupted Web Audio during loading, or makes base64/JSON copies of every sprite.\n- Enables SSF2's existing sequential resource loader to reduce overlapping asset decoding. The checksum-verified original stays intact; a derived iOS movie changes exactly one boolean instruction. Both Xcode and packaged builds load the derived movie.\n- Native cache failures show recovery instead of silently building a large RAM cache.\n- Preserves the repeated-Resume fix and existing touch layouts, saves and controls.\n\nValidation: Two successful macOS WebKit startup traces completed at approximately 624 MB of WebAssembly allocation, compared with approximately 784 MB in the old-build trace. This measures WebAssembly allocation, not total process memory. The title/menu responded, a Ness/Mario battle loaded, and an output-graph probe detected a nonzero audio signal. A UIKit Mac Catalyst test passed 1,000 byte-exact binary cache round trips, 500 transient lifecycle/audio notifications, background suspension and one-tap resume. JavaScript, native cache and deterministic one-instruction loader-patch checks passed, as did the unsigned Release IPA audit. Every bundled web/game/runtime file was compared with the verified source.\n\nPhysical iPhone startup reliability, headphone output and longer-session stability still need verification. This release does not establish that all underlying memory-related crashes are eliminated. Match memory remains substantial. Restart after WebKit termination still returns to the title and cannot restore a lost match.\n\nDownload **SuperSmashFlash2-1.1.8-unsigned.ipa**, sign it and install it with your sideloading tool. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.8/SuperSmashFlash2-1.1.8-unsigned.ipa",
+          "size": 804898198,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.7",
+          "buildVersion": "10",
+          "marketingVersion": "SSF2 iOS 1.1.7 — Resume loop fix and lower startup memory",
+          "date": "2026-10-14T05:00:20Z",
+          "localizedDescription": "Fixes the repeated **Game suspended / RESUME** interruptions reported after the audio update, and reduces startup memory pressure.\n\n- Only app backgrounding shows the native port's Resume card. Audio interruptions, headphone route notifications and transient inactivity no longer suspend the game.\n- Removes the audio activation feedback path. Playback policy is configured before audio starts; taps and key presses continue to unlock Web Audio.\n- Background suspension is idempotent and still offers Resume when Ruffle has already paused itself. Backgrounding before the first start preserves LET'S PLAY.\n- New installations use lower-memory rendering by default. The low-memory GPU sprite cache now targets 64 MB instead of 96 MB.\n- Packaging clones Web resources directly into the IPA on APFS, avoiding another full asset copy in DerivedData.\n\nValidation: JavaScript control, audio, rendering, texture-cache and recovery checks passed, including native visibility regression and a 64 MB disk-backed cache. A UIKit Mac Catalyst check of the shipped native controller passed 1,000 trusted cache prompts and 500 transient lifecycle/audio notifications without pausing, then background pause and one-tap resume. Native texture-storage checks and the unsigned Release IPA audit passed. All bundled web/game/runtime files were compared with the verified source.\n\n**Device validation:** The repeated suspension paths have been removed and regression-tested. The reported startup WebKit termination and physical iPhone/headphone behavior still need checking on affected devices; this release does not establish that every memory-related crash is eliminated.\n\nDownload **SuperSmashFlash2-1.1.7-unsigned.ipa**, sign it with your sideloading tool and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data. Restart after a terminated WebKit process returns to the title; it cannot recover the lost match.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.7/SuperSmashFlash2-1.1.7-unsigned.ipa",
+          "size": 802689251,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.6",
+          "buildVersion": "9",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.6",
+          "date": "2026-10-13T15:23:01Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.6 (build 9) fixes missing audio unlock and an unreliable restart control.\n\n- User taps and key presses explicitly resume the Web Audio contexts used by Ruffle. The custom Play button unlocks audio before starting the game loop.\n- Ruffle's unmute overlay is visible as a fallback.\n- The native playback audio session is activated and reactivated when appropriate. Headphone disconnection pauses the game; connection, app activation and interruptions are handled.\n- The native Restart game button has an explicit layout width and remains enabled while a replacement page loads. Brief duplicate taps are debounced without disabling the control.\n\nA restart creates a new Flash runtime and returns to the title screen. It cannot restore a match from a terminated process. Completed save data and control settings remain in the persistent store. This release does not establish that the earlier memory-related crashes have been eliminated.\n\nValidation: audio unlock, interruption and gesture-retry tests; touch, renderer and cache checks; source/IPA audits; unsigned iOS Release build. The shipped recovery-view component accepted two successive taps in a UIKit Mac Catalyst test app. A native WebKit probe reached a running audio context, but non-silent headphone output still needs verification on affected iPhones.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.6/SuperSmashFlash2-1.1.6-unsigned.ipa",
+          "size": 802692291,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.5",
+          "buildVersion": "8",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.5",
+          "date": "2026-10-13T12:34:58Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.5 (build 8) adds native recovery from a failed game page.\n\n- A native Restart game screen handles WebKit process termination, WebGL context loss and sprite-cache read failures. It remains available even when the web controls have disappeared or a failure occurs in the background.\n- Restart replaces the WebView, stops the old controller bridge and clears temporary sprite storage. The persistent save-data store remains in use.\n- Committed navigation failures are handled as well as provisional failures. Slow restarts allow another attempt after 30 seconds; this does not limit gameplay time.\n- Failed sessions require a deliberate restart rather than silently reloading into another failure.\n\nThere is no play-time limit. Free storage does not prevent RAM or graphics-memory pressure. This release improves recovery; it does not establish or eliminate every underlying crash. An interrupted match cannot be recovered.\n\nValidation: graphics-loss and cache-read failure notification tests; texture-cache, pixel round-trip, touch and rendering checks; source and IPA audits; unsigned iOS Release build. Native recovery still needs verification on the affected iPhone.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Use the same signing identity and bundle identifier to preserve existing app data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.5/SuperSmashFlash2-1.1.5-unsigned.ipa",
+          "size": 802685484,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.4",
+          "buildVersion": "7",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.4",
+          "date": "2026-10-13T05:35:55Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.4 (build 7) reduces memory pressure during startup and character/stage changes.\n\n- Compressed sprites move to temporary native disk storage instead of staying in the JavaScript heap. The WebKit integration test paged approximately 326 MB of compressed sprites to disk.\n- Inactive static sprite textures leave a bounded GPU working set and restore through stable logical handles. The target is 128 MB normally, 96 MB on low-memory startup and 64 MB after a memory warning; active draw inputs and modified render targets are preserved.\n- Sampler settings, texture-unit bindings and pixel-store state survive restoration.\n- Local asset responses use no-store to avoid retaining response bodies in the browser cache.\n- The native cache is session-only, reuses freed storage and disappears on app exit.\n\nKeep at least 1 GB of device storage free for normal play; long sessions can require more. If temporary storage cannot be used, compressed sprites fall back to RAM.\n\nValidation: 48-sprite cache stress tests with both RAM and native paging, exact pixel restoration, multiple WebGL contexts, native storage tests, touch/rendering checks, source and IPA audits, and an unsigned iOS Release build. A native macOS WebKit test started a Ness battle, switched to Link and another stage, and reached the next battle without a process termination or sprite-cache read error.\n\nThis addresses identified memory pressure, but all crashes on affected iPhones have not yet been verified as resolved. Ruffle can still retain other movie resources.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.4/SuperSmashFlash2-1.1.4-unsigned.ipa",
+          "size": 802682431,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.3",
+          "buildVersion": "6",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.3",
+          "date": "2026-10-12T19:07:47Z",
+          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
+          "size": 802669662,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.2",
+          "buildVersion": "5",
+          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.2",
+          "date": "2026-10-12T17:13:41Z",
+          "localizedDescription": "First public release of the Super Smash Flash 2 iPhone and iPad port.\n\n- Offline Super Smash Flash 2 v1.3.1.2 Portable, with bundled Ruffle 0.6.0.\n- Matching multitouch control deck, adjustable size and opacity, and separate customizable portrait/landscape layouts.\n- Native gamepad support and remappable touch, keyboard, and controller actions.\n- Deferred compressed texture uploads to reduce GPU memory use.\n- Clean public source with checksum-pinned asset downloads and reproducible unsigned IPA packaging.\n- Release builds exclude the device test command channel, diagnostic files, source maps, signing files, and embedded local build paths.\n\n**Installation:** Requires iOS/iPadOS 16 or later. Download the unsigned IPA, sign it with your preferred sideloading tool, and install. Preserve the bundle identifier and signing identity when updating to keep app data.\n\nThe game runs offline; online multiplayer is unsupported. Performance and Flash compatibility depend on the device and Ruffle.\n\n**Validation:** Xcode Release build, touch/controller/layout tests, texture memory tests, source privacy audit, and final IPA integrity/privacy audit passed. The SHA-256 checksum is attached.\n\nSee the README for controls, installation, building, credits, and licenses.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.2/SuperSmashFlash2-1.1.2-unsigned.ipa",
+          "size": 802667400,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.1.8",
+      "versionDate": "2026-10-15T04:48:31Z",
+      "versionDescription": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.\n\n- Sprite storage now uses binary requests over the existing offline URL scheme. It no longer uses JavaScript prompts, which interrupted Web Audio during loading, or makes base64/JSON copies of every sprite.\n- Enables SSF2's existing sequential resource loader to reduce overlapping asset decoding. The checksum-verified original stays intact; a derived iOS movie changes exactly one boolean instruction. Both Xcode and packaged builds load the derived movie.\n- Native cache failures show recovery instead of silently building a large RAM cache.\n- Preserves the repeated-Resume fix and existing touch layouts, saves and controls.\n\nValidation: Two successful macOS WebKit startup traces completed at approximately 624 MB of WebAssembly allocation, compared with approximately 784 MB in the old-build trace. This measures WebAssembly allocation, not total process memory. The title/menu responded, a Ness/Mario battle loaded, and an output-graph probe detected a nonzero audio signal. A UIKit Mac Catalyst test passed 1,000 byte-exact binary cache round trips, 500 transient lifecycle/audio notifications, background suspension and one-tap resume. JavaScript, native cache and deterministic one-instruction loader-patch checks passed, as did the unsigned Release IPA audit. Every bundled web/game/runtime file was compared with the verified source.\n\nPhysical iPhone startup reliability, headphone output and longer-session stability still need verification. This release does not establish that all underlying memory-related crashes are eliminated. Match memory remains substantial. Restart after WebKit termination still returns to the title and cannot restore a lost match.\n\nDownload **SuperSmashFlash2-1.1.8-unsigned.ipa**, sign it and install it with your sideloading tool. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data.",
+      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.8/SuperSmashFlash2-1.1.8-unsigned.ipa",
+      "size": 804898198
+    },
     {
       "name": "COD4iOS",
       "bundleIdentifier": "com.devz.cod4ios",
@@ -98,88 +190,6 @@
       "versionDescription": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
       "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
       "size": 46869337
-    },
-    {
-      "name": "Super Smash Flash 2",
-      "bundleIdentifier": "com.devz.supersmashflash2",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad",
-      "localizedDescription": "Unofficial Super Smash Flash 2 iPhone and iPad port with offline Ruffle runtime, customizable touch controls and gamepad support.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SSF2-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.supersmashflash2-3b1b34914954.png",
-      "tintColor": "#AF0F02",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.1.7",
-          "buildVersion": "10",
-          "marketingVersion": "SSF2 iOS 1.1.7 — Resume loop fix and lower startup memory",
-          "date": "2026-10-14T05:00:20Z",
-          "localizedDescription": "Fixes the repeated **Game suspended / RESUME** interruptions reported after the audio update, and reduces startup memory pressure.\n\n- Only app backgrounding shows the native port's Resume card. Audio interruptions, headphone route notifications and transient inactivity no longer suspend the game.\n- Removes the audio activation feedback path. Playback policy is configured before audio starts; taps and key presses continue to unlock Web Audio.\n- Background suspension is idempotent and still offers Resume when Ruffle has already paused itself. Backgrounding before the first start preserves LET'S PLAY.\n- New installations use lower-memory rendering by default. The low-memory GPU sprite cache now targets 64 MB instead of 96 MB.\n- Packaging clones Web resources directly into the IPA on APFS, avoiding another full asset copy in DerivedData.\n\nValidation: JavaScript control, audio, rendering, texture-cache and recovery checks passed, including native visibility regression and a 64 MB disk-backed cache. A UIKit Mac Catalyst check of the shipped native controller passed 1,000 trusted cache prompts and 500 transient lifecycle/audio notifications without pausing, then background pause and one-tap resume. Native texture-storage checks and the unsigned Release IPA audit passed. All bundled web/game/runtime files were compared with the verified source.\n\n**Device validation:** The repeated suspension paths have been removed and regression-tested. The reported startup WebKit termination and physical iPhone/headphone behavior still need checking on affected devices; this release does not establish that every memory-related crash is eliminated.\n\nDownload **SuperSmashFlash2-1.1.7-unsigned.ipa**, sign it with your sideloading tool and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data. Restart after a terminated WebKit process returns to the title; it cannot recover the lost match.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.7/SuperSmashFlash2-1.1.7-unsigned.ipa",
-          "size": 802689251,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.6",
-          "buildVersion": "9",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.6",
-          "date": "2026-10-13T15:23:01Z",
-          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.6 (build 9) fixes missing audio unlock and an unreliable restart control.\n\n- User taps and key presses explicitly resume the Web Audio contexts used by Ruffle. The custom Play button unlocks audio before starting the game loop.\n- Ruffle's unmute overlay is visible as a fallback.\n- The native playback audio session is activated and reactivated when appropriate. Headphone disconnection pauses the game; connection, app activation and interruptions are handled.\n- The native Restart game button has an explicit layout width and remains enabled while a replacement page loads. Brief duplicate taps are debounced without disabling the control.\n\nA restart creates a new Flash runtime and returns to the title screen. It cannot restore a match from a terminated process. Completed save data and control settings remain in the persistent store. This release does not establish that the earlier memory-related crashes have been eliminated.\n\nValidation: audio unlock, interruption and gesture-retry tests; touch, renderer and cache checks; source/IPA audits; unsigned iOS Release build. The shipped recovery-view component accepted two successive taps in a UIKit Mac Catalyst test app. A native WebKit probe reached a running audio context, but non-silent headphone output still needs verification on affected iPhones.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.6/SuperSmashFlash2-1.1.6-unsigned.ipa",
-          "size": 802692291,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.5",
-          "buildVersion": "8",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.5",
-          "date": "2026-10-13T12:34:58Z",
-          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.5 (build 8) adds native recovery from a failed game page.\n\n- A native Restart game screen handles WebKit process termination, WebGL context loss and sprite-cache read failures. It remains available even when the web controls have disappeared or a failure occurs in the background.\n- Restart replaces the WebView, stops the old controller bridge and clears temporary sprite storage. The persistent save-data store remains in use.\n- Committed navigation failures are handled as well as provisional failures. Slow restarts allow another attempt after 30 seconds; this does not limit gameplay time.\n- Failed sessions require a deliberate restart rather than silently reloading into another failure.\n\nThere is no play-time limit. Free storage does not prevent RAM or graphics-memory pressure. This release improves recovery; it does not establish or eliminate every underlying crash. An interrupted match cannot be recovered.\n\nValidation: graphics-loss and cache-read failure notification tests; texture-cache, pixel round-trip, touch and rendering checks; source and IPA audits; unsigned iOS Release build. Native recovery still needs verification on the affected iPhone.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Use the same signing identity and bundle identifier to preserve existing app data.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.5/SuperSmashFlash2-1.1.5-unsigned.ipa",
-          "size": 802685484,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.4",
-          "buildVersion": "7",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.4",
-          "date": "2026-10-13T05:35:55Z",
-          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.4 (build 7) reduces memory pressure during startup and character/stage changes.\n\n- Compressed sprites move to temporary native disk storage instead of staying in the JavaScript heap. The WebKit integration test paged approximately 326 MB of compressed sprites to disk.\n- Inactive static sprite textures leave a bounded GPU working set and restore through stable logical handles. The target is 128 MB normally, 96 MB on low-memory startup and 64 MB after a memory warning; active draw inputs and modified render targets are preserved.\n- Sampler settings, texture-unit bindings and pixel-store state survive restoration.\n- Local asset responses use no-store to avoid retaining response bodies in the browser cache.\n- The native cache is session-only, reuses freed storage and disappears on app exit.\n\nKeep at least 1 GB of device storage free for normal play; long sessions can require more. If temporary storage cannot be used, compressed sprites fall back to RAM.\n\nValidation: 48-sprite cache stress tests with both RAM and native paging, exact pixel restoration, multiple WebGL contexts, native storage tests, touch/rendering checks, source and IPA audits, and an unsigned iOS Release build. A native macOS WebKit test started a Ness battle, switched to Link and another stage, and reached the next battle without a process termination or sprite-cache read error.\n\nThis addresses identified memory pressure, but all crashes on affected iPhones have not yet been verified as resolved. Ruffle can still retain other movie resources.\n\nThe IPA is unsigned. Sign it with your sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.4/SuperSmashFlash2-1.1.4-unsigned.ipa",
-          "size": 802682431,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.3",
-          "buildVersion": "6",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.3",
-          "date": "2026-10-12T19:07:47Z",
-          "localizedDescription": "Super Smash Flash 2 for iOS 1.1.3 (build 6) fixes touch layout editing and reduces memory pressure.\n\n- Pause and Start / OK use Space; old Enter pause bindings migrate automatically.\n- MENU replaces the Escape-based Back button and opens the app control panel.\n- D-pad dragging supports upward movement, pointer capture, resizing and reset.\n- Fullscreen landscape play is enabled by default, with overlay controls.\n- Deferred textures release their original pixel buffers; upload buffers are reused and rendering resolution is capped.\n- Memory warnings or WebKit process termination enable persistent lower-memory rendering, with a controlled retry after repeated failure.\n\nThe IPA is unsigned. Sign and install it with your preferred sideloading tool. Keep the same signing identity and bundle identifier to preserve existing app data.\n\nValidation: JavaScript control, memory-retention and rendering tests; source and IPA privacy audits; unsigned iOS Release build. Simultaneous-KO crashes still need testing on physical iPhones; the memory fixes cannot guarantee every device avoids iOS memory limits.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.3/SuperSmashFlash2-1.1.3-unsigned.ipa",
-          "size": 802669662,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.1.2",
-          "buildVersion": "5",
-          "marketingVersion": "Super Smash Flash 2 for iOS 1.1.2",
-          "date": "2026-10-12T17:13:41Z",
-          "localizedDescription": "First public release of the Super Smash Flash 2 iPhone and iPad port.\n\n- Offline Super Smash Flash 2 v1.3.1.2 Portable, with bundled Ruffle 0.6.0.\n- Matching multitouch control deck, adjustable size and opacity, and separate customizable portrait/landscape layouts.\n- Native gamepad support and remappable touch, keyboard, and controller actions.\n- Deferred compressed texture uploads to reduce GPU memory use.\n- Clean public source with checksum-pinned asset downloads and reproducible unsigned IPA packaging.\n- Release builds exclude the device test command channel, diagnostic files, source maps, signing files, and embedded local build paths.\n\n**Installation:** Requires iOS/iPadOS 16 or later. Download the unsigned IPA, sign it with your preferred sideloading tool, and install. Preserve the bundle identifier and signing identity when updating to keep app data.\n\nThe game runs offline; online multiplayer is unsupported. Performance and Flash compatibility depend on the device and Ruffle.\n\n**Validation:** Xcode Release build, touch/controller/layout tests, texture memory tests, source privacy audit, and final IPA integrity/privacy audit passed. The SHA-256 checksum is attached.\n\nSee the README for controls, installation, building, credits, and licenses.",
-          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.2/SuperSmashFlash2-1.1.2-unsigned.ipa",
-          "size": 802667400,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.1.7",
-      "versionDate": "2026-10-14T05:00:20Z",
-      "versionDescription": "Fixes the repeated **Game suspended / RESUME** interruptions reported after the audio update, and reduces startup memory pressure.\n\n- Only app backgrounding shows the native port's Resume card. Audio interruptions, headphone route notifications and transient inactivity no longer suspend the game.\n- Removes the audio activation feedback path. Playback policy is configured before audio starts; taps and key presses continue to unlock Web Audio.\n- Background suspension is idempotent and still offers Resume when Ruffle has already paused itself. Backgrounding before the first start preserves LET'S PLAY.\n- New installations use lower-memory rendering by default. The low-memory GPU sprite cache now targets 64 MB instead of 96 MB.\n- Packaging clones Web resources directly into the IPA on APFS, avoiding another full asset copy in DerivedData.\n\nValidation: JavaScript control, audio, rendering, texture-cache and recovery checks passed, including native visibility regression and a 64 MB disk-backed cache. A UIKit Mac Catalyst check of the shipped native controller passed 1,000 trusted cache prompts and 500 transient lifecycle/audio notifications without pausing, then background pause and one-tap resume. Native texture-storage checks and the unsigned Release IPA audit passed. All bundled web/game/runtime files were compared with the verified source.\n\n**Device validation:** The repeated suspension paths have been removed and regression-tested. The reported startup WebKit termination and physical iPhone/headphone behavior still need checking on affected devices; this release does not establish that every memory-related crash is eliminated.\n\nDownload **SuperSmashFlash2-1.1.7-unsigned.ipa**, sign it with your sideloading tool and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data. Restart after a terminated WebKit process returns to the title; it cannot recover the lost match.",
-      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.7/SuperSmashFlash2-1.1.7-unsigned.ipa",
-      "size": 802689251
     },
     {
       "name": "Mega Man 64",
@@ -693,6 +703,16 @@
   ],
   "news": [
     {
+      "title": "Super Smash Flash 2 SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
+      "identifier": "release-SSF2-iOS-v1.1.8",
+      "caption": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.",
+      "date": "2026-10-15T04:48:31Z",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.8",
+      "appID": "com.devz.supersmashflash2",
+      "notify": false,
+      "tintColor": "#AF0F02"
+    },
+    {
       "title": "COD4iOS Release 3 (Campaign crash fix)",
       "identifier": "release-COD4iOS-COD4NS-R3",
       "caption": "What's fixed in this build:",
@@ -748,16 +768,6 @@
       "caption": "Super Smash Flash 2 for iOS 1.1.6 (build 9) fixes missing audio unlock and an unreliable restart control.",
       "date": "2026-10-13T15:23:01Z",
       "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.6",
-      "appID": "com.devz.supersmashflash2",
-      "notify": false,
-      "tintColor": "#AF0F02"
-    },
-    {
-      "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.5",
-      "identifier": "release-SSF2-iOS-v1.1.5",
-      "caption": "Super Smash Flash 2 for iOS 1.1.5 (build 8) adds native recovery from a failed game page.",
-      "date": "2026-10-13T12:34:58Z",
-      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.5",
       "appID": "com.devz.supersmashflash2",
       "notify": false,
       "tintColor": "#AF0F02"

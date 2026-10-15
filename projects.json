@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-15T01:41:17.952449Z",
+  "generated": "2026-10-15T07:04:31.601094Z",
   "projects": [
     {
       "repo": "MegaMan64Recompiled-Mobile",
@@ -13,10 +13,10 @@
       "created": "2026-10-13T17:44:09Z",
       "firstRelease": "2026-10-13T17:45:33Z",
       "latestRelease": {
-        "tag": "v0.9.1-mobile.1",
-        "name": "Mega Man 64 Mobile 0.9.1 — Android and iOS",
-        "date": "2026-10-13T17:45:33Z",
-        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-mobile.1"
+        "tag": "v0.9.1-quest-preview.1",
+        "name": "Quest VR preview 1 — virtual screen and Touch controls",
+        "date": "2026-10-15T04:57:50Z",
+        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-quest-preview.1"
       },
       "released": "2026-10-13T17:45:33Z",
       "app": {
@@ -37,10 +37,10 @@
       "created": "2026-10-12T12:45:13Z",
       "firstRelease": "2026-10-12T17:13:41Z",
       "latestRelease": {
-        "tag": "v1.1.7",
-        "name": "SSF2 iOS 1.1.7 — Resume loop fix and lower startup memory",
-        "date": "2026-10-14T05:00:20Z",
-        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.7"
+        "tag": "v1.1.8",
+        "name": "SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
+        "date": "2026-10-15T04:48:31Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.8"
       },
       "released": "2026-10-12T17:13:41Z",
       "app": {
