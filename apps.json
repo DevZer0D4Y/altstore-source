@@ -9,10 +9,10 @@
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
     "com.devz.supersmashflash2",
+    "com.devz.sonic2006",
     "com.devz.cod4ios",
     "com.devz.MarathonRecomp",
-    "com.devz.megaman64",
-    "com.devz.slamjam96"
+    "com.devz.megaman64"
   ],
   "apps": [
     {
@@ -26,6 +26,16 @@
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "1.1.9",
+          "buildVersion": "12",
+          "marketingVersion": "SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
+          "date": "2026-10-15T13:20:30Z",
+          "localizedDescription": "Adds the missing game-input bindings and dedicated C-stick controls.\n\n- **KEYS** and controller action menus now include **C-Up, C-Left, C-Down, C-Right, Jump 2, Shield 2 and Dash**. Key bindings may also be left unassigned.\n- The right stick defaults to the four C actions, using **T / F / G / H** for up / left / down / right. A diagonal tilt selects one C direction. Old unassigned right-stick defaults migrate once; existing custom action and key mappings remain.\n- Adds an adjustable stick dead zone with threshold hysteresis and optional left-stick-strength walk/dash control. Light tilt sends movement; above 75% horizontal tilt adds Dash. This provides two speed levels rather than continuous analog movement.\n- Keeps the memory and audio improvements from 1.1.8. The remaining crash after several matches is unresolved; this release does not claim another memory-crash fix.\n\n### Set up C-stick attacks\n\nIn the game's **Options → Controls → P1**, bind **C-Up = T, C-Left = F, C-Down = G, C-Right = H**. These slots initially show n/a and must be assigned in the game too. Select each slot and tilt the corresponding right-stick direction to assign it. If your port controller settings previously used **Attack** on the right stick, change those mappings to the corresponding **C** actions in **CONTROLS → CONTROLLER**.\n\nFor optional walk/dash, bind the game's **Dash** to **Shift**, disable **Auto-Dash** and **D-Tap Dash**, then enable **Left-stick strength controls walk / dash** in the port. To assign an n/a slot on iPhone, map a controller button to that action, select the slot in the game, and press that button.\n\nThe portable Flash movie disables its desktop controller initialization. The iOS port still uses a GameController-to-keyboard bridge, so the in-game device list remains **Keyboard**. Native XInput and continuous analog movement are not enabled by this update.\n\nValidation: Controller checks passed for native and browser paths, all C directions, independent movement, diagonal direction choice, custom/disabled keys, additional jump/shield/dash actions, migration, dead-zone hysteresis and disconnect releases. A macOS WebKit integration check assigned all four C slots to T/F/G/H using injected native-controller updates. Audio, rendering, cache, recovery and loader-patch regressions passed. The unsigned Release IPA passed its audit, and every bundled web/game/runtime file was compared with verified source. Physical controller/iPhone validation is still needed.\n\nDownload **SuperSmashFlash2-1.1.9-unsigned.ipa**, sign it and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to retain your data.",
+          "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.9/SuperSmashFlash2-1.1.9-unsigned.ipa",
+          "size": 804899183,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.1.8",
           "buildVersion": "11",
@@ -101,11 +111,55 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "1.1.8",
-      "versionDate": "2026-10-15T04:48:31Z",
-      "versionDescription": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.\n\n- Sprite storage now uses binary requests over the existing offline URL scheme. It no longer uses JavaScript prompts, which interrupted Web Audio during loading, or makes base64/JSON copies of every sprite.\n- Enables SSF2's existing sequential resource loader to reduce overlapping asset decoding. The checksum-verified original stays intact; a derived iOS movie changes exactly one boolean instruction. Both Xcode and packaged builds load the derived movie.\n- Native cache failures show recovery instead of silently building a large RAM cache.\n- Preserves the repeated-Resume fix and existing touch layouts, saves and controls.\n\nValidation: Two successful macOS WebKit startup traces completed at approximately 624 MB of WebAssembly allocation, compared with approximately 784 MB in the old-build trace. This measures WebAssembly allocation, not total process memory. The title/menu responded, a Ness/Mario battle loaded, and an output-graph probe detected a nonzero audio signal. A UIKit Mac Catalyst test passed 1,000 byte-exact binary cache round trips, 500 transient lifecycle/audio notifications, background suspension and one-tap resume. JavaScript, native cache and deterministic one-instruction loader-patch checks passed, as did the unsigned Release IPA audit. Every bundled web/game/runtime file was compared with the verified source.\n\nPhysical iPhone startup reliability, headphone output and longer-session stability still need verification. This release does not establish that all underlying memory-related crashes are eliminated. Match memory remains substantial. Restart after WebKit termination still returns to the title and cannot restore a lost match.\n\nDownload **SuperSmashFlash2-1.1.8-unsigned.ipa**, sign it and install it with your sideloading tool. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to preserve existing data.",
-      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.8/SuperSmashFlash2-1.1.8-unsigned.ipa",
-      "size": 804898198
+      "version": "1.1.9",
+      "versionDate": "2026-10-15T13:20:30Z",
+      "versionDescription": "Adds the missing game-input bindings and dedicated C-stick controls.\n\n- **KEYS** and controller action menus now include **C-Up, C-Left, C-Down, C-Right, Jump 2, Shield 2 and Dash**. Key bindings may also be left unassigned.\n- The right stick defaults to the four C actions, using **T / F / G / H** for up / left / down / right. A diagonal tilt selects one C direction. Old unassigned right-stick defaults migrate once; existing custom action and key mappings remain.\n- Adds an adjustable stick dead zone with threshold hysteresis and optional left-stick-strength walk/dash control. Light tilt sends movement; above 75% horizontal tilt adds Dash. This provides two speed levels rather than continuous analog movement.\n- Keeps the memory and audio improvements from 1.1.8. The remaining crash after several matches is unresolved; this release does not claim another memory-crash fix.\n\n### Set up C-stick attacks\n\nIn the game's **Options → Controls → P1**, bind **C-Up = T, C-Left = F, C-Down = G, C-Right = H**. These slots initially show n/a and must be assigned in the game too. Select each slot and tilt the corresponding right-stick direction to assign it. If your port controller settings previously used **Attack** on the right stick, change those mappings to the corresponding **C** actions in **CONTROLS → CONTROLLER**.\n\nFor optional walk/dash, bind the game's **Dash** to **Shift**, disable **Auto-Dash** and **D-Tap Dash**, then enable **Left-stick strength controls walk / dash** in the port. To assign an n/a slot on iPhone, map a controller button to that action, select the slot in the game, and press that button.\n\nThe portable Flash movie disables its desktop controller initialization. The iOS port still uses a GameController-to-keyboard bridge, so the in-game device list remains **Keyboard**. Native XInput and continuous analog movement are not enabled by this update.\n\nValidation: Controller checks passed for native and browser paths, all C directions, independent movement, diagonal direction choice, custom/disabled keys, additional jump/shield/dash actions, migration, dead-zone hysteresis and disconnect releases. A macOS WebKit integration check assigned all four C slots to T/F/G/H using injected native-controller updates. Audio, rendering, cache, recovery and loader-patch regressions passed. The unsigned Release IPA passed its audit, and every bundled web/game/runtime file was compared with verified source. Physical controller/iPhone validation is still needed.\n\nDownload **SuperSmashFlash2-1.1.9-unsigned.ipa**, sign it and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to retain your data.",
+      "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.9/SuperSmashFlash2-1.1.9-unsigned.ipa",
+      "size": 804899183
+    },
+    {
+      "name": "Sonic (2006)",
+      "bundleIdentifier": "com.devz.sonic2006",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+      "tintColor": "#304278",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.6",
+          "marketingVersion": "Sonic (2006) — original identity, current runtime and mods",
+          "date": "2026-10-15T12:53:09Z",
+          "localizedDescription": "Updates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
+          "size": 35598104,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.5",
+          "marketingVersion": "v1.0",
+          "date": "2026-10-05T18:29:37Z",
+          "localizedDescription": "First release!",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
+          "size": 35609295,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+        }
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-15T12:53:09Z",
+      "versionDescription": "Updates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
+      "size": 35598104
     },
     {
       "name": "COD4iOS",
@@ -175,7 +229,7 @@
           "buildVersion": "v1.0.0",
           "marketingVersion": "iOS mod manager — launch crash fix",
           "date": "2026-10-14T12:00:12Z",
-          "localizedDescription": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
+          "localizedDescription": "**Superseded: use the original-identity/current-runtime mod release (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15).** This older package uses `com.devz.MarathonRecomp`; the replacement restores R1's `com.devz.sonic2006`, name and icon, and includes the current port runtime fixes.\n\nFixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
           "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
           "size": 46869337,
           "minOSVersion": "17.0"
@@ -187,7 +241,7 @@
       },
       "version": "v1.0.0",
       "versionDate": "2026-10-14T12:00:12Z",
-      "versionDescription": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
+      "versionDescription": "**Superseded: use the original-identity/current-runtime mod release (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15).** This older package uses `com.devz.MarathonRecomp`; the replacement restores R1's `com.devz.sonic2006`, name and icon, and includes the current port runtime fixes.\n\nFixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
       "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
       "size": 46869337
     },
@@ -625,38 +679,6 @@
       "size": 30273313
     },
     {
-      "name": "Sonic (2006)",
-      "bundleIdentifier": "com.devz.sonic2006",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
-      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
-      "tintColor": "#304278",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.5",
-          "marketingVersion": "v1.0",
-          "date": "2026-10-05T18:29:37Z",
-          "localizedDescription": "First release!",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
-          "size": 35609295,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.0.0",
-      "versionDate": "2026-10-05T18:29:37Z",
-      "versionDescription": "First release!",
-      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
-      "size": 35609295
-    },
-    {
       "name": "MCX360 Edition",
       "bundleIdentifier": "com.devz.mc360",
       "developerName": "DevZer0D4Y",
@@ -703,6 +725,26 @@
   ],
   "news": [
     {
+      "title": "Super Smash Flash 2 SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
+      "identifier": "release-SSF2-iOS-v1.1.9",
+      "caption": "Adds the missing game-input bindings and dedicated C-stick controls.",
+      "date": "2026-10-15T13:20:30Z",
+      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.9",
+      "appID": "com.devz.supersmashflash2",
+      "notify": false,
+      "tintColor": "#AF0F02"
+    },
+    {
+      "title": "Sonic (2006) Sonic (2006) — original identity, current runtime and mods",
+      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15",
+      "caption": "Updates the original Sonic (2006) app identity: com.devz.sonic2006, display name Sonic (2006), original R1 icon, build 1.0.6. Both compiled ",
+      "date": "2026-10-15T12:53:09Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
       "title": "Super Smash Flash 2 SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
       "identifier": "release-SSF2-iOS-v1.1.8",
       "caption": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.",
@@ -725,7 +767,7 @@
     {
       "title": "Marathon Recompiled iOS mod manager — launch crash fix",
       "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-14-launchfix",
-      "caption": "Fixes two reproducible startup crashes in the October 13 mod-enabled IPA:",
+      "caption": "Superseded: use the original-identity/current-runtime mod release (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods",
       "date": "2026-10-14T12:00:12Z",
       "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-14-launchfix",
       "appID": "com.devz.MarathonRecomp",
@@ -761,16 +803,6 @@
       "appID": "com.devz.megaman64",
       "notify": false,
       "tintColor": "#BF8640"
-    },
-    {
-      "title": "Super Smash Flash 2 Super Smash Flash 2 for iOS 1.1.6",
-      "identifier": "release-SSF2-iOS-v1.1.6",
-      "caption": "Super Smash Flash 2 for iOS 1.1.6 (build 9) fixes missing audio unlock and an unreliable restart control.",
-      "date": "2026-10-13T15:23:01Z",
-      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.6",
-      "appID": "com.devz.supersmashflash2",
-      "notify": false,
-      "tintColor": "#AF0F02"
     },
     {
       "title": "Slam’n’Jam 96 NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
@@ -891,16 +923,6 @@
       "appID": "com.devz.umk3",
       "notify": false,
       "tintColor": "#C36810"
-    },
-    {
-      "title": "Tony Hawk’s Pro Skater 2 NativePorts v1.0",
-      "identifier": "release-NativePorts-v1.0",
-      "caption": "Super Street Fighter II Turbo 0.1.1, Ultimate Mortal Kombat 3 0.1.1, Slam 'n Jam '96 0.1.1 and Tony Hawk's Pro Skater 2 0.1.9 for iOS and Wi",
-      "date": "2026-10-11T18:40:05Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v1.0",
-      "appID": "com.devz.thps2",
-      "notify": false,
-      "tintColor": "#687185"
     }
   ]
 }

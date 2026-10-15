@@ -599,5 +599,37 @@
     "name": "Super Smash Flash 2",
     "privacy": {},
     "version": "1.1.8"
+  },
+  "643862983:2026-10-15T12:53:08Z:35598104": {
+    "buildVersion": "1.0.6",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
+  },
+  "643930199:2026-10-15T13:20:29Z:804899183": {
+    "buildVersion": "12",
+    "bundleIdentifier": "com.devz.supersmashflash2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.supersmashflash2-3b1b34914954.png",
+      "tint": "#AF0F02",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Smash Flash 2",
+    "privacy": {},
+    "version": "1.1.9"
   }
 }

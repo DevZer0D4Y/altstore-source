@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-15T12:46:41.894716Z",
+  "generated": "2026-10-15T17:39:14.561429Z",
   "projects": [
     {
       "repo": "MegaMan64Recompiled-Mobile",
@@ -37,10 +37,10 @@
       "created": "2026-10-12T12:45:13Z",
       "firstRelease": "2026-10-12T17:13:41Z",
       "latestRelease": {
-        "tag": "v1.1.8",
-        "name": "SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
-        "date": "2026-10-15T04:48:31Z",
-        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.8"
+        "tag": "v1.1.9",
+        "name": "SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
+        "date": "2026-10-15T13:20:30Z",
+        "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.9"
       },
       "released": "2026-10-12T17:13:41Z",
       "app": {
@@ -166,17 +166,17 @@
       "created": "2026-10-03T13:06:04Z",
       "firstRelease": "2026-10-05T18:29:37Z",
       "latestRelease": {
-        "tag": "ios-mods-2026-10-14-launchfix",
-        "name": "iOS mod manager — launch crash fix",
-        "date": "2026-10-14T12:00:12Z",
-        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-14-launchfix"
+        "tag": "ios-mods-2026-10-15",
+        "name": "Sonic (2006) — original identity, current runtime and mods",
+        "date": "2026-10-15T12:53:09Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15"
       },
       "released": "2026-10-05T18:29:37Z",
       "app": {
-        "name": "Marathon Recompiled",
-        "bundleIdentifier": "com.devz.MarathonRecomp",
-        "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
-        "tintColor": "#2F6FEB"
+        "name": "Sonic (2006)",
+        "bundleIdentifier": "com.devz.sonic2006",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+        "tintColor": "#304278"
       }
     },
     {
