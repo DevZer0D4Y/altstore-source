@@ -631,5 +631,69 @@
     "name": "Super Smash Flash 2",
     "privacy": {},
     "version": "1.1.9"
+  },
+  "644752268:2026-10-15T18:20:42Z:15883081": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.nfsu2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nfsu2-a597a28eb8ab.png",
+      "tint": "#878D4F",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NFSU2",
+    "privacy": {},
+    "version": "0.3"
+  },
+  "644776747:2026-10-15T18:29:21Z:35715475": {
+    "buildVersion": "1.0.7",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
+  },
+  "644803947:2026-10-15T18:39:51Z:9687390": {
+    "buildVersion": "10",
+    "bundleIdentifier": "com.devz.cod4ios",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tint": "#4F5634",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "COD4iOS",
+    "privacy": {},
+    "version": "1.0.4"
+  },
+  "644826049:2026-10-15T18:48:55Z:35715635": {
+    "buildVersion": "1.0.8",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
   }
 }

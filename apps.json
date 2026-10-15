@@ -8,13 +8,171 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
-    "com.devz.supersmashflash2",
     "com.devz.sonic2006",
     "com.devz.cod4ios",
-    "com.devz.MarathonRecomp",
-    "com.devz.megaman64"
+    "com.devz.nfsu2",
+    "com.devz.supersmashflash2",
+    "com.devz.MarathonRecomp"
   ],
   "apps": [
+    {
+      "name": "Sonic (2006)",
+      "bundleIdentifier": "com.devz.sonic2006",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+      "tintColor": "#304278",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.8",
+          "marketingVersion": "Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
+          "date": "2026-10-15T18:48:56Z",
+          "localizedDescription": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report. This changes the shared reader for all enabled mods; there are no title- or author-specific exceptions.\n\n- Accept validated ordinary 12-byte raw U8 nodes as well as extended 16-byte Sonic '06 nodes. Convert input into the extended game layout.\n- Accept root labels and unused root/directory metadata instead of requiring every such field to be zero. Continue validating table bounds, member names, hierarchy, duplicates and payload bounds.\n- Write the extended U8 compatibility marker expected by archive tools. A new cache revision regenerates archives from earlier builds.\n- Identify whether an archive read error originated from the installed original, a complete replacement, or a mod archive. Keep the manager open for retries.\n\n**Validation:** ASan/UBSan mod/archive regression suite passed, including flat/nested ordinary U8 conversion, named roots, nonzero metadata, mixed input layouts, priority, compressed payload preservation and malformed data. The public Werehog package (https://gamebanana.com/mods/330727) matching the screenshot's title/author passed import, selection and archive merging against synthetic originals; an independent decoder compared every mod member and verified preservation of an original-only member. A supplied real `shader.arc` round trip passed. Full Release arm64 iPhoneOS build and IPA integrity checks passed.\n\nThe public Werehog archive itself already passed the previous parser. The tester's installed original archive was unavailable, so the exact screenshot failure and in-game behavior remain unverified. This release addresses shared format assumptions rather than claiming every mod has been gameplay-tested. Native plugins, executable patches and custom HMM code still require ports.\n\n**Build 1.0.8:** original `com.devz.sonic2006`, **Sonic (2006)** name and original icon PNGs verified. Keep this bundle ID when signing. The IPA is unsigned; no downloaded mod or original game archive is bundled.\n\nCommit: `2b09bed` on `ios-mods-performance-20261015`.\nSHA-256 (`Sonic06-iOS.ipa`): `1ebf3ee96b5347d15fde19afdbb5ca021a9c073c4fd369220973718f48c2f9e3`",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-u8-compat/Sonic06-iOS.ipa",
+          "size": 35715635,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.7",
+          "marketingVersion": "Sonic (2006) — iOS archive merging support",
+          "date": "2026-10-15T18:29:22Z",
+          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nReplaces the blanket “Archive merging needs a Sonic ’06 port” rejection with real Sonic ’06 U8 archive merging. This is a general asset-mod implementation, not a special case for Super Sonic.\n\n- Merge partial packed `.arc` files, extracted `.arc` directories, and extensionless extracted folders when the matching original archive exists.\n- Match loose replacements against archive member paths, including members introduced by other enabled archive patches.\n- Preserve untouched members and original compression; the top enabled mod wins each member conflict. Respect complete replacements and UMM `Read-only` archive paths.\n- Prepare archives in the background with a “Preparing mods…” title. Errors keep the manager open so the selection can be changed and retried.\n- Cache verified merged archives without modifying installed game files or imported mod assets. Preparation uses bounded payload buffers.\n\n**App identity:** original `com.devz.sonic2006`, display name/icon **Sonic (2006)**, build **1.0.7**. Keep this bundle ID when signing to update the existing app. The IPA is unsigned and needs your sideloading signature. Game data is not included.\n\n**Validation:** ASan/UBSan mod/archive tests passed, including independent U8/zlib decoding and a round trip of a supplied real `shader.arc`; existing port regressions passed; UIKit SDK compile and full Release arm64 iPhoneOS build passed. Packaged IPA integrity, original icon PNGs, bundle identity and required scene/Bluetooth metadata verified.\n\n**Scope:** Sonic ’06 asset mods using the supported layouts. DLL plugins, custom HMM code, executable patches and Unleashed archive formats still require source ports. The tester’s specific Super Sonic package and gameplay with real mods have not been tested on a device. Older generated selections remain in `mod-cache`; it may be removed while the game is closed to reclaim storage.\n\nSource commit: `49bce32` on `ios-mods-performance-20261015`.\n\nSHA-256 (`Sonic06-iOS.ipa`): `be5965716fa3a5cd1819774d75957cccfeaae6cdc6decc5741c138eeab8fa205`",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-arc-merge/Sonic06-iOS.ipa",
+          "size": 35715475,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.6",
+          "marketingVersion": "Sonic (2006) — original identity, current runtime and mods",
+          "date": "2026-10-15T12:53:09Z",
+          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nSuperseded by the archive-merging build (1.0.7) (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-arc-merge), which replaces the blanket Merge=true rejection.\n\nUpdates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
+          "size": 35598104,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.5",
+          "marketingVersion": "v1.0",
+          "date": "2026-10-05T18:29:37Z",
+          "localizedDescription": "First release!",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
+          "size": 35609295,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+        }
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-15T18:48:56Z",
+      "versionDescription": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report. This changes the shared reader for all enabled mods; there are no title- or author-specific exceptions.\n\n- Accept validated ordinary 12-byte raw U8 nodes as well as extended 16-byte Sonic '06 nodes. Convert input into the extended game layout.\n- Accept root labels and unused root/directory metadata instead of requiring every such field to be zero. Continue validating table bounds, member names, hierarchy, duplicates and payload bounds.\n- Write the extended U8 compatibility marker expected by archive tools. A new cache revision regenerates archives from earlier builds.\n- Identify whether an archive read error originated from the installed original, a complete replacement, or a mod archive. Keep the manager open for retries.\n\n**Validation:** ASan/UBSan mod/archive regression suite passed, including flat/nested ordinary U8 conversion, named roots, nonzero metadata, mixed input layouts, priority, compressed payload preservation and malformed data. The public Werehog package (https://gamebanana.com/mods/330727) matching the screenshot's title/author passed import, selection and archive merging against synthetic originals; an independent decoder compared every mod member and verified preservation of an original-only member. A supplied real `shader.arc` round trip passed. Full Release arm64 iPhoneOS build and IPA integrity checks passed.\n\nThe public Werehog archive itself already passed the previous parser. The tester's installed original archive was unavailable, so the exact screenshot failure and in-game behavior remain unverified. This release addresses shared format assumptions rather than claiming every mod has been gameplay-tested. Native plugins, executable patches and custom HMM code still require ports.\n\n**Build 1.0.8:** original `com.devz.sonic2006`, **Sonic (2006)** name and original icon PNGs verified. Keep this bundle ID when signing. The IPA is unsigned; no downloaded mod or original game archive is bundled.\n\nCommit: `2b09bed` on `ios-mods-performance-20261015`.\nSHA-256 (`Sonic06-iOS.ipa`): `1ebf3ee96b5347d15fde19afdbb5ca021a9c073c4fd369220973718f48c2f9e3`",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-u8-compat/Sonic06-iOS.ipa",
+      "size": 35715635
+    },
+    {
+      "name": "COD4iOS",
+      "bundleIdentifier": "com.devz.cod4ios",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tintColor": "#4F5634",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.4",
+          "buildVersion": "10",
+          "marketingVersion": "Release 4 (Nikolai crash fix)",
+          "date": "2026-10-15T18:40:00Z",
+          "localizedDescription": "COD4iOS 1.0.4 build 10. This is the exact IPA tested by the reporter, who confirmed the crash is fixed.\n\n- Fixes dynamic-lighting memory overwrites and invalid static-model draw data involved in the Blackout/Nikolai crash.\n- Includes campaign checkpoint protection, Resume recovery, and persistent mission unlocks.\n- Includes the touch-control editor and Metal upload/memory improvements from the preceding builds.\n\nBoth single-player and multiplayer engines are included. Renderer, checkpoint, campaign-transition and mission-progress regression tests pass. FPS improvements have not been measured on the affected device.\n\nThe IPA is unsigned: use your signing/sideload tool and install as an update with the same app identifier to preserve existing data. Back up your `players` folder before updating.\n\nThe matching build-source archive and SHA-256 checksums are attached. The source archive includes the complete build checkout, including pre-existing source changes beyond the release tag. Retail game data, personal saves and signing keys are not included.\n\nIPA SHA-256: `ea26f886f535e5bd0715cdfe6b4482e80d131a893e0442292ebed877d27f9a0e`",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R4/COD4iOS-1.0.4-build10-renderer-crash-fix-unsigned.ipa",
+          "size": 9687390,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.4",
+          "buildVersion": "8",
+          "marketingVersion": "Release 3 (Campaign crash fix)",
+          "date": "2026-10-14T12:20:08Z",
+          "localizedDescription": "What's fixed in this build:\n- Confirmed checkpoints used to remain in RAM; they are now immediately written to disk.\n- \"Resume\" now retrieves the save reference even if it is missing from config.cfg.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R3/COD4iOS-1.0.4.ipa",
+          "size": 9675463,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.4",
+          "buildVersion": "7",
+          "marketingVersion": "Better Stability Release",
+          "date": "2026-10-13T19:57:59Z",
+          "localizedDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
+          "size": 9665598,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.3",
+          "buildVersion": "4",
+          "marketingVersion": "Call of Duty 4 for iOS first release!!",
+          "date": "2026-10-03T06:49:12Z",
+          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
+          "size": 9596607,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.4",
+      "versionDate": "2026-10-15T18:40:00Z",
+      "versionDescription": "COD4iOS 1.0.4 build 10. This is the exact IPA tested by the reporter, who confirmed the crash is fixed.\n\n- Fixes dynamic-lighting memory overwrites and invalid static-model draw data involved in the Blackout/Nikolai crash.\n- Includes campaign checkpoint protection, Resume recovery, and persistent mission unlocks.\n- Includes the touch-control editor and Metal upload/memory improvements from the preceding builds.\n\nBoth single-player and multiplayer engines are included. Renderer, checkpoint, campaign-transition and mission-progress regression tests pass. FPS improvements have not been measured on the affected device.\n\nThe IPA is unsigned: use your signing/sideload tool and install as an update with the same app identifier to preserve existing data. Back up your `players` folder before updating.\n\nThe matching build-source archive and SHA-256 checksums are attached. The source archive includes the complete build checkout, including pre-existing source changes beyond the release tag. Retail game data, personal saves and signing keys are not included.\n\nIPA SHA-256: `ea26f886f535e5bd0715cdfe6b4482e80d131a893e0442292ebed877d27f9a0e`",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R4/COD4iOS-1.0.4-build10-renderer-crash-fix-unsigned.ipa",
+      "size": 9687390
+    },
+    {
+      "name": "NFSU2",
+      "bundleIdentifier": "com.devz.nfsu2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Need For Speed Underground 2 Xbox Original port for iPhone, iPad and macOS. Native Metal renderer, touch, controller and",
+      "localizedDescription": "Need For Speed Underground 2 Xbox Original port for iPhone, iPad and macOS. Native Metal renderer, touch, controller and keyboard controls.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/nfsu2-ios",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nfsu2-a597a28eb8ab.png",
+      "tintColor": "#878D4F",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.3",
+          "buildVersion": "2",
+          "marketingVersion": "NFSU2 iOS 0.3",
+          "date": "2026-10-15T18:19:52Z",
+          "localizedDescription": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching European PAL Xbox disc; game files and music are not included. Other executable regions/revisions require matching translations.\n\nBundle ID: `com.devz.nfsu2` · Version: **0.3**, build **2**.\n\n### Mobile experience\n\n- Fullscreen landscape play with optional aspect-fit presentation.\n- Uncapped presentation by default; optional FPS ceiling through `NFSU2_FPS_LIMIT`.\n- 4× internal width and height by default on iOS; adjustable render scale.\n- Racing-style touch controls and a separate simple menu layout. Both layouts support independent positioning, size, opacity, visibility and button mappings, with Save, Cancel and Reset.\n- Automatic PAL Menu/Drive switching, including pause/options/frontend detection. A manual toggle remains available.\n- Physical controllers take over from the touch pad; disconnecting restores neutral touch input.\n- MP3 import from Files, persistent playlist, playback switch, volume and Next Track. Lower the original soundtrack's Music volume in-game to hear only your playlist with game effects.\n- Background suspension for the game, GPU work and audio.\n\n### Import and distribution\n\n- Streaming Xbox ISO extraction with path/bounds checks, executable preflight, staged replacement and save preservation.\n- PAL Europe and NTSC-U executable profiles. Each build contains one matching executable translation; region-neutral ISO extraction does not provide universal regional playback.\n- Active extracted directory and compiled profile shown under **Edit → Game files**. Default directory: **Files → On My iPhone/iPad → NFSU2 → game**.\n- New game-cover icon, display name **NFSU2**, bundle ID **com.devz.nfsu2**, version **0.3**, build **2**.\n- Public unsigned PAL IPA and SHA-256 checksum in `dist/`; sign for your own device before installation.\n- Public source cleaned of local developer notes and compiled test binaries. Game files, generated game code, music and signing material remain excluded from source.\n\n### Performance\n\n- Cache Metal uniform, constant-buffer, texture and sampler bindings within their valid encoder lifetime.\n- Reuse unchanged transform-constant uploads within a command buffer; keep fresh allocations for changed constants and instanced draws.\n- Combine matching feedback-stage snapshots into one copy per draw.\n- Use render-pass clears for complete surface clears while preserving partial and active-pass behavior.\n- Native PAL CRT/video conversion fast paths and Apple generated-code optimization.\n- Add asynchronous GPU timing diagnostics without waiting for GPU completion.\n\n### Validation and limitations\n\n- Seven input/pacing tests passed, alongside UIKit layout/customization/lifecycle/import tests, MP3 playback tests, XISO checks and Metal GPU regression checks at native and 4× scale.\n- Installed and launched on an iPhone 16 Pro Max. All 191 transferred disc files matched source sizes and SHA-1 checksums on-device.\n- Synthetic constant-upload benchmarks reduced CPU submission time by about 7–9% for that workload; this is not a measured gameplay FPS gain.\n- Real race/pause automatic transitions and sustained gameplay performance still need device validation. Arbitrary regions and executable revisions require their own verified translation.",
+          "downloadURL": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/download/v0.3/NFSU2-0.3-unsigned.ipa",
+          "size": 15883081,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.3",
+      "versionDate": "2026-10-15T18:19:52Z",
+      "versionDescription": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching European PAL Xbox disc; game files and music are not included. Other executable regions/revisions require matching translations.\n\nBundle ID: `com.devz.nfsu2` · Version: **0.3**, build **2**.\n\n### Mobile experience\n\n- Fullscreen landscape play with optional aspect-fit presentation.\n- Uncapped presentation by default; optional FPS ceiling through `NFSU2_FPS_LIMIT`.\n- 4× internal width and height by default on iOS; adjustable render scale.\n- Racing-style touch controls and a separate simple menu layout. Both layouts support independent positioning, size, opacity, visibility and button mappings, with Save, Cancel and Reset.\n- Automatic PAL Menu/Drive switching, including pause/options/frontend detection. A manual toggle remains available.\n- Physical controllers take over from the touch pad; disconnecting restores neutral touch input.\n- MP3 import from Files, persistent playlist, playback switch, volume and Next Track. Lower the original soundtrack's Music volume in-game to hear only your playlist with game effects.\n- Background suspension for the game, GPU work and audio.\n\n### Import and distribution\n\n- Streaming Xbox ISO extraction with path/bounds checks, executable preflight, staged replacement and save preservation.\n- PAL Europe and NTSC-U executable profiles. Each build contains one matching executable translation; region-neutral ISO extraction does not provide universal regional playback.\n- Active extracted directory and compiled profile shown under **Edit → Game files**. Default directory: **Files → On My iPhone/iPad → NFSU2 → game**.\n- New game-cover icon, display name **NFSU2**, bundle ID **com.devz.nfsu2**, version **0.3**, build **2**.\n- Public unsigned PAL IPA and SHA-256 checksum in `dist/`; sign for your own device before installation.\n- Public source cleaned of local developer notes and compiled test binaries. Game files, generated game code, music and signing material remain excluded from source.\n\n### Performance\n\n- Cache Metal uniform, constant-buffer, texture and sampler bindings within their valid encoder lifetime.\n- Reuse unchanged transform-constant uploads within a command buffer; keep fresh allocations for changed constants and instanced draws.\n- Combine matching feedback-stage snapshots into one copy per draw.\n- Use render-pass clears for complete surface clears while preserving partial and active-pass behavior.\n- Native PAL CRT/video conversion fast paths and Apple generated-code optimization.\n- Add asynchronous GPU timing diagnostics without waiting for GPU completion.\n\n### Validation and limitations\n\n- Seven input/pacing tests passed, alongside UIKit layout/customization/lifecycle/import tests, MP3 playback tests, XISO checks and Metal GPU regression checks at native and 4× scale.\n- Installed and launched on an iPhone 16 Pro Max. All 191 transferred disc files matched source sizes and SHA-1 checksums on-device.\n- Synthetic constant-upload benchmarks reduced CPU submission time by about 7–9% for that workload; this is not a measured gameplay FPS gain.\n- Real race/pause automatic transitions and sustained gameplay performance still need device validation. Arbitrary regions and executable revisions require their own verified translation.",
+      "downloadURL": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/download/v0.3/NFSU2-0.3-unsigned.ipa",
+      "size": 15883081
+    },
     {
       "name": "Super Smash Flash 2",
       "bundleIdentifier": "com.devz.supersmashflash2",
@@ -116,102 +274,6 @@
       "versionDescription": "Adds the missing game-input bindings and dedicated C-stick controls.\n\n- **KEYS** and controller action menus now include **C-Up, C-Left, C-Down, C-Right, Jump 2, Shield 2 and Dash**. Key bindings may also be left unassigned.\n- The right stick defaults to the four C actions, using **T / F / G / H** for up / left / down / right. A diagonal tilt selects one C direction. Old unassigned right-stick defaults migrate once; existing custom action and key mappings remain.\n- Adds an adjustable stick dead zone with threshold hysteresis and optional left-stick-strength walk/dash control. Light tilt sends movement; above 75% horizontal tilt adds Dash. This provides two speed levels rather than continuous analog movement.\n- Keeps the memory and audio improvements from 1.1.8. The remaining crash after several matches is unresolved; this release does not claim another memory-crash fix.\n\n### Set up C-stick attacks\n\nIn the game's **Options → Controls → P1**, bind **C-Up = T, C-Left = F, C-Down = G, C-Right = H**. These slots initially show n/a and must be assigned in the game too. Select each slot and tilt the corresponding right-stick direction to assign it. If your port controller settings previously used **Attack** on the right stick, change those mappings to the corresponding **C** actions in **CONTROLS → CONTROLLER**.\n\nFor optional walk/dash, bind the game's **Dash** to **Shift**, disable **Auto-Dash** and **D-Tap Dash**, then enable **Left-stick strength controls walk / dash** in the port. To assign an n/a slot on iPhone, map a controller button to that action, select the slot in the game, and press that button.\n\nThe portable Flash movie disables its desktop controller initialization. The iOS port still uses a GameController-to-keyboard bridge, so the in-game device list remains **Keyboard**. Native XInput and continuous analog movement are not enabled by this update.\n\nValidation: Controller checks passed for native and browser paths, all C directions, independent movement, diagonal direction choice, custom/disabled keys, additional jump/shield/dash actions, migration, dead-zone hysteresis and disconnect releases. A macOS WebKit integration check assigned all four C slots to T/F/G/H using injected native-controller updates. Audio, rendering, cache, recovery and loader-patch regressions passed. The unsigned Release IPA passed its audit, and every bundled web/game/runtime file was compared with verified source. Physical controller/iPhone validation is still needed.\n\nDownload **SuperSmashFlash2-1.1.9-unsigned.ipa**, sign it and install it. Keep the same signing identity and bundle identifier (`com.devz.supersmashflash2`) to retain your data.",
       "downloadURL": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/download/v1.1.9/SuperSmashFlash2-1.1.9-unsigned.ipa",
       "size": 804899183
-    },
-    {
-      "name": "Sonic (2006)",
-      "bundleIdentifier": "com.devz.sonic2006",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
-      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
-      "tintColor": "#304278",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.6",
-          "marketingVersion": "Sonic (2006) — original identity, current runtime and mods",
-          "date": "2026-10-15T12:53:09Z",
-          "localizedDescription": "Updates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
-          "size": 35598104,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.5",
-          "marketingVersion": "v1.0",
-          "date": "2026-10-05T18:29:37Z",
-          "localizedDescription": "First release!",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
-          "size": 35609295,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
-        }
-      },
-      "version": "1.0.0",
-      "versionDate": "2026-10-15T12:53:09Z",
-      "versionDescription": "Updates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
-      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
-      "size": 35598104
-    },
-    {
-      "name": "COD4iOS",
-      "bundleIdentifier": "com.devz.cod4ios",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Call of Duty 4 port for iOS and Nintendo Switch",
-      "localizedDescription": "Call of Duty 4 port for iOS and Nintendo Switch\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
-      "tintColor": "#4F5634",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.4",
-          "buildVersion": "8",
-          "marketingVersion": "Release 3 (Campaign crash fix)",
-          "date": "2026-10-14T12:20:08Z",
-          "localizedDescription": "What's fixed in this build:\n- Confirmed checkpoints used to remain in RAM; they are now immediately written to disk.\n- \"Resume\" now retrieves the save reference even if it is missing from config.cfg.",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R3/COD4iOS-1.0.4.ipa",
-          "size": 9675463,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.4",
-          "buildVersion": "7",
-          "marketingVersion": "Better Stability Release",
-          "date": "2026-10-13T19:57:59Z",
-          "localizedDescription": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R2/COD4iOS-1.0.4.ipa",
-          "size": 9665598,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.3",
-          "buildVersion": "4",
-          "marketingVersion": "Call of Duty 4 for iOS first release!!",
-          "date": "2026-10-03T06:49:12Z",
-          "localizedDescription": "Multiplayer works too, you can play with PC users by joining the same servers.",
-          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R1/COD4iOS_v1.0.3.ipa",
-          "size": 9596607,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "1.0.4",
-      "versionDate": "2026-10-14T12:20:08Z",
-      "versionDescription": "What's fixed in this build:\n- Confirmed checkpoints used to remain in RAM; they are now immediately written to disk.\n- \"Resume\" now retrieves the save reference even if it is missing from config.cfg.",
-      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R3/COD4iOS-1.0.4.ipa",
-      "size": 9675463
     },
     {
       "name": "Marathon Recompiled",
@@ -725,6 +787,46 @@
   ],
   "news": [
     {
+      "title": "Sonic (2006) Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
+      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-u8-compat",
+      "caption": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report.",
+      "date": "2026-10-15T18:48:56Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
+      "title": "COD4iOS Release 4 (Nikolai crash fix)",
+      "identifier": "release-COD4iOS-COD4NS-R4",
+      "caption": "COD4iOS 1.0.4 build 10. This is the exact IPA tested by the reporter, who confirmed the crash is fixed.",
+      "date": "2026-10-15T18:40:00Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R4",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "Sonic (2006) Sonic (2006) — iOS archive merging support",
+      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-arc-merge",
+      "caption": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/i",
+      "date": "2026-10-15T18:29:22Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-arc-merge",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
+      "title": "NFSU2 NFSU2 iOS 0.3",
+      "identifier": "release-nfsu2-ios-v0.3",
+      "caption": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching Europe",
+      "date": "2026-10-15T18:19:52Z",
+      "url": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/tag/v0.3",
+      "appID": "com.devz.nfsu2",
+      "notify": false,
+      "tintColor": "#878D4F"
+    },
+    {
       "title": "Super Smash Flash 2 SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
       "identifier": "release-SSF2-iOS-v1.1.9",
       "caption": "Adds the missing game-input bindings and dedicated C-stick controls.",
@@ -737,7 +839,7 @@
     {
       "title": "Sonic (2006) Sonic (2006) — original identity, current runtime and mods",
       "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15",
-      "caption": "Updates the original Sonic (2006) app identity: com.devz.sonic2006, display name Sonic (2006), original R1 icon, build 1.0.6. Both compiled ",
+      "caption": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/i",
       "date": "2026-10-15T12:53:09Z",
       "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15",
       "appID": "com.devz.sonic2006",
@@ -883,46 +985,6 @@
       "appID": "com.devz.ssf2t",
       "notify": false,
       "tintColor": "#AF4A58"
-    },
-    {
-      "title": "Slam’n’Jam 96 NativePorts 0.2.0",
-      "identifier": "release-NativePorts-v0.2.0",
-      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
-      "date": "2026-10-12T12:40:28Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
-      "appID": "com.devz.slamjam96",
-      "notify": false,
-      "tintColor": "#4E4A69"
-    },
-    {
-      "title": "Super Street Fighter II Turbo NativePorts 0.2.0",
-      "identifier": "release-NativePorts-v0.2.0",
-      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
-      "date": "2026-10-12T12:40:28Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
-      "appID": "com.devz.ssf2t",
-      "notify": false,
-      "tintColor": "#AF4A58"
-    },
-    {
-      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.2.0",
-      "identifier": "release-NativePorts-v0.2.0",
-      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
-      "date": "2026-10-12T12:40:28Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
-      "appID": "com.devz.thps2",
-      "notify": false,
-      "tintColor": "#687185"
-    },
-    {
-      "title": "Ultimate Mortal Kombat 3 NativePorts 0.2.0",
-      "identifier": "release-NativePorts-v0.2.0",
-      "caption": "NativePorts 0.2.0 includes Super Street Fighter II Turbo, Ultimate Mortal Kombat 3, Slam ’n Jam ’96 and Tony Hawk’s Pro Skater 2 for iOS and",
-      "date": "2026-10-12T12:40:28Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.0",
-      "appID": "com.devz.umk3",
-      "notify": false,
-      "tintColor": "#C36810"
     }
   ]
 }
