@@ -1,7 +1,24 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-16T08:48:19.581463Z",
+  "generated": "2026-10-16T13:47:19.479924Z",
   "projects": [
+    {
+      "repo": "ProjectReignition-iOS",
+      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
+      "description": "The Sonic and the Secret Rings fan-remake.",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "kumapauz/project-reignition",
+        "url": "https://github.com/kumapauz/project-reignition"
+      },
+      "created": "2026-10-16T09:23:03Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-16T09:23:03Z",
+      "app": null
+    },
     {
       "repo": "nfsu2-ios",
       "url": "https://github.com/DevZer0D4Y/nfsu2-ios",
@@ -40,10 +57,10 @@
       "created": "2026-10-13T17:44:09Z",
       "firstRelease": "2026-10-13T17:45:33Z",
       "latestRelease": {
-        "tag": "v0.9.1-quest-preview.1",
-        "name": "Quest VR preview 1 — virtual screen and Touch controls",
-        "date": "2026-10-15T04:57:50Z",
-        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-quest-preview.1"
+        "tag": "v0.9.1-quest-preview.2",
+        "name": "Quest VR Preview 2 — orientation fix",
+        "date": "2026-10-16T09:44:10Z",
+        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-quest-preview.2"
       },
       "released": "2026-10-13T17:45:33Z",
       "app": {
@@ -88,17 +105,17 @@
       "created": "2026-10-11T18:37:49Z",
       "firstRelease": "2026-10-11T18:40:05Z",
       "latestRelease": {
-        "tag": "v0.2.2",
-        "name": "NativePorts 0.2.2 — SSF2T and Slam n Jam fixes",
-        "date": "2026-10-13T12:32:12Z",
-        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.2.2"
+        "tag": "v0.3.0",
+        "name": "NativePorts 0.3.0 — NBA Showtime and rendering fixes",
+        "date": "2026-10-16T09:29:41Z",
+        "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.3.0"
       },
       "released": "2026-10-11T18:40:05Z",
       "app": {
-        "name": "Slam’n’Jam 96",
-        "bundleIdentifier": "com.devz.slamjam96",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.slamjam96-7ae02dd0f6c2.png",
-        "tintColor": "#4E4A69"
+        "name": "NBA Showtime - NBA on NBC",
+        "bundleIdentifier": "com.devz.nbashowt",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbashowt-1784f00b8367.png",
+        "tintColor": "#9459DF"
       }
     },
     {
@@ -220,10 +237,10 @@
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",
       "latestRelease": {
-        "tag": "R5-beta.1",
-        "name": "R5 beta 1 — War Pig rendering test (build 11)",
-        "date": "2026-10-16T04:30:54Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.1"
+        "tag": "R5-beta.2",
+        "name": "R5-beta.2 — iOS build 12: fog fix and crash diagnostics",
+        "date": "2026-10-16T09:47:41Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.2"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {

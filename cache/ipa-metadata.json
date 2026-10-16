@@ -744,5 +744,95 @@
       "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
     },
     "version": "1.0.0"
+  },
+  "646827107:2026-10-16T09:29:32Z:563385": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.devz.nbashowt",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nbashowt-1784f00b8367.png",
+      "tint": "#9459DF",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NBA Showtime - NBA on NBC",
+    "privacy": {},
+    "version": "0.3.0"
+  },
+  "646827110:2026-10-16T09:29:40Z:6262686": {
+    "buildVersion": "12",
+    "bundleIdentifier": "com.devz.thps2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thps2-8f65bb588040.png",
+      "tint": "#687185",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Tony Hawk\u2019s Pro Skater 2",
+    "privacy": {},
+    "version": "0.3.0"
+  },
+  "646827121:2026-10-16T09:29:39Z:3935691": {
+    "buildVersion": "4",
+    "bundleIdentifier": "com.devz.umk3",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.umk3-a623eb6cace8.png",
+      "tint": "#C36810",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Ultimate Mortal Kombat 3",
+    "privacy": {},
+    "version": "0.3.0"
+  },
+  "646827127:2026-10-16T09:29:38Z:3077197": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tint": "#4E4A69",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.3.0"
+  },
+  "646827128:2026-10-16T09:29:39Z:5183208": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-a56d0136807b.png",
+      "tint": "#AF4A58",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.3.0"
+  },
+  "646875752:2026-10-16T09:47:20Z:9692384": {
+    "buildVersion": "12",
+    "bundleIdentifier": "com.devz.cod4ios",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tint": "#4F5634",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "COD4iOS",
+    "privacy": {},
+    "version": "1.0.4"
   }
 }
