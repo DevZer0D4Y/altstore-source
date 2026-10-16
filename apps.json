@@ -8,52 +8,13 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
-    "com.devz.projectreignition",
     "com.devz.cod4ios",
+    "com.devz.projectreignition",
     "com.devz.nbashowt",
     "com.devz.slamjam96",
     "com.devz.ssf2t"
   ],
   "apps": [
-    {
-      "name": "Sonic and the Secret Rings Remake",
-      "bundleIdentifier": "com.devz.projectreignition",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "The Sonic and the Secret Rings fan-remake.",
-      "localizedDescription": "The Sonic and the Secret Rings fan-remake.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ProjectReignition-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
-      "tintColor": "#A5743B",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.9",
-          "buildVersion": "4",
-          "marketingVersion": "Project Reignition for iOS 1.0.9",
-          "date": "2026-10-16T14:17:17Z",
-          "localizedDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
-          "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-          "size": 1944738652,
-          "minOSVersion": "15.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.kernel.increased-memory-limit"
-        ],
-        "privacy": {
-          "NSCameraUsageDescription": "",
-          "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
-          "NSMicrophoneUsageDescription": "",
-          "NSPhotoLibraryUsageDescription": ""
-        }
-      },
-      "version": "1.0.9",
-      "versionDate": "2026-10-16T14:17:17Z",
-      "versionDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
-      "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-      "size": 1944738652
-    },
     {
       "name": "COD4iOS",
       "bundleIdentifier": "com.devz.cod4ios",
@@ -65,6 +26,26 @@
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "1.0.4",
+          "buildVersion": "13",
+          "marketingVersion": "R6-beta.1 — Clean and Performance Stats Enabled",
+          "date": "2026-10-16T17:42:31Z",
+          "localizedDescription": "# R6-beta.1 — clean and performance-stats-enabled packages\n\nThe tester confirmed that build 13 fixed War Pig's crash and black surfaces. This pre-release adds a clean package with the upper-right performance statistics removed in both single-player and multiplayer, including when existing archived settings enable them.\n\nChoose one IPA:\n- **build14-clean**: hides the top-right FPS, timing and memory/debug statistics. Both engines rebuilt; the upper-right HUD entry point was verified to compile to a return in SP and MP.\n- **build13-performance_stats_enabled**: the exact working build 13 binary with its filename clarified. SHA-256 is unchanged: `dbbc5e981f6fb79da2aaaf0fea8de4eeed1667310863ca8388ede051beb72a05`.\n\nBoth retain the War Pig fixes, touch controls and campaign/save functionality. The bottom build watermark remains. Both use the same app identifier; install the chosen variant as an update with your usual signing tool. Keep a backup of the players folder. No game files or saves are included.\n\nThe clean source build can enable the stats HUD with `-DKISAK_IOS_PERFORMANCE_STATS=ON`. The compile setting applies only to iOS; Android was not rebuilt. Separate corresponding source archives are included for builds 13 and 14; they reflect their complete local build sources, including earlier uncommitted work.\n\nZIP integrity, embedded engine identity, exported-symbol preservation and temporary signing checks pass. Code and both IPAs are committed under this tag. This release remains a pre-release.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R6-beta.1/COD4iOS-1.0.4-build13-performance_stats_enabled-unsigned.ipa",
+          "size": 9692131,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.4",
+          "buildVersion": "14",
+          "marketingVersion": "R6-beta.1 — Clean and Performance Stats Enabled",
+          "date": "2026-10-16T17:42:31Z",
+          "localizedDescription": "# R6-beta.1 — clean and performance-stats-enabled packages\n\nThe tester confirmed that build 13 fixed War Pig's crash and black surfaces. This pre-release adds a clean package with the upper-right performance statistics removed in both single-player and multiplayer, including when existing archived settings enable them.\n\nChoose one IPA:\n- **build14-clean**: hides the top-right FPS, timing and memory/debug statistics. Both engines rebuilt; the upper-right HUD entry point was verified to compile to a return in SP and MP.\n- **build13-performance_stats_enabled**: the exact working build 13 binary with its filename clarified. SHA-256 is unchanged: `dbbc5e981f6fb79da2aaaf0fea8de4eeed1667310863ca8388ede051beb72a05`.\n\nBoth retain the War Pig fixes, touch controls and campaign/save functionality. The bottom build watermark remains. Both use the same app identifier; install the chosen variant as an update with your usual signing tool. Keep a backup of the players folder. No game files or saves are included.\n\nThe clean source build can enable the stats HUD with `-DKISAK_IOS_PERFORMANCE_STATS=ON`. The compile setting applies only to iOS; Android was not rebuilt. Separate corresponding source archives are included for builds 13 and 14; they reflect their complete local build sources, including earlier uncommitted work.\n\nZIP integrity, embedded engine identity, exported-symbol preservation and temporary signing checks pass. Code and both IPAs are committed under this tag. This release remains a pre-release.",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R6-beta.1/COD4iOS-1.0.4-build14-clean-unsigned.ipa",
+          "size": 9691407,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.0.4",
           "buildVersion": "12",
@@ -131,10 +112,49 @@
         "privacy": {}
       },
       "version": "1.0.4",
-      "versionDate": "2026-10-16T09:47:41Z",
-      "versionDescription": "# COD4iOS 1.0.4 build 12 — fog fix and crash diagnostics\n\nThis is an unsigned test IPA. The reported War Pig crash remains unresolved; this build must not be described as a confirmed crash fix.\n\nThe shader translator now preserves zero masks on Metal pixel-output MUL/MAD operations. A zero fog weight previously multiplied unused NaN/Inf lighting and produced invalid output instead of the fog colour. This defect is consistent with black fully fogged surfaces, but the complete War Pig scene has not been reproduced on the affected device.\n\nValidation:\n- Native Apple M1 GPU regression: 80 cases; before 96 incorrect channels, after 0. Covers MUL/MAD, both operand orders, signed zero, NaN/Inf, and finite controls.\n- 299 representative retail shaders translated and compiled with 0 failures. Retail shader assets are not included in this package.\n- GLES/GLSL source fingerprints unchanged across all 299 shaders. Android was not rebuilt.\n- ARM64 fatal-signal diagnostics test passes with PC/LR/SP/FP and x0–x28 recorded.\n- Release arm64 iPhoneOS SP and MP engines rebuilt; embedded engines match the build outputs.\n- Packaging verifies ZIP integrity, exported symbols and temporary ad-hoc signatures, removed before delivery.\n\nBundle version, gameplay watermark and diagnostics now share build number 12. The old screenshot's build-10 watermark came from Git revision count and did not identify the installed IPA version.\n\nThe clip shows an exit shortly after normal gameplay starts. No development device was connected to collect the report. After reproducing the exit, attach Files → COD4iOS → diagnostics → native-crash.txt and campaign-events.txt. If there is no native crash record, the iOS Analytics report for COD4iOS or JetsamEvent may be needed to distinguish an OS memory termination.\n\nInstall by signing with your usual tool and updating the existing com.devz.cod4ios installation. Keep a backup of your players folder. Existing control/save/campaign changes are retained. No game data or saves are included.\n\nCode and IPA are committed in tag R5-beta.2. This is a pre-release; R4 remains the latest stable release. The source archive reflects the complete local build tree, including earlier uncommitted work; the new code commit contains only the scoped iOS changes.\n\nCompatibility reference: DXVK D3D9 float-emulation configuration (https://raw.githubusercontent.com/doitsujin/dxvk/master/dxvk.conf).",
-      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R5-beta.2/COD4iOS-1.0.4-build12-fog-fix-diagnostics-unsigned.ipa",
-      "size": 9692384
+      "versionDate": "2026-10-16T17:42:31Z",
+      "versionDescription": "# R6-beta.1 — clean and performance-stats-enabled packages\n\nThe tester confirmed that build 13 fixed War Pig's crash and black surfaces. This pre-release adds a clean package with the upper-right performance statistics removed in both single-player and multiplayer, including when existing archived settings enable them.\n\nChoose one IPA:\n- **build14-clean**: hides the top-right FPS, timing and memory/debug statistics. Both engines rebuilt; the upper-right HUD entry point was verified to compile to a return in SP and MP.\n- **build13-performance_stats_enabled**: the exact working build 13 binary with its filename clarified. SHA-256 is unchanged: `dbbc5e981f6fb79da2aaaf0fea8de4eeed1667310863ca8388ede051beb72a05`.\n\nBoth retain the War Pig fixes, touch controls and campaign/save functionality. The bottom build watermark remains. Both use the same app identifier; install the chosen variant as an update with your usual signing tool. Keep a backup of the players folder. No game files or saves are included.\n\nThe clean source build can enable the stats HUD with `-DKISAK_IOS_PERFORMANCE_STATS=ON`. The compile setting applies only to iOS; Android was not rebuilt. Separate corresponding source archives are included for builds 13 and 14; they reflect their complete local build sources, including earlier uncommitted work.\n\nZIP integrity, embedded engine identity, exported-symbol preservation and temporary signing checks pass. Code and both IPAs are committed under this tag. This release remains a pre-release.",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R6-beta.1/COD4iOS-1.0.4-build13-performance_stats_enabled-unsigned.ipa",
+      "size": 9692131
+    },
+    {
+      "name": "Sonic and the Secret Rings Remake",
+      "bundleIdentifier": "com.devz.projectreignition",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "The Sonic and the Secret Rings fan-remake.",
+      "localizedDescription": "The Sonic and the Secret Rings fan-remake.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ProjectReignition-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
+      "tintColor": "#A5743B",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.9",
+          "buildVersion": "4",
+          "marketingVersion": "Project Reignition for iOS 1.0.9",
+          "date": "2026-10-16T14:17:17Z",
+          "localizedDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+          "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
+          "size": 1944738652,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {
+          "NSCameraUsageDescription": "",
+          "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
+          "NSMicrophoneUsageDescription": "",
+          "NSPhotoLibraryUsageDescription": ""
+        }
+      },
+      "version": "1.0.9",
+      "versionDate": "2026-10-16T14:17:17Z",
+      "versionDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+      "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
+      "size": 1944738652
     },
     {
       "name": "NBA Showtime - NBA on NBC",
@@ -938,6 +958,26 @@
   ],
   "news": [
     {
+      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
+      "identifier": "release-COD4iOS-COD4NS-R6-beta.1",
+      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
+      "date": "2026-10-16T17:42:31Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
+      "identifier": "release-COD4iOS-COD4NS-R6-beta.1",
+      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
+      "date": "2026-10-16T17:42:31Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
       "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9",
       "identifier": "release-ProjectReignition-iOS-1.0.9",
       "caption": "1.0.9 (build 4)",
@@ -1028,16 +1068,6 @@
       "tintColor": "#304278"
     },
     {
-      "title": "COD4iOS R5 beta 1 — War Pig rendering test (build 11)",
-      "identifier": "release-COD4iOS-COD4NS-R5-beta.1",
-      "caption": "COD4iOS 1.0.4 build 11 — rendering test pre-release.",
-      "date": "2026-10-16T04:30:54Z",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.1",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
-    },
-    {
       "title": "Sonic (2006) Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
       "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-u8-compat",
       "caption": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report.",
@@ -1046,16 +1076,6 @@
       "appID": "com.devz.sonic2006",
       "notify": false,
       "tintColor": "#304278"
-    },
-    {
-      "title": "COD4iOS Release 4 (Nikolai crash fix)",
-      "identifier": "release-COD4iOS-COD4NS-R4",
-      "caption": "COD4iOS 1.0.4 build 10. This is the exact IPA tested by the reporter, who confirmed the crash is fixed.",
-      "date": "2026-10-15T18:40:00Z",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R4",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
     },
     {
       "title": "NFSU2 NFSU2 iOS 0.3",

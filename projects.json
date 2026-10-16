@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-16T14:18:13.001513Z",
+  "generated": "2026-10-16T17:50:17.502883Z",
   "projects": [
     {
       "repo": "ProjectReignition-iOS",
@@ -247,10 +247,10 @@
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",
       "latestRelease": {
-        "tag": "R5-beta.2",
-        "name": "R5-beta.2 — iOS build 12: fog fix and crash diagnostics",
-        "date": "2026-10-16T09:47:41Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.2"
+        "tag": "R6-beta.1",
+        "name": "R6-beta.1 — Clean and Performance Stats Enabled",
+        "date": "2026-10-16T17:42:31Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {
