@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-16T17:50:17.502883Z",
+  "generated": "2026-10-16T20:37:06.183846Z",
   "projects": [
     {
       "repo": "ProjectReignition-iOS",
@@ -17,7 +17,7 @@
       "firstRelease": "2026-10-16T14:17:17Z",
       "latestRelease": {
         "tag": "1.0.9",
-        "name": "Project Reignition for iOS 1.0.9",
+        "name": "Project Reignition for iOS 1.0.9 (build 5)",
         "date": "2026-10-16T14:17:17Z",
         "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9"
       },
@@ -25,7 +25,7 @@
       "app": {
         "name": "Sonic and the Secret Rings Remake",
         "bundleIdentifier": "com.devz.projectreignition",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-6dbcce9783e2.png",
         "tintColor": "#A5743B"
       }
     },
@@ -220,10 +220,10 @@
       "created": "2026-10-03T13:06:04Z",
       "firstRelease": "2026-10-05T18:29:37Z",
       "latestRelease": {
-        "tag": "ios-2026-10-16-b",
-        "name": "Sonic (2006) — mod manager layout fix, build 1.0.10",
-        "date": "2026-10-16T05:16:04Z",
-        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-b"
+        "tag": "ios-2026-10-16-c",
+        "name": "Sonic (2006) — Sonic '06 Mod Manager patches, build 1.0.11",
+        "date": "2026-10-16T17:57:34Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-c"
       },
       "released": "2026-10-05T18:29:37Z",
       "app": {

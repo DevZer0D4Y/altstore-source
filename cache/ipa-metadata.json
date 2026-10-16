@@ -835,28 +835,6 @@
     "privacy": {},
     "version": "1.0.4"
   },
-  "647548097:2026-10-16T14:17:16Z:1944738652": {
-    "buildVersion": "4",
-    "bundleIdentifier": "com.devz.projectreignition",
-    "cacheVersion": 4,
-    "entitlements": [
-      "com.apple.developer.kernel.increased-memory-limit"
-    ],
-    "icon": {
-      "file": "com.devz.projectreignition-68f8fa97652f.png",
-      "tint": "#A5743B",
-      "width": 152
-    },
-    "minOSVersion": "15.0",
-    "name": "Sonic and the Secret Rings Remake",
-    "privacy": {
-      "NSCameraUsageDescription": "",
-      "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
-      "NSMicrophoneUsageDescription": "",
-      "NSPhotoLibraryUsageDescription": ""
-    },
-    "version": "1.0.9"
-  },
   "648027464:2026-10-16T17:42:00Z:9692131": {
     "buildVersion": "13",
     "bundleIdentifier": "com.devz.cod4ios",
@@ -901,5 +879,44 @@
     "name": "COD4iOS",
     "privacy": {},
     "version": "1.0.4"
+  },
+  "648134338:2026-10-16T17:57:33Z:35806088": {
+    "buildVersion": "1.0.11",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
+  },
+  "648425697:2026-10-16T19:55:41Z:1944594351": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.projectreignition",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.projectreignition-6dbcce9783e2.png",
+      "tint": "#A5743B",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "Sonic and the Secret Rings Remake",
+    "privacy": {
+      "NSCameraUsageDescription": "",
+      "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
+      "NSMicrophoneUsageDescription": "",
+      "NSPhotoLibraryUsageDescription": ""
+    },
+    "version": "1.0.9"
   }
 }

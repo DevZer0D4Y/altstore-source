@@ -8,13 +8,107 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.sonic2006",
     "com.devz.cod4ios",
     "com.devz.projectreignition",
     "com.devz.nbashowt",
-    "com.devz.slamjam96",
-    "com.devz.ssf2t"
+    "com.devz.slamjam96"
   ],
   "apps": [
+    {
+      "name": "Sonic (2006)",
+      "bundleIdentifier": "com.devz.sonic2006",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
+      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
+      "tintColor": "#304278",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.11",
+          "marketingVersion": "Sonic (2006) — Sonic '06 Mod Manager patches, build 1.0.11",
+          "date": "2026-10-16T17:57:34Z",
+          "localizedDescription": "**Build 1.0.11.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files or patches.\n\n### Sonic '06 Mod Manager patches (.mlua)\nThe mod manager has a new **Patches** section for patches written for the Sonic '06 Mod Manager, such as Knuxfan24/Sonic-06-Mod-Manager-Patches (https://github.com/Knuxfan24/Sonic-06-Mod-Manager-Patches).\n\n1. Download that repository as a ZIP and extract it in Files.\n2. In the mod manager, tap **Import folder** and select the extracted folder.\n3. Tap the patches you want, then tap **Play**.\n\nPatches run at launch on top of your mods. The installed game is never modified. Edited files go to `mod-cache/patches` and are reused until you change the selection.\n\n**What works:** patches that edit archives, packages (`.pkg`) or files, and patches that change *data* in the executable. **39 of the 150** patches in Knuxfan24's collection run, for example Disable Fog, Disable Character Stumble, Disable Hint Rings, Disable Music, E3 Timers, Correct Sonic Jump Animation and Opposite Button Prompts. Another 17 already exist as built-in codes.\n\n**What doesn't (yet):**\n- **Patches that rewrite game code** (82 in that collection) can't run, because the game's code is recompiled ahead of time. Each shows the address it would change, and can be ported as a built-in code.\n- **Patches that edit Lua scripts as text** (29 of them) need decompiled scripts. The game ships compiled ones.\n\nBoth kinds stay listed with the reason, instead of failing silently.\n\n### Validation\nThe ASan/UBSan mod suite passes. It covers package round trips, edits on compressed and raw archive members, renames, data writes, cache reuse, import, and the file overlay. All 31 real packages from a Sonic '06 mod re-serialise byte for byte. The Knuxfan24 collection classifies as 39 runnable out of 150. The Release arm64 iPhoneOS build and the IPA checks passed. Not yet played on a device with patches enabled.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-c/Sonic06-iOS.ipa",
+          "size": 35806088,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.10",
+          "marketingVersion": "Sonic (2006) — mod manager layout fix, build 1.0.10",
+          "date": "2026-10-16T05:16:04Z",
+          "localizedDescription": "**Build 1.0.10.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files.\n\n- **Mod manager:** a mod's \"can't be enabled\" reason no longer spills into the next row. Rows now grow to fit the text.\n\nEverything from build 1.0.9 (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16) is included: the floating stick, the 120 FPS cap, the fix for stretched buttons after switching apps, and the check that stops Khronos-based mods from crashing the game.\n\nKhronos, Physics and Physics Companion still can't be enabled. They need the Khronos DLL, which patches the game executable, and the recompiled game can't run it yet.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-b/Sonic06-iOS.ipa",
+          "size": 35723108,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.9",
+          "marketingVersion": "Sonic (2006) — floating stick, 120 FPS cap and mod crash fix, build 1.0.9",
+          "date": "2026-10-16T04:44:26Z",
+          "localizedDescription": "**Build 1.0.9.** Install over the existing **Sonic (2006)** app with your sideloading tool and keep the bundle ID `com.devz.sonic2006`, so your game files, mods and saves stay in place. The IPA is unsigned and contains no game files.\n\n### New\n- **Floating stick.** The movement stick stays hidden until your thumb touches the lower left of the screen, then appears right under it and follows your thumb. Let go and it disappears. Tap **EDIT → STICK** to switch back to the fixed stick with its D-Pad ring. Resizing the stick in the editor also sets the floating stick's size.\n- **120 FPS cap.** The game now runs at up to 120 FPS on ProMotion iPhones and iPads, and never above that. The old 60 FPS cap code is gone. If your frame rate was still at the old default of 60, it moves to 120 once. You can lower it any time under **Options → Frame Rate**. Upstream warns that frame rates other than 60 can cause glitches in places, and 120 FPS makes the phone warmer.\n\n### Fixes\n- **Stretched touch buttons after switching apps or taking a screenshot.** iOS kept reporting the screen as portrait, and the buttons were drawn several times too tall. They now follow the orientation the game is drawn in.\n- **Crash while loading a stage with Khronos-based mods.** Khronos patches the game executable so that it loads its `Core.xex` DLL. Physics and Physics Companion are Lua scripts that call into that DLL. The recompiled game can't load Xbox DLLs or apply executable patches, so with those mods enabled the game crashed after Episode Select. The mod manager now refuses to enable these mods and says why:\n  - Khronos: loads the `Core.xex` DLL by patching the executable.\n  - Physics Companion: its `patch.mlua` patches the executable.\n  - Physics: requires patches that Marathon doesn't include (`CorrectFastSonicGoalAnimation`, `DisableCharacterStumble`, `RestoreRotationInterpolation`).\n  \n  Required patches that Marathon has as built-in codes (for example `ControllableBoundAttack`) no longer block a mod and are switched on when you tap **Play**. Running Khronos mods would need a port of its DLL to the recompiled game.\n\n### Validation\nTouch and mod regression suites pass (UBSan/ASan), including the floating stick, a stale portrait window size, and executable-patch detection against the real Khronos and Physics packages. Release arm64 iPhoneOS build and IPA integrity checks passed. Not yet tested on a device: the floating stick feel, the 120 FPS cap and the app-switcher fix.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16/Sonic06-iOS.ipa",
+          "size": 35723117,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.8",
+          "marketingVersion": "Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
+          "date": "2026-10-15T18:48:56Z",
+          "localizedDescription": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report. This changes the shared reader for all enabled mods; there are no title- or author-specific exceptions.\n\n- Accept validated ordinary 12-byte raw U8 nodes as well as extended 16-byte Sonic '06 nodes. Convert input into the extended game layout.\n- Accept root labels and unused root/directory metadata instead of requiring every such field to be zero. Continue validating table bounds, member names, hierarchy, duplicates and payload bounds.\n- Write the extended U8 compatibility marker expected by archive tools. A new cache revision regenerates archives from earlier builds.\n- Identify whether an archive read error originated from the installed original, a complete replacement, or a mod archive. Keep the manager open for retries.\n\n**Validation:** ASan/UBSan mod/archive regression suite passed, including flat/nested ordinary U8 conversion, named roots, nonzero metadata, mixed input layouts, priority, compressed payload preservation and malformed data. The public Werehog package (https://gamebanana.com/mods/330727) matching the screenshot's title/author passed import, selection and archive merging against synthetic originals; an independent decoder compared every mod member and verified preservation of an original-only member. A supplied real `shader.arc` round trip passed. Full Release arm64 iPhoneOS build and IPA integrity checks passed.\n\nThe public Werehog archive itself already passed the previous parser. The tester's installed original archive was unavailable, so the exact screenshot failure and in-game behavior remain unverified. This release addresses shared format assumptions rather than claiming every mod has been gameplay-tested. Native plugins, executable patches and custom HMM code still require ports.\n\n**Build 1.0.8:** original `com.devz.sonic2006`, **Sonic (2006)** name and original icon PNGs verified. Keep this bundle ID when signing. The IPA is unsigned; no downloaded mod or original game archive is bundled.\n\nCommit: `2b09bed` on `ios-mods-performance-20261015`.\nSHA-256 (`Sonic06-iOS.ipa`): `1ebf3ee96b5347d15fde19afdbb5ca021a9c073c4fd369220973718f48c2f9e3`",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-u8-compat/Sonic06-iOS.ipa",
+          "size": 35715635,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.7",
+          "marketingVersion": "Sonic (2006) — iOS archive merging support",
+          "date": "2026-10-15T18:29:22Z",
+          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nReplaces the blanket “Archive merging needs a Sonic ’06 port” rejection with real Sonic ’06 U8 archive merging. This is a general asset-mod implementation, not a special case for Super Sonic.\n\n- Merge partial packed `.arc` files, extracted `.arc` directories, and extensionless extracted folders when the matching original archive exists.\n- Match loose replacements against archive member paths, including members introduced by other enabled archive patches.\n- Preserve untouched members and original compression; the top enabled mod wins each member conflict. Respect complete replacements and UMM `Read-only` archive paths.\n- Prepare archives in the background with a “Preparing mods…” title. Errors keep the manager open so the selection can be changed and retried.\n- Cache verified merged archives without modifying installed game files or imported mod assets. Preparation uses bounded payload buffers.\n\n**App identity:** original `com.devz.sonic2006`, display name/icon **Sonic (2006)**, build **1.0.7**. Keep this bundle ID when signing to update the existing app. The IPA is unsigned and needs your sideloading signature. Game data is not included.\n\n**Validation:** ASan/UBSan mod/archive tests passed, including independent U8/zlib decoding and a round trip of a supplied real `shader.arc`; existing port regressions passed; UIKit SDK compile and full Release arm64 iPhoneOS build passed. Packaged IPA integrity, original icon PNGs, bundle identity and required scene/Bluetooth metadata verified.\n\n**Scope:** Sonic ’06 asset mods using the supported layouts. DLL plugins, custom HMM code, executable patches and Unleashed archive formats still require source ports. The tester’s specific Super Sonic package and gameplay with real mods have not been tested on a device. Older generated selections remain in `mod-cache`; it may be removed while the game is closed to reclaim storage.\n\nSource commit: `49bce32` on `ios-mods-performance-20261015`.\n\nSHA-256 (`Sonic06-iOS.ipa`): `be5965716fa3a5cd1819774d75957cccfeaae6cdc6decc5741c138eeab8fa205`",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-arc-merge/Sonic06-iOS.ipa",
+          "size": 35715475,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.6",
+          "marketingVersion": "Sonic (2006) — original identity, current runtime and mods",
+          "date": "2026-10-15T12:53:09Z",
+          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nSuperseded by the archive-merging build (1.0.7) (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-arc-merge), which replaces the blanket Merge=true rejection.\n\nUpdates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
+          "size": 35598104,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.5",
+          "marketingVersion": "v1.0",
+          "date": "2026-10-05T18:29:37Z",
+          "localizedDescription": "First release!",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
+          "size": 35609295,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+        }
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-16T17:57:34Z",
+      "versionDescription": "**Build 1.0.11.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files or patches.\n\n### Sonic '06 Mod Manager patches (.mlua)\nThe mod manager has a new **Patches** section for patches written for the Sonic '06 Mod Manager, such as Knuxfan24/Sonic-06-Mod-Manager-Patches (https://github.com/Knuxfan24/Sonic-06-Mod-Manager-Patches).\n\n1. Download that repository as a ZIP and extract it in Files.\n2. In the mod manager, tap **Import folder** and select the extracted folder.\n3. Tap the patches you want, then tap **Play**.\n\nPatches run at launch on top of your mods. The installed game is never modified. Edited files go to `mod-cache/patches` and are reused until you change the selection.\n\n**What works:** patches that edit archives, packages (`.pkg`) or files, and patches that change *data* in the executable. **39 of the 150** patches in Knuxfan24's collection run, for example Disable Fog, Disable Character Stumble, Disable Hint Rings, Disable Music, E3 Timers, Correct Sonic Jump Animation and Opposite Button Prompts. Another 17 already exist as built-in codes.\n\n**What doesn't (yet):**\n- **Patches that rewrite game code** (82 in that collection) can't run, because the game's code is recompiled ahead of time. Each shows the address it would change, and can be ported as a built-in code.\n- **Patches that edit Lua scripts as text** (29 of them) need decompiled scripts. The game ships compiled ones.\n\nBoth kinds stay listed with the reason, instead of failing silently.\n\n### Validation\nThe ASan/UBSan mod suite passes. It covers package round trips, edits on compressed and raw archive members, renames, data writes, cache reuse, import, and the file overlay. All 31 real packages from a Sonic '06 mod re-serialise byte for byte. The Knuxfan24 collection classifies as 39 runnable out of 150. The Release arm64 iPhoneOS build and the IPA checks passed. Not yet played on a device with patches enabled.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-c/Sonic06-iOS.ipa",
+      "size": 35806088
+    },
     {
       "name": "COD4iOS",
       "bundleIdentifier": "com.devz.cod4ios",
@@ -123,19 +217,19 @@
       "developerName": "DevZer0D4Y",
       "subtitle": "The Sonic and the Secret Rings fan-remake.",
       "localizedDescription": "The Sonic and the Secret Rings fan-remake.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ProjectReignition-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-6dbcce9783e2.png",
       "tintColor": "#A5743B",
       "category": "games",
       "screenshots": [],
       "versions": [
         {
           "version": "1.0.9",
-          "buildVersion": "4",
-          "marketingVersion": "Project Reignition for iOS 1.0.9",
+          "buildVersion": "5",
+          "marketingVersion": "Project Reignition for iOS 1.0.9 (build 5)",
           "date": "2026-10-16T14:17:17Z",
-          "localizedDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+          "localizedDescription": "## 1.0.9 (build 5)\n\n- The homing attack's aura no longer stays on Sonic. Godot's Mobile renderer ignores the fade the game uses for it; the port now fades such objects itself, which also fixes item box glows, fire souls, debris, the Evil Foundry golem's core and Pirate Storm's lightning.\n- No more black patches where Lost Prologue's Wonderblocks appear: the Mobile renderer halved multiply-blended effects, which now draw as on PC there and in later stages.\n- Cutscenes that showed only subtitles and sound play their video again (the one after the first stage, Events 4 to 9, the openings, the endings and the developer intro).\n\n## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
           "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-          "size": 1944738652,
+          "size": 1944594351,
           "minOSVersion": "15.0"
         }
       ],
@@ -152,9 +246,9 @@
       },
       "version": "1.0.9",
       "versionDate": "2026-10-16T14:17:17Z",
-      "versionDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+      "versionDescription": "## 1.0.9 (build 5)\n\n- The homing attack's aura no longer stays on Sonic. Godot's Mobile renderer ignores the fade the game uses for it; the port now fades such objects itself, which also fixes item box glows, fire souls, debris, the Evil Foundry golem's core and Pirate Storm's lightning.\n- No more black patches where Lost Prologue's Wonderblocks appear: the Mobile renderer halved multiply-blended effects, which now draw as on PC there and in later stages.\n- Cutscenes that showed only subtitles and sound play their video again (the one after the first stage, Events 4 to 9, the openings, the endings and the developer intro).\n\n## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
       "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-      "size": 1944738652
+      "size": 1944594351
     },
     {
       "name": "NBA Showtime - NBA on NBC",
@@ -455,90 +549,6 @@
       "versionDescription": "NBA Showtime (PlayStation USA) joins the four existing ports. All five iOS apps and Windows executables are version 0.3.0.\n\nChanges:\n- SSF2T: fixed 512-column widescreen output prevents camera-dependent resizing. Unsupported stage edges are clipped inside the fixed canvas and filled with colored margins; scenery is not mirrored.\n- Slam 'n Jam '96: extend the SLES-00076 game's crowd/court clipping checks, rather than only widening the GPU canvas. Original interior pixels and HUD are preserved. No coin prompts; Restart Game remains the console action.\n- UMK3: extend solid background/gradient clears into the extra columns before drawing foreground scenery, fixing the rectangular gap reproduced in Scorpion's Lair.\n- THPS2: keep the gameplay HUD in the centered original 4:3 area. Increase the normal follow-camera offset by 25% through a guarded boot-time instruction patch, verified on the USA executable. Black letterbox bars and CRT toggle are retained.\n- NBA Showtime: supplied PlayStation USA BIN support, four-player multitap, Hangtime-style controls/UI, centered HUD and expanded gameplay canvas, CRT enabled by default with on/off controls.\n- Include THPS2's Windows C++ runtime DLLs and version all five builds consistently.\n\nDownloads:\n- NativePorts-Windows-x64.zip: all five Windows games. Extract it and keep every DLL beside its EXE.\n- Five unsigned IPAs: sign with your sideloading tool. Keep existing bundle identifiers to preserve app data.\n- SHA256SUMS.txt: checksums for the downloadable builds.\n\nGame files and signing credentials are not included. NBA Showtime needs the extracted raw PlayStation MODE2/2352 BIN named nbashowt.bin, not its archive or an arcade ROM.\n\nValidation: all ten platform builds passed; Apple/SDL virtual-controller tests, shader compilation, texture-cache checks, rendering helper regressions and local gameplay captures passed. Local captures covered SSF2T camera limits, Slam court pans, UMK3 Scorpion's Lair, THPS2 Hangar, and NBA Showtime gameplay/toggle/HUD. This is not complete stage coverage or physical iPhone/Windows multiplayer validation. THPS2 iOS still uses the CPU interpreter; this release does not claim a verified frame-rate improvement. Some Slam camera angles can still reveal the finite arena's dark exterior.",
       "downloadURL": "https://github.com/DevZer0D4Y/NativePorts/releases/download/v0.3.0/UMK3-0.3.0-unsigned.ipa",
       "size": 3935691
-    },
-    {
-      "name": "Sonic (2006)",
-      "bundleIdentifier": "com.devz.sonic2006",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recomp",
-      "localizedDescription": "An unofficial iOS port of the Xbox 360 version of Sonic the Hedgehog (2006) created through the process of static recompilation\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MarathonRecompilediOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonic2006-c5b24b42a5ac.png",
-      "tintColor": "#304278",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.10",
-          "marketingVersion": "Sonic (2006) — mod manager layout fix, build 1.0.10",
-          "date": "2026-10-16T05:16:04Z",
-          "localizedDescription": "**Build 1.0.10.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files.\n\n- **Mod manager:** a mod's \"can't be enabled\" reason no longer spills into the next row. Rows now grow to fit the text.\n\nEverything from build 1.0.9 (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16) is included: the floating stick, the 120 FPS cap, the fix for stretched buttons after switching apps, and the check that stops Khronos-based mods from crashing the game.\n\nKhronos, Physics and Physics Companion still can't be enabled. They need the Khronos DLL, which patches the game executable, and the recompiled game can't run it yet.",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-b/Sonic06-iOS.ipa",
-          "size": 35723108,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.9",
-          "marketingVersion": "Sonic (2006) — floating stick, 120 FPS cap and mod crash fix, build 1.0.9",
-          "date": "2026-10-16T04:44:26Z",
-          "localizedDescription": "**Build 1.0.9.** Install over the existing **Sonic (2006)** app with your sideloading tool and keep the bundle ID `com.devz.sonic2006`, so your game files, mods and saves stay in place. The IPA is unsigned and contains no game files.\n\n### New\n- **Floating stick.** The movement stick stays hidden until your thumb touches the lower left of the screen, then appears right under it and follows your thumb. Let go and it disappears. Tap **EDIT → STICK** to switch back to the fixed stick with its D-Pad ring. Resizing the stick in the editor also sets the floating stick's size.\n- **120 FPS cap.** The game now runs at up to 120 FPS on ProMotion iPhones and iPads, and never above that. The old 60 FPS cap code is gone. If your frame rate was still at the old default of 60, it moves to 120 once. You can lower it any time under **Options → Frame Rate**. Upstream warns that frame rates other than 60 can cause glitches in places, and 120 FPS makes the phone warmer.\n\n### Fixes\n- **Stretched touch buttons after switching apps or taking a screenshot.** iOS kept reporting the screen as portrait, and the buttons were drawn several times too tall. They now follow the orientation the game is drawn in.\n- **Crash while loading a stage with Khronos-based mods.** Khronos patches the game executable so that it loads its `Core.xex` DLL. Physics and Physics Companion are Lua scripts that call into that DLL. The recompiled game can't load Xbox DLLs or apply executable patches, so with those mods enabled the game crashed after Episode Select. The mod manager now refuses to enable these mods and says why:\n  - Khronos: loads the `Core.xex` DLL by patching the executable.\n  - Physics Companion: its `patch.mlua` patches the executable.\n  - Physics: requires patches that Marathon doesn't include (`CorrectFastSonicGoalAnimation`, `DisableCharacterStumble`, `RestoreRotationInterpolation`).\n  \n  Required patches that Marathon has as built-in codes (for example `ControllableBoundAttack`) no longer block a mod and are switched on when you tap **Play**. Running Khronos mods would need a port of its DLL to the recompiled game.\n\n### Validation\nTouch and mod regression suites pass (UBSan/ASan), including the floating stick, a stale portrait window size, and executable-patch detection against the real Khronos and Physics packages. Release arm64 iPhoneOS build and IPA integrity checks passed. Not yet tested on a device: the floating stick feel, the 120 FPS cap and the app-switcher fix.",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16/Sonic06-iOS.ipa",
-          "size": 35723117,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.8",
-          "marketingVersion": "Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
-          "date": "2026-10-15T18:48:56Z",
-          "localizedDescription": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report. This changes the shared reader for all enabled mods; there are no title- or author-specific exceptions.\n\n- Accept validated ordinary 12-byte raw U8 nodes as well as extended 16-byte Sonic '06 nodes. Convert input into the extended game layout.\n- Accept root labels and unused root/directory metadata instead of requiring every such field to be zero. Continue validating table bounds, member names, hierarchy, duplicates and payload bounds.\n- Write the extended U8 compatibility marker expected by archive tools. A new cache revision regenerates archives from earlier builds.\n- Identify whether an archive read error originated from the installed original, a complete replacement, or a mod archive. Keep the manager open for retries.\n\n**Validation:** ASan/UBSan mod/archive regression suite passed, including flat/nested ordinary U8 conversion, named roots, nonzero metadata, mixed input layouts, priority, compressed payload preservation and malformed data. The public Werehog package (https://gamebanana.com/mods/330727) matching the screenshot's title/author passed import, selection and archive merging against synthetic originals; an independent decoder compared every mod member and verified preservation of an original-only member. A supplied real `shader.arc` round trip passed. Full Release arm64 iPhoneOS build and IPA integrity checks passed.\n\nThe public Werehog archive itself already passed the previous parser. The tester's installed original archive was unavailable, so the exact screenshot failure and in-game behavior remain unverified. This release addresses shared format assumptions rather than claiming every mod has been gameplay-tested. Native plugins, executable patches and custom HMM code still require ports.\n\n**Build 1.0.8:** original `com.devz.sonic2006`, **Sonic (2006)** name and original icon PNGs verified. Keep this bundle ID when signing. The IPA is unsigned; no downloaded mod or original game archive is bundled.\n\nCommit: `2b09bed` on `ios-mods-performance-20261015`.\nSHA-256 (`Sonic06-iOS.ipa`): `1ebf3ee96b5347d15fde19afdbb5ca021a9c073c4fd369220973718f48c2f9e3`",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-u8-compat/Sonic06-iOS.ipa",
-          "size": 35715635,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.7",
-          "marketingVersion": "Sonic (2006) — iOS archive merging support",
-          "date": "2026-10-15T18:29:22Z",
-          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nReplaces the blanket “Archive merging needs a Sonic ’06 port” rejection with real Sonic ’06 U8 archive merging. This is a general asset-mod implementation, not a special case for Super Sonic.\n\n- Merge partial packed `.arc` files, extracted `.arc` directories, and extensionless extracted folders when the matching original archive exists.\n- Match loose replacements against archive member paths, including members introduced by other enabled archive patches.\n- Preserve untouched members and original compression; the top enabled mod wins each member conflict. Respect complete replacements and UMM `Read-only` archive paths.\n- Prepare archives in the background with a “Preparing mods…” title. Errors keep the manager open so the selection can be changed and retried.\n- Cache verified merged archives without modifying installed game files or imported mod assets. Preparation uses bounded payload buffers.\n\n**App identity:** original `com.devz.sonic2006`, display name/icon **Sonic (2006)**, build **1.0.7**. Keep this bundle ID when signing to update the existing app. The IPA is unsigned and needs your sideloading signature. Game data is not included.\n\n**Validation:** ASan/UBSan mod/archive tests passed, including independent U8/zlib decoding and a round trip of a supplied real `shader.arc`; existing port regressions passed; UIKit SDK compile and full Release arm64 iPhoneOS build passed. Packaged IPA integrity, original icon PNGs, bundle identity and required scene/Bluetooth metadata verified.\n\n**Scope:** Sonic ’06 asset mods using the supported layouts. DLL plugins, custom HMM code, executable patches and Unleashed archive formats still require source ports. The tester’s specific Super Sonic package and gameplay with real mods have not been tested on a device. Older generated selections remain in `mod-cache`; it may be removed while the game is closed to reclaim storage.\n\nSource commit: `49bce32` on `ios-mods-performance-20261015`.\n\nSHA-256 (`Sonic06-iOS.ipa`): `be5965716fa3a5cd1819774d75957cccfeaae6cdc6decc5741c138eeab8fa205`",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-arc-merge/Sonic06-iOS.ipa",
-          "size": 35715475,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.6",
-          "marketingVersion": "Sonic (2006) — original identity, current runtime and mods",
-          "date": "2026-10-15T12:53:09Z",
-          "localizedDescription": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat).\n\nSuperseded by the archive-merging build (1.0.7) (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-arc-merge), which replaces the blanket Merge=true rejection.\n\nUpdates the original Sonic (2006) app identity: **com.devz.sonic2006**, display name **Sonic (2006)**, original R1 icon, build **1.0.6**. Both compiled icon PNGs were checked byte-for-byte against R1.\n\nThe native mod manager is now built on the current iOS port instead of the older integration snapshot. This restores the dedicated GPU-wait command list/fence, ARM synchronization fixes, guest-memory page reclamation, Metal render-pass optimization, asynchronous pipeline compilation, reduced CPU spinning, hidden guest symbols and optimized texture uploads.\n\nRelease arm64 compilation/linking and mod, portable port/touch/fade and read-only input regressions passed. **The reported gameplay slowdown/freeze has not been reproduced or measured on-device for this build.** These changes restore existing runtime fixes relevant to that report; they are not a verified performance guarantee.\n\nDownload **Sonic06-iOS.ipa** (unsigned, iOS 17+, about 33.9 MiB) and sign while preserving the bundle ID to update R1. No game files or personal signing data are included. The earlier MarathonRecomp-identity prereleases are separate apps; their player data is not automatically migrated by changing back to the original identity.",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15/Sonic06-iOS.ipa",
-          "size": 35598104,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1.0.5",
-          "marketingVersion": "v1.0",
-          "date": "2026-10-05T18:29:37Z",
-          "localizedDescription": "First release!",
-          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/R1/Sonic06-iOS.ipa",
-          "size": 35609295,
-          "minOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {
-          "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
-        }
-      },
-      "version": "1.0.0",
-      "versionDate": "2026-10-16T05:16:04Z",
-      "versionDescription": "**Build 1.0.10.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files.\n\n- **Mod manager:** a mod's \"can't be enabled\" reason no longer spills into the next row. Rows now grow to fit the text.\n\nEverything from build 1.0.9 (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16) is included: the floating stick, the 120 FPS cap, the fix for stretched buttons after switching apps, and the check that stops Khronos-based mods from crashing the game.\n\nKhronos, Physics and Physics Companion still can't be enabled. They need the Khronos DLL, which patches the game executable, and the recompiled game can't run it yet.",
-      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-b/Sonic06-iOS.ipa",
-      "size": 35723108
     },
     {
       "name": "NFSU2",
@@ -958,14 +968,14 @@
   ],
   "news": [
     {
-      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
-      "identifier": "release-COD4iOS-COD4NS-R6-beta.1",
-      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
-      "date": "2026-10-16T17:42:31Z",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1",
-      "appID": "com.devz.cod4ios",
+      "title": "Sonic (2006) Sonic (2006) — Sonic '06 Mod Manager patches, build 1.0.11",
+      "identifier": "release-MarathonRecompilediOS-ios-2026-10-16-c",
+      "caption": "Build 1.0.11. Install over the existing Sonic (2006) app and keep the bundle ID com.devz.sonic2006. The IPA is unsigned and contains no game",
+      "date": "2026-10-16T17:57:34Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-c",
+      "appID": "com.devz.sonic2006",
       "notify": false,
-      "tintColor": "#4F5634"
+      "tintColor": "#304278"
     },
     {
       "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
@@ -978,9 +988,19 @@
       "tintColor": "#4F5634"
     },
     {
-      "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9",
+      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
+      "identifier": "release-COD4iOS-COD4NS-R6-beta.1",
+      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
+      "date": "2026-10-16T17:42:31Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
+      "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9 (build 5)",
       "identifier": "release-ProjectReignition-iOS-1.0.9",
-      "caption": "1.0.9 (build 4)",
+      "caption": "1.0.9 (build 5)",
       "date": "2026-10-16T14:17:17Z",
       "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9",
       "appID": "com.devz.projectreignition",
@@ -1063,16 +1083,6 @@
       "caption": "Build 1.0.9. Install over the existing Sonic (2006) app with your sideloading tool and keep the bundle ID com.devz.sonic2006, so your game f",
       "date": "2026-10-16T04:44:26Z",
       "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
-    },
-    {
-      "title": "Sonic (2006) Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
-      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-u8-compat",
-      "caption": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report.",
-      "date": "2026-10-15T18:48:56Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat",
       "appID": "com.devz.sonic2006",
       "notify": false,
       "tintColor": "#304278"
