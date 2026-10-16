@@ -1,12 +1,12 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-16T13:47:19.479924Z",
+  "generated": "2026-10-16T14:18:13.001513Z",
   "projects": [
     {
       "repo": "ProjectReignition-iOS",
       "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
       "description": "The Sonic and the Secret Rings fan-remake.",
-      "language": null,
+      "language": "C#",
       "topics": [],
       "fork": true,
       "parent": {
@@ -14,10 +14,20 @@
         "url": "https://github.com/kumapauz/project-reignition"
       },
       "created": "2026-10-16T09:23:03Z",
-      "firstRelease": null,
-      "latestRelease": null,
-      "released": "2026-10-16T09:23:03Z",
-      "app": null
+      "firstRelease": "2026-10-16T14:17:17Z",
+      "latestRelease": {
+        "tag": "1.0.9",
+        "name": "Project Reignition for iOS 1.0.9",
+        "date": "2026-10-16T14:17:17Z",
+        "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9"
+      },
+      "released": "2026-10-16T14:17:17Z",
+      "app": {
+        "name": "Sonic and the Secret Rings Remake",
+        "bundleIdentifier": "com.devz.projectreignition",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
+        "tintColor": "#A5743B"
+      }
     },
     {
       "repo": "nfsu2-ios",

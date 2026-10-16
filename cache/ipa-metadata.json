@@ -834,5 +834,27 @@
     "name": "COD4iOS",
     "privacy": {},
     "version": "1.0.4"
+  },
+  "647548097:2026-10-16T14:17:16Z:1944738652": {
+    "buildVersion": "4",
+    "bundleIdentifier": "com.devz.projectreignition",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.projectreignition-68f8fa97652f.png",
+      "tint": "#A5743B",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "Sonic and the Secret Rings Remake",
+    "privacy": {
+      "NSCameraUsageDescription": "",
+      "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
+      "NSMicrophoneUsageDescription": "",
+      "NSPhotoLibraryUsageDescription": ""
+    },
+    "version": "1.0.9"
   }
 }

@@ -8,13 +8,52 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.projectreignition",
     "com.devz.cod4ios",
     "com.devz.nbashowt",
     "com.devz.slamjam96",
-    "com.devz.ssf2t",
-    "com.devz.thps2"
+    "com.devz.ssf2t"
   ],
   "apps": [
+    {
+      "name": "Sonic and the Secret Rings Remake",
+      "bundleIdentifier": "com.devz.projectreignition",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "The Sonic and the Secret Rings fan-remake.",
+      "localizedDescription": "The Sonic and the Secret Rings fan-remake.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ProjectReignition-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-68f8fa97652f.png",
+      "tintColor": "#A5743B",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.9",
+          "buildVersion": "4",
+          "marketingVersion": "Project Reignition for iOS 1.0.9",
+          "date": "2026-10-16T14:17:17Z",
+          "localizedDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+          "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
+          "size": 1944738652,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {
+          "NSCameraUsageDescription": "",
+          "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
+          "NSMicrophoneUsageDescription": "",
+          "NSPhotoLibraryUsageDescription": ""
+        }
+      },
+      "version": "1.0.9",
+      "versionDate": "2026-10-16T14:17:17Z",
+      "versionDescription": "## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: multiply-blended effects render too dark, the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
+      "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
+      "size": 1944738652
+    },
     {
       "name": "COD4iOS",
       "bundleIdentifier": "com.devz.cod4ios",
@@ -899,6 +938,16 @@
   ],
   "news": [
     {
+      "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9",
+      "identifier": "release-ProjectReignition-iOS-1.0.9",
+      "caption": "1.0.9 (build 4)",
+      "date": "2026-10-16T14:17:17Z",
+      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9",
+      "appID": "com.devz.projectreignition",
+      "notify": false,
+      "tintColor": "#A5743B"
+    },
+    {
       "title": "COD4iOS R5-beta.2 — iOS build 12: fog fix and crash diagnostics",
       "identifier": "release-COD4iOS-COD4NS-R5-beta.2",
       "caption": "COD4iOS 1.0.4 build 12 — fog fix and crash diagnostics",
@@ -957,15 +1006,6 @@
       "appID": "com.devz.umk3",
       "notify": false,
       "tintColor": "#C36810"
-    },
-    {
-      "title": "In development: ProjectReignition-iOS",
-      "identifier": "upcoming-ProjectReignition-iOS",
-      "caption": "The Sonic and the Secret Rings fan-remake.",
-      "date": "2026-10-16T09:23:03Z",
-      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
-      "notify": false,
-      "tintColor": "#2F6FEB"
     },
     {
       "title": "Sonic (2006) Sonic (2006) — mod manager layout fix, build 1.0.10",
