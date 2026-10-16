@@ -695,5 +695,54 @@
       "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
     },
     "version": "1.0.0"
+  },
+  "646137069:2026-10-16T04:30:45Z:9687761": {
+    "buildVersion": "11",
+    "bundleIdentifier": "com.devz.cod4ios",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.cod4ios-3d1d5fd18e9e.png",
+      "tint": "#4F5634",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "COD4iOS",
+    "privacy": {},
+    "version": "1.0.4"
+  },
+  "646165922:2026-10-16T04:44:26Z:35723117": {
+    "buildVersion": "1.0.9",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
+  },
+  "646227417:2026-10-16T05:16:03Z:35723108": {
+    "buildVersion": "1.0.10",
+    "bundleIdentifier": "com.devz.sonic2006",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.sonic2006-c5b24b42a5ac.png",
+      "tint": "#304278",
+      "width": 152
+    },
+    "minOSVersion": "17.0",
+    "name": "Sonic (2006)",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Connect to wireless game controllers."
+    },
+    "version": "1.0.0"
   }
 }

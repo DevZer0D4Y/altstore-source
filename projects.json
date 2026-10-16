@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-16T03:31:15.924782Z",
+  "generated": "2026-10-16T08:48:19.581463Z",
   "projects": [
     {
       "repo": "nfsu2-ios",
@@ -193,10 +193,10 @@
       "created": "2026-10-03T13:06:04Z",
       "firstRelease": "2026-10-05T18:29:37Z",
       "latestRelease": {
-        "tag": "ios-mods-2026-10-15-u8-compat",
-        "name": "Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
-        "date": "2026-10-15T18:48:56Z",
-        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-u8-compat"
+        "tag": "ios-2026-10-16-b",
+        "name": "Sonic (2006) — mod manager layout fix, build 1.0.10",
+        "date": "2026-10-16T05:16:04Z",
+        "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-b"
       },
       "released": "2026-10-05T18:29:37Z",
       "app": {
@@ -220,10 +220,10 @@
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",
       "latestRelease": {
-        "tag": "R4",
-        "name": "Release 4 (Nikolai crash fix)",
-        "date": "2026-10-15T18:40:00Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R4"
+        "tag": "R5-beta.1",
+        "name": "R5 beta 1 — War Pig rendering test (build 11)",
+        "date": "2026-10-16T04:30:54Z",
+        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.1"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {

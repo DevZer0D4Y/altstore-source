@@ -28,6 +28,26 @@
       "versions": [
         {
           "version": "1.0.0",
+          "buildVersion": "1.0.10",
+          "marketingVersion": "Sonic (2006) — mod manager layout fix, build 1.0.10",
+          "date": "2026-10-16T05:16:04Z",
+          "localizedDescription": "**Build 1.0.10.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files.\n\n- **Mod manager:** a mod's \"can't be enabled\" reason no longer spills into the next row. Rows now grow to fit the text.\n\nEverything from build 1.0.9 (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16) is included: the floating stick, the 120 FPS cap, the fix for stretched buttons after switching apps, and the check that stops Khronos-based mods from crashing the game.\n\nKhronos, Physics and Physics Companion still can't be enabled. They need the Khronos DLL, which patches the game executable, and the recompiled game can't run it yet.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-b/Sonic06-iOS.ipa",
+          "size": 35723108,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.9",
+          "marketingVersion": "Sonic (2006) — floating stick, 120 FPS cap and mod crash fix, build 1.0.9",
+          "date": "2026-10-16T04:44:26Z",
+          "localizedDescription": "**Build 1.0.9.** Install over the existing **Sonic (2006)** app with your sideloading tool and keep the bundle ID `com.devz.sonic2006`, so your game files, mods and saves stay in place. The IPA is unsigned and contains no game files.\n\n### New\n- **Floating stick.** The movement stick stays hidden until your thumb touches the lower left of the screen, then appears right under it and follows your thumb. Let go and it disappears. Tap **EDIT → STICK** to switch back to the fixed stick with its D-Pad ring. Resizing the stick in the editor also sets the floating stick's size.\n- **120 FPS cap.** The game now runs at up to 120 FPS on ProMotion iPhones and iPads, and never above that. The old 60 FPS cap code is gone. If your frame rate was still at the old default of 60, it moves to 120 once. You can lower it any time under **Options → Frame Rate**. Upstream warns that frame rates other than 60 can cause glitches in places, and 120 FPS makes the phone warmer.\n\n### Fixes\n- **Stretched touch buttons after switching apps or taking a screenshot.** iOS kept reporting the screen as portrait, and the buttons were drawn several times too tall. They now follow the orientation the game is drawn in.\n- **Crash while loading a stage with Khronos-based mods.** Khronos patches the game executable so that it loads its `Core.xex` DLL. Physics and Physics Companion are Lua scripts that call into that DLL. The recompiled game can't load Xbox DLLs or apply executable patches, so with those mods enabled the game crashed after Episode Select. The mod manager now refuses to enable these mods and says why:\n  - Khronos: loads the `Core.xex` DLL by patching the executable.\n  - Physics Companion: its `patch.mlua` patches the executable.\n  - Physics: requires patches that Marathon doesn't include (`CorrectFastSonicGoalAnimation`, `DisableCharacterStumble`, `RestoreRotationInterpolation`).\n  \n  Required patches that Marathon has as built-in codes (for example `ControllableBoundAttack`) no longer block a mod and are switched on when you tap **Play**. Running Khronos mods would need a port of its DLL to the recompiled game.\n\n### Validation\nTouch and mod regression suites pass (UBSan/ASan), including the floating stick, a stale portrait window size, and executable-patch detection against the real Khronos and Physics packages. Release arm64 iPhoneOS build and IPA integrity checks passed. Not yet tested on a device: the floating stick feel, the 120 FPS cap and the app-switcher fix.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16/Sonic06-iOS.ipa",
+          "size": 35723117,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
           "buildVersion": "1.0.8",
           "marketingVersion": "Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
           "date": "2026-10-15T18:48:56Z",
@@ -74,10 +94,10 @@
         }
       },
       "version": "1.0.0",
-      "versionDate": "2026-10-15T18:48:56Z",
-      "versionDescription": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report. This changes the shared reader for all enabled mods; there are no title- or author-specific exceptions.\n\n- Accept validated ordinary 12-byte raw U8 nodes as well as extended 16-byte Sonic '06 nodes. Convert input into the extended game layout.\n- Accept root labels and unused root/directory metadata instead of requiring every such field to be zero. Continue validating table bounds, member names, hierarchy, duplicates and payload bounds.\n- Write the extended U8 compatibility marker expected by archive tools. A new cache revision regenerates archives from earlier builds.\n- Identify whether an archive read error originated from the installed original, a complete replacement, or a mod archive. Keep the manager open for retries.\n\n**Validation:** ASan/UBSan mod/archive regression suite passed, including flat/nested ordinary U8 conversion, named roots, nonzero metadata, mixed input layouts, priority, compressed payload preservation and malformed data. The public Werehog package (https://gamebanana.com/mods/330727) matching the screenshot's title/author passed import, selection and archive merging against synthetic originals; an independent decoder compared every mod member and verified preservation of an original-only member. A supplied real `shader.arc` round trip passed. Full Release arm64 iPhoneOS build and IPA integrity checks passed.\n\nThe public Werehog archive itself already passed the previous parser. The tester's installed original archive was unavailable, so the exact screenshot failure and in-game behavior remain unverified. This release addresses shared format assumptions rather than claiming every mod has been gameplay-tested. Native plugins, executable patches and custom HMM code still require ports.\n\n**Build 1.0.8:** original `com.devz.sonic2006`, **Sonic (2006)** name and original icon PNGs verified. Keep this bundle ID when signing. The IPA is unsigned; no downloaded mod or original game archive is bundled.\n\nCommit: `2b09bed` on `ios-mods-performance-20261015`.\nSHA-256 (`Sonic06-iOS.ipa`): `1ebf3ee96b5347d15fde19afdbb5ca021a9c073c4fd369220973718f48c2f9e3`",
-      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-15-u8-compat/Sonic06-iOS.ipa",
-      "size": 35715635
+      "versionDate": "2026-10-16T05:16:04Z",
+      "versionDescription": "**Build 1.0.10.** Install over the existing **Sonic (2006)** app and keep the bundle ID `com.devz.sonic2006`. The IPA is unsigned and contains no game files.\n\n- **Mod manager:** a mod's \"can't be enabled\" reason no longer spills into the next row. Rows now grow to fit the text.\n\nEverything from build 1.0.9 (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16) is included: the floating stick, the 120 FPS cap, the fix for stretched buttons after switching apps, and the check that stops Khronos-based mods from crashing the game.\n\nKhronos, Physics and Physics Companion still can't be enabled. They need the Khronos DLL, which patches the game executable, and the recompiled game can't run it yet.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-2026-10-16-b/Sonic06-iOS.ipa",
+      "size": 35723108
     },
     {
       "name": "COD4iOS",
@@ -90,6 +110,16 @@
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "1.0.4",
+          "buildVersion": "11",
+          "marketingVersion": "R5 beta 1 — War Pig rendering test (build 11)",
+          "date": "2026-10-16T04:30:54Z",
+          "localizedDescription": "COD4iOS 1.0.4 build 11 — rendering test pre-release.\n\nThis candidate targets the black geometry reported during War Pig's opening aerial camera in R4. Metal vertex shaders now use invariant position outputs, and runtime compilation preserves that invariance so equivalent depth and lighting passes calculate matching positions.\n\n**The exact visual defect has not been reproduced locally, and this candidate has not been verified on the affected device.** Please check War Pig's opening flyover and report whether the black surfaces remain. The before/after comparison on this Mac did not reproduce the original artifact.\n\nValidation:\n- All 299 saved game shaders translate and compile successfully.\n- GPU depth/lighting coverage test: 231,013 covered pixels, zero missing pixels across 20 camera/distance combinations on Apple M1.\n- Existing lighting, static-model crash, Metal pipeline-lifetime and upload-ordering regressions pass.\n- Both iOS single-player and multiplayer engines compile and are included.\n\nR4's crash fixes, checkpoint protections, mission unlocks and touch editor remain included. Graphics settings are unchanged; no FPS gain is claimed.\n\nThe IPA is unsigned. Install with your signing/sideload tool as an update to the same app identifier (`com.devz.cod4ios`) to retain app data, keeping a backup of `players`.\n\nThe exact build 11 IPA, matching build-source archive and SHA-256 checksums are attached. The source archive contains the full build checkout, including pre-existing uncommitted source changes beyond the release tag. No retail game assets, personal saves or signing keys are included.\n\nIPA SHA-256: `fd07b939cdf94ef77c131c217316dcf1813ff2037669e862f72a30cc650dc406`",
+          "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R5-beta.1/COD4iOS-1.0.4-build11-rendering-test-unsigned.ipa",
+          "size": 9687761,
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.0.4",
           "buildVersion": "10",
@@ -136,10 +166,10 @@
         "privacy": {}
       },
       "version": "1.0.4",
-      "versionDate": "2026-10-15T18:40:00Z",
-      "versionDescription": "COD4iOS 1.0.4 build 10. This is the exact IPA tested by the reporter, who confirmed the crash is fixed.\n\n- Fixes dynamic-lighting memory overwrites and invalid static-model draw data involved in the Blackout/Nikolai crash.\n- Includes campaign checkpoint protection, Resume recovery, and persistent mission unlocks.\n- Includes the touch-control editor and Metal upload/memory improvements from the preceding builds.\n\nBoth single-player and multiplayer engines are included. Renderer, checkpoint, campaign-transition and mission-progress regression tests pass. FPS improvements have not been measured on the affected device.\n\nThe IPA is unsigned: use your signing/sideload tool and install as an update with the same app identifier to preserve existing data. Back up your `players` folder before updating.\n\nThe matching build-source archive and SHA-256 checksums are attached. The source archive includes the complete build checkout, including pre-existing source changes beyond the release tag. Retail game data, personal saves and signing keys are not included.\n\nIPA SHA-256: `ea26f886f535e5bd0715cdfe6b4482e80d131a893e0442292ebed877d27f9a0e`",
-      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R4/COD4iOS-1.0.4-build10-renderer-crash-fix-unsigned.ipa",
-      "size": 9687390
+      "versionDate": "2026-10-16T04:30:54Z",
+      "versionDescription": "COD4iOS 1.0.4 build 11 — rendering test pre-release.\n\nThis candidate targets the black geometry reported during War Pig's opening aerial camera in R4. Metal vertex shaders now use invariant position outputs, and runtime compilation preserves that invariance so equivalent depth and lighting passes calculate matching positions.\n\n**The exact visual defect has not been reproduced locally, and this candidate has not been verified on the affected device.** Please check War Pig's opening flyover and report whether the black surfaces remain. The before/after comparison on this Mac did not reproduce the original artifact.\n\nValidation:\n- All 299 saved game shaders translate and compile successfully.\n- GPU depth/lighting coverage test: 231,013 covered pixels, zero missing pixels across 20 camera/distance combinations on Apple M1.\n- Existing lighting, static-model crash, Metal pipeline-lifetime and upload-ordering regressions pass.\n- Both iOS single-player and multiplayer engines compile and are included.\n\nR4's crash fixes, checkpoint protections, mission unlocks and touch editor remain included. Graphics settings are unchanged; no FPS gain is claimed.\n\nThe IPA is unsigned. Install with your signing/sideload tool as an update to the same app identifier (`com.devz.cod4ios`) to retain app data, keeping a backup of `players`.\n\nThe exact build 11 IPA, matching build-source archive and SHA-256 checksums are attached. The source archive contains the full build checkout, including pre-existing uncommitted source changes beyond the release tag. No retail game assets, personal saves or signing keys are included.\n\nIPA SHA-256: `fd07b939cdf94ef77c131c217316dcf1813ff2037669e862f72a30cc650dc406`",
+      "downloadURL": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/download/R5-beta.1/COD4iOS-1.0.4-build11-rendering-test-unsigned.ipa",
+      "size": 9687761
     },
     {
       "name": "NFSU2",
@@ -787,6 +817,36 @@
   ],
   "news": [
     {
+      "title": "Sonic (2006) Sonic (2006) — mod manager layout fix, build 1.0.10",
+      "identifier": "release-MarathonRecompilediOS-ios-2026-10-16-b",
+      "caption": "Build 1.0.10. Install over the existing Sonic (2006) app and keep the bundle ID com.devz.sonic2006. The IPA is unsigned and contains no game",
+      "date": "2026-10-16T05:16:04Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-b",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
+      "title": "Sonic (2006) Sonic (2006) — floating stick, 120 FPS cap and mod crash fix, build 1.0.9",
+      "identifier": "release-MarathonRecompilediOS-ios-2026-10-16",
+      "caption": "Build 1.0.9. Install over the existing Sonic (2006) app with your sideloading tool and keep the bundle ID com.devz.sonic2006, so your game f",
+      "date": "2026-10-16T04:44:26Z",
+      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16",
+      "appID": "com.devz.sonic2006",
+      "notify": false,
+      "tintColor": "#304278"
+    },
+    {
+      "title": "COD4iOS R5 beta 1 — War Pig rendering test (build 11)",
+      "identifier": "release-COD4iOS-COD4NS-R5-beta.1",
+      "caption": "COD4iOS 1.0.4 build 11 — rendering test pre-release.",
+      "date": "2026-10-16T04:30:54Z",
+      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R5-beta.1",
+      "appID": "com.devz.cod4ios",
+      "notify": false,
+      "tintColor": "#4F5634"
+    },
+    {
       "title": "Sonic (2006) Sonic (2006) — U8 mod archive compatibility, build 1.0.8",
       "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-u8-compat",
       "caption": "General U8 archive compatibility update for the iOS mod loader, following the “Invalid Sonic '06 U8 root (16-byte entries required)” report.",
@@ -807,16 +867,6 @@
       "tintColor": "#4F5634"
     },
     {
-      "title": "Sonic (2006) Sonic (2006) — iOS archive merging support",
-      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15-arc-merge",
-      "caption": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/i",
-      "date": "2026-10-15T18:29:22Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15-arc-merge",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
-    },
-    {
       "title": "NFSU2 NFSU2 iOS 0.3",
       "identifier": "release-nfsu2-ios-v0.3",
       "caption": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching Europe",
@@ -835,16 +885,6 @@
       "appID": "com.devz.supersmashflash2",
       "notify": false,
       "tintColor": "#AF0F02"
-    },
-    {
-      "title": "Sonic (2006) Sonic (2006) — original identity, current runtime and mods",
-      "identifier": "release-MarathonRecompilediOS-ios-mods-2026-10-15",
-      "caption": "Superseded by build 1.0.8 with the shared U8 reader compatibility update (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/i",
-      "date": "2026-10-15T12:53:09Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
     },
     {
       "title": "Super Smash Flash 2 SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
@@ -885,16 +925,6 @@
       "appID": "com.devz.supersmashflash2",
       "notify": false,
       "tintColor": "#AF0F02"
-    },
-    {
-      "title": "COD4iOS Better Stability Release",
-      "identifier": "release-COD4iOS-COD4NS-R2",
-      "caption": "Fixed performance, you can now edit your controls, better stability (known crash after rescue Nikolai mission).",
-      "date": "2026-10-13T19:57:59Z",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R2",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
     },
     {
       "title": "Mega Man 64 Mega Man 64 Mobile 0.9.1 — Android and iOS",
