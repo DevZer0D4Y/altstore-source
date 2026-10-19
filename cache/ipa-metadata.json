@@ -918,5 +918,80 @@
       "NSPhotoLibraryUsageDescription": ""
     },
     "version": "1.0.9"
+  },
+  "657131895:2026-10-19T18:51:24Z:6263639": {
+    "buildVersion": "43",
+    "bundleIdentifier": "com.devz.thps2",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thps2-8f65bb588040.png",
+      "tint": "#687185",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Tony Hawk\u2019s Pro Skater 2",
+    "privacy": {},
+    "version": "0.4.3"
+  },
+  "657131898:2026-10-19T18:51:22Z:3937224": {
+    "buildVersion": "42",
+    "bundleIdentifier": "com.devz.umk3",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.umk3-a623eb6cace8.png",
+      "tint": "#C36810",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Ultimate Mortal Kombat 3",
+    "privacy": {},
+    "version": "0.4.2"
+  },
+  "657131899:2026-10-19T18:51:21Z:3077706": {
+    "buildVersion": "42",
+    "bundleIdentifier": "com.devz.slamjam96",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.slamjam96-7ae02dd0f6c2.png",
+      "tint": "#4E4A69",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Slam\u2019n\u2019Jam 96",
+    "privacy": {},
+    "version": "0.4.2"
+  },
+  "657131905:2026-10-19T18:51:26Z:13603033": {
+    "buildVersion": "46",
+    "bundleIdentifier": "com.devz.nbashowt",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.nbashowt-8a8f78d061a1.png",
+      "tint": "#432FAB",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "NBA Showtime - NBA on NBC",
+    "privacy": {},
+    "version": "0.4.6"
+  },
+  "657131906:2026-10-19T18:51:23Z:5183412": {
+    "buildVersion": "42",
+    "bundleIdentifier": "com.devz.ssf2t",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.ssf2t-a56d0136807b.png",
+      "tint": "#AF4A58",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "Super Street Fighter II Turbo",
+    "privacy": {},
+    "version": "0.4.2"
   }
 }
