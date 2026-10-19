@@ -1,7 +1,24 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-19T09:40:19.081288Z",
+  "generated": "2026-10-19T16:50:14.136119Z",
   "projects": [
+    {
+      "repo": "spotinx",
+      "url": "https://github.com/DevZer0D4Y/spotinx",
+      "description": "A Spotify client for the Nintendo Switch.",
+      "language": "C",
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "shodowlo/chromium-nx",
+        "url": "https://github.com/shodowlo/chromium-nx"
+      },
+      "created": "2026-10-19T16:35:34Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-19T16:35:34Z",
+      "app": null
+    },
     {
       "repo": "ProjectReignition-iOS",
       "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
