@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-22T10:27:38.618850Z",
+  "generated": "2026-10-22T15:31:55.087756Z",
   "projects": [
     {
       "repo": "ProjectReignition-iOS",
@@ -14,20 +14,10 @@
         "url": "https://github.com/kumapauz/project-reignition"
       },
       "created": "2026-10-16T09:23:03Z",
-      "firstRelease": "2026-10-16T14:17:17Z",
-      "latestRelease": {
-        "tag": "1.0.9",
-        "name": "Project Reignition for iOS 1.0.9 (build 5)",
-        "date": "2026-10-16T14:17:17Z",
-        "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9"
-      },
-      "released": "2026-10-16T14:17:17Z",
-      "app": {
-        "name": "Sonic and the Secret Rings Remake",
-        "bundleIdentifier": "com.devz.projectreignition",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-6dbcce9783e2.png",
-        "tintColor": "#A5743B"
-      }
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-16T09:23:03Z",
+      "app": null
     },
     {
       "repo": "nfsu2-ios",
@@ -41,20 +31,10 @@
         "url": "https://github.com/myUdav4iik/nfsu2-ios"
       },
       "created": "2026-10-15T17:58:20Z",
-      "firstRelease": "2026-10-15T18:19:52Z",
-      "latestRelease": {
-        "tag": "v0.3",
-        "name": "NFSU2 iOS 0.3",
-        "date": "2026-10-15T18:19:52Z",
-        "url": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/tag/v0.3"
-      },
-      "released": "2026-10-15T18:19:52Z",
-      "app": {
-        "name": "NFSU2",
-        "bundleIdentifier": "com.devz.nfsu2",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nfsu2-a597a28eb8ab.png",
-        "tintColor": "#878D4F"
-      }
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-15T17:58:20Z",
+      "app": null
     },
     {
       "repo": "MegaMan64Recompiled-Mobile",
@@ -65,20 +45,10 @@
       "fork": false,
       "parent": null,
       "created": "2026-10-13T17:44:09Z",
-      "firstRelease": "2026-10-13T17:45:33Z",
-      "latestRelease": {
-        "tag": "v0.9.1-quest-preview.2",
-        "name": "Quest VR Preview 2 — orientation fix",
-        "date": "2026-10-16T09:44:10Z",
-        "url": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/tag/v0.9.1-quest-preview.2"
-      },
-      "released": "2026-10-13T17:45:33Z",
-      "app": {
-        "name": "Mega Man 64",
-        "bundleIdentifier": "com.devz.megaman64",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.megaman64-56121012bc88.png",
-        "tintColor": "#BF8640"
-      }
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-13T17:44:09Z",
+      "app": null
     },
     {
       "repo": "SSF2-iOS",
@@ -164,20 +134,10 @@
       "fork": false,
       "parent": null,
       "created": "2026-10-10T15:09:14Z",
-      "firstRelease": "2026-10-10T15:13:26Z",
-      "latestRelease": {
-        "tag": "v0.4.4",
-        "name": "NBA Hangtime 0.4.4",
-        "date": "2026-10-13T05:39:25Z",
-        "url": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/tag/v0.4.4"
-      },
-      "released": "2026-10-10T15:13:26Z",
-      "app": {
-        "name": "NBA Hangtime",
-        "bundleIdentifier": "com.devz.nbahangtime",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
-        "tintColor": "#C45629"
-      }
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-10-10T15:09:14Z",
+      "app": null
     },
     {
       "repo": "TheSimpsonsGame-iOS",

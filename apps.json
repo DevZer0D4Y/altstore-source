@@ -562,77 +562,6 @@
       "size": 9692131
     },
     {
-      "name": "Sonic and the Secret Rings Remake",
-      "bundleIdentifier": "com.devz.projectreignition",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "The Sonic and the Secret Rings fan-remake.",
-      "localizedDescription": "The Sonic and the Secret Rings fan-remake.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ProjectReignition-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.projectreignition-6dbcce9783e2.png",
-      "tintColor": "#A5743B",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "1.0.9",
-          "buildVersion": "5",
-          "marketingVersion": "Project Reignition for iOS 1.0.9 (build 5)",
-          "date": "2026-10-16T14:17:17Z",
-          "localizedDescription": "## 1.0.9 (build 5)\n\n- The homing attack's aura no longer stays on Sonic. Godot's Mobile renderer ignores the fade the game uses for it; the port now fades such objects itself, which also fixes item box glows, fire souls, debris, the Evil Foundry golem's core and Pirate Storm's lightning.\n- No more black patches where Lost Prologue's Wonderblocks appear: the Mobile renderer halved multiply-blended effects, which now draw as on PC there and in later stages.\n- Cutscenes that showed only subtitles and sound play their video again (the one after the first stage, Events 4 to 9, the openings, the endings and the developer intro).\n\n## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
-          "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-          "size": 1944594351,
-          "minOSVersion": "15.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [
-          "com.apple.developer.kernel.increased-memory-limit"
-        ],
-        "privacy": {
-          "NSCameraUsageDescription": "",
-          "NSLocalNetworkUsageDescription": "Party mode finds and joins games on your local network.",
-          "NSMicrophoneUsageDescription": "",
-          "NSPhotoLibraryUsageDescription": ""
-        }
-      },
-      "version": "1.0.9",
-      "versionDate": "2026-10-16T14:17:17Z",
-      "versionDescription": "## 1.0.9 (build 5)\n\n- The homing attack's aura no longer stays on Sonic. Godot's Mobile renderer ignores the fade the game uses for it; the port now fades such objects itself, which also fixes item box glows, fire souls, debris, the Evil Foundry golem's core and Pirate Storm's lightning.\n- No more black patches where Lost Prologue's Wonderblocks appear: the Mobile renderer halved multiply-blended effects, which now draw as on PC there and in later stages.\n- Cutscenes that showed only subtitles and sound play their video again (the one after the first stage, Events 4 to 9, the openings, the endings and the developer intro).\n\n## 1.0.9 (build 4)\n\nFirst iOS release, built from Project Reignition 1.0.9 (`dev/v1.0.x` at e13abfa).\n\n- On-screen touch controls that act as an Xbox controller; controller support.\n- Cutscenes as Ogg Theora.\n- Up to 120 FPS on ProMotion screens; lighter iOS defaults for reflections and soft shadows.\n- Menus take input: scenes are exported as text, which keeps their lists of buttons and videos.\n- Saves work and stay in the app's Documents folder across updates; deleting a save removes it.\n- Lost Prologue's bloom works on the Mobile renderer.\n- No more errors logged every frame in levels, a source of stutter.\n- Garbage collections run during loading screens instead of gameplay.\n- Frame-time log and test modes for benchmarks and saves.\n\nKnown issues: the first visit to an area can stutter while shaders compile, and Party mode's local network play is untested.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+ and about 6 GB free while installing.\n\nUnofficial fan project, not affiliated with or endorsed by SEGA; must not be sold. Project Reignition is distributed under the Open Sonic Fan Game License (LICENSE.md); its graphical assets are owned by SEGA and used under that license.",
-      "downloadURL": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/download/1.0.9/ProjectReignition-iOS.ipa",
-      "size": 1944594351
-    },
-    {
-      "name": "NFSU2",
-      "bundleIdentifier": "com.devz.nfsu2",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Need For Speed Underground 2 Xbox Original port for iPhone, iPad and macOS. Native Metal renderer, touch, controller and",
-      "localizedDescription": "Need For Speed Underground 2 Xbox Original port for iPhone, iPad and macOS. Native Metal renderer, touch, controller and keyboard controls.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/nfsu2-ios",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nfsu2-a597a28eb8ab.png",
-      "tintColor": "#878D4F",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.3",
-          "buildVersion": "2",
-          "marketingVersion": "NFSU2 iOS 0.3",
-          "date": "2026-10-15T18:19:52Z",
-          "localizedDescription": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching European PAL Xbox disc; game files and music are not included. Other executable regions/revisions require matching translations.\n\nBundle ID: `com.devz.nfsu2` · Version: **0.3**, build **2**.\n\n### Mobile experience\n\n- Fullscreen landscape play with optional aspect-fit presentation.\n- Uncapped presentation by default; optional FPS ceiling through `NFSU2_FPS_LIMIT`.\n- 4× internal width and height by default on iOS; adjustable render scale.\n- Racing-style touch controls and a separate simple menu layout. Both layouts support independent positioning, size, opacity, visibility and button mappings, with Save, Cancel and Reset.\n- Automatic PAL Menu/Drive switching, including pause/options/frontend detection. A manual toggle remains available.\n- Physical controllers take over from the touch pad; disconnecting restores neutral touch input.\n- MP3 import from Files, persistent playlist, playback switch, volume and Next Track. Lower the original soundtrack's Music volume in-game to hear only your playlist with game effects.\n- Background suspension for the game, GPU work and audio.\n\n### Import and distribution\n\n- Streaming Xbox ISO extraction with path/bounds checks, executable preflight, staged replacement and save preservation.\n- PAL Europe and NTSC-U executable profiles. Each build contains one matching executable translation; region-neutral ISO extraction does not provide universal regional playback.\n- Active extracted directory and compiled profile shown under **Edit → Game files**. Default directory: **Files → On My iPhone/iPad → NFSU2 → game**.\n- New game-cover icon, display name **NFSU2**, bundle ID **com.devz.nfsu2**, version **0.3**, build **2**.\n- Public unsigned PAL IPA and SHA-256 checksum in `dist/`; sign for your own device before installation.\n- Public source cleaned of local developer notes and compiled test binaries. Game files, generated game code, music and signing material remain excluded from source.\n\n### Performance\n\n- Cache Metal uniform, constant-buffer, texture and sampler bindings within their valid encoder lifetime.\n- Reuse unchanged transform-constant uploads within a command buffer; keep fresh allocations for changed constants and instanced draws.\n- Combine matching feedback-stage snapshots into one copy per draw.\n- Use render-pass clears for complete surface clears while preserving partial and active-pass behavior.\n- Native PAL CRT/video conversion fast paths and Apple generated-code optimization.\n- Add asynchronous GPU timing diagnostics without waiting for GPU completion.\n\n### Validation and limitations\n\n- Seven input/pacing tests passed, alongside UIKit layout/customization/lifecycle/import tests, MP3 playback tests, XISO checks and Metal GPU regression checks at native and 4× scale.\n- Installed and launched on an iPhone 16 Pro Max. All 191 transferred disc files matched source sizes and SHA-1 checksums on-device.\n- Synthetic constant-upload benchmarks reduced CPU submission time by about 7–9% for that workload; this is not a measured gameplay FPS gain.\n- Real race/pause automatic transitions and sustained gameplay performance still need device validation. Arbitrary regions and executable revisions require their own verified translation.",
-          "downloadURL": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/download/v0.3/NFSU2-0.3-unsigned.ipa",
-          "size": 15883081,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.3",
-      "versionDate": "2026-10-15T18:19:52Z",
-      "versionDescription": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching European PAL Xbox disc; game files and music are not included. Other executable regions/revisions require matching translations.\n\nBundle ID: `com.devz.nfsu2` · Version: **0.3**, build **2**.\n\n### Mobile experience\n\n- Fullscreen landscape play with optional aspect-fit presentation.\n- Uncapped presentation by default; optional FPS ceiling through `NFSU2_FPS_LIMIT`.\n- 4× internal width and height by default on iOS; adjustable render scale.\n- Racing-style touch controls and a separate simple menu layout. Both layouts support independent positioning, size, opacity, visibility and button mappings, with Save, Cancel and Reset.\n- Automatic PAL Menu/Drive switching, including pause/options/frontend detection. A manual toggle remains available.\n- Physical controllers take over from the touch pad; disconnecting restores neutral touch input.\n- MP3 import from Files, persistent playlist, playback switch, volume and Next Track. Lower the original soundtrack's Music volume in-game to hear only your playlist with game effects.\n- Background suspension for the game, GPU work and audio.\n\n### Import and distribution\n\n- Streaming Xbox ISO extraction with path/bounds checks, executable preflight, staged replacement and save preservation.\n- PAL Europe and NTSC-U executable profiles. Each build contains one matching executable translation; region-neutral ISO extraction does not provide universal regional playback.\n- Active extracted directory and compiled profile shown under **Edit → Game files**. Default directory: **Files → On My iPhone/iPad → NFSU2 → game**.\n- New game-cover icon, display name **NFSU2**, bundle ID **com.devz.nfsu2**, version **0.3**, build **2**.\n- Public unsigned PAL IPA and SHA-256 checksum in `dist/`; sign for your own device before installation.\n- Public source cleaned of local developer notes and compiled test binaries. Game files, generated game code, music and signing material remain excluded from source.\n\n### Performance\n\n- Cache Metal uniform, constant-buffer, texture and sampler bindings within their valid encoder lifetime.\n- Reuse unchanged transform-constant uploads within a command buffer; keep fresh allocations for changed constants and instanced draws.\n- Combine matching feedback-stage snapshots into one copy per draw.\n- Use render-pass clears for complete surface clears while preserving partial and active-pass behavior.\n- Native PAL CRT/video conversion fast paths and Apple generated-code optimization.\n- Add asynchronous GPU timing diagnostics without waiting for GPU completion.\n\n### Validation and limitations\n\n- Seven input/pacing tests passed, alongside UIKit layout/customization/lifecycle/import tests, MP3 playback tests, XISO checks and Metal GPU regression checks at native and 4× scale.\n- Installed and launched on an iPhone 16 Pro Max. All 191 transferred disc files matched source sizes and SHA-1 checksums on-device.\n- Synthetic constant-upload benchmarks reduced CPU submission time by about 7–9% for that workload; this is not a measured gameplay FPS gain.\n- Real race/pause automatic transitions and sustained gameplay performance still need device validation. Arbitrary regions and executable revisions require their own verified translation.",
-      "downloadURL": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/download/v0.3/NFSU2-0.3-unsigned.ipa",
-      "size": 15883081
-    },
-    {
       "name": "Super Smash Flash 2",
       "bundleIdentifier": "com.devz.supersmashflash2",
       "developerName": "DevZer0D4Y",
@@ -765,100 +694,6 @@
       "versionDescription": "**Superseded: use the original-identity/current-runtime mod release (https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-mods-2026-10-15).** This older package uses `com.devz.MarathonRecomp`; the replacement restores R1's `com.devz.sonic2006`, name and icon, and includes the current port runtime fixes.\n\nFixes two reproducible startup crashes in the October 13 mod-enabled IPA:\n\n- Restores the required scene lifecycle, waits for the scene and attaches SDL's window. The previous IPA aborted in UIKit's missing-scene-lifecycle check on iOS 27.\n- Adds the Bluetooth usage description required by controller discovery. Its omission caused a second Core Bluetooth privacy abort.\n- Rejects packages missing these launch requirements. Adds an optional entitlement switch for personal-team device testing.\n\nThe previous IPA's crash was reproduced on an iPhone 14 Pro Max running iOS 27.0.1. The corrected signed test app launched, initialized UIKit/Metal/Bluetooth, and remained running in subsequent process checks with no new crash report. Gameplay and mod import/selection have not been tested.\n\nDownload `MarathonRecomp-mods-launchfix.ipa`: unsigned arm64, iOS 17+, about 44.7 MiB. Sign it before installation. It retains `com.devz.MarathonRecomp` and contains no original game files. Checksums, manifest, validation report and source patch are attached.\n\nSource: `ios-mod-integration-20261013`. This experimental build does not include newer unrelated changes on `main`.",
       "downloadURL": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/download/ios-mods-2026-10-14-launchfix/MarathonRecomp-mods-launchfix.ipa",
       "size": 46869337
-    },
-    {
-      "name": "Mega Man 64",
-      "bundleIdentifier": "com.devz.megaman64",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "Unofficial Mega Man 64 Recompiled mobile port for Android and iOS, with editable touch controls and controller support. ",
-      "localizedDescription": "Unofficial Mega Man 64 Recompiled mobile port for Android and iOS, with editable touch controls and controller support. Bring your own USA ROM.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.megaman64-56121012bc88.png",
-      "tintColor": "#BF8640",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.9.1",
-          "buildVersion": "2",
-          "marketingVersion": "Mega Man 64 Mobile 0.9.1 — Android and iOS",
-          "date": "2026-10-13T17:45:33Z",
-          "localizedDescription": "Android and iOS mobile builds of Mega Man 64: Recompiled.\n\n- Editable gameplay and menu touch pads: movement stick, N64 buttons, position/size/opacity/color controls, and GAME PAD / MENU PAD switching.\n- SDL USB/Bluetooth controller support and configurable bindings.\n- Mobile renderer fixes, Android Vulkan surface/descriptor handling, and iOS screenshot/notification size restoration.\n- Persistent USA FlashRAM saves, atomic replacement, backup writes, and background save flushing.\n- The supplied Mega Man 64 artwork is now the app icon on both platforms.\n- Both application IDs are `com.devz.megaman64`, matching the other ports' naming convention.\n\n**Downloads:** install the ARM64 APK on Android 8.0+ with a compatible Vulkan GPU. Sign the ARM64 IPA for your own iOS 16+ device using eSign or another signing tool. The IPA contains no personal certificate or provisioning profile. `SHA256SUMS.txt` covers both downloads.\n\n**ROM:** supply your own Mega Man 64 USA ROM through the launcher. `.z64`, `.v64`, and `.n64` byte orders are accepted. Japanese Rockman DASH gameplay is not supported by this USA recompilation; the loader reports that limitation. No ROM or save data is bundled.\n\n**Existing saves:** the new IDs create separate app storage. Back up the old app's `config/saves` folder before changing builds, preserve filenames, and keep the old app installed until the backup is safe. Storage locations and restoration limits are described in MOBILE.md. Saves are not automatically migrated between different IDs.\n\nThe repository starts with a clean source history and pinned dependencies. It excludes ROM-derived generated sources, ROMs, saves, logs, SDKs, local build folders, personal paths, and signing keys. Required build scripts, application assets, licenses, and upstream attribution remain available.\n\nValidation: source privacy and whitespace checks; dependency patches applied against pinned revisions; APK signature and 16 KB alignment; ARM64 package structure; ROM/private-path scans; icon pixel checks, application IDs, Android Java class and all renamed JNI entry points. Rendering/gameplay had been confirmed on iOS and Adreno 710 Android before these icon/ID/publication changes. Installation of this newly packaged release still needs verification on devices.\n\nUpstream: https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
-          "downloadURL": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/download/v0.9.1-mobile.1/MegaMan64-iOS-v0.9.1-mobile.1.ipa",
-          "size": 15317212,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.9.1",
-      "versionDate": "2026-10-13T17:45:33Z",
-      "versionDescription": "Android and iOS mobile builds of Mega Man 64: Recompiled.\n\n- Editable gameplay and menu touch pads: movement stick, N64 buttons, position/size/opacity/color controls, and GAME PAD / MENU PAD switching.\n- SDL USB/Bluetooth controller support and configurable bindings.\n- Mobile renderer fixes, Android Vulkan surface/descriptor handling, and iOS screenshot/notification size restoration.\n- Persistent USA FlashRAM saves, atomic replacement, backup writes, and background save flushing.\n- The supplied Mega Man 64 artwork is now the app icon on both platforms.\n- Both application IDs are `com.devz.megaman64`, matching the other ports' naming convention.\n\n**Downloads:** install the ARM64 APK on Android 8.0+ with a compatible Vulkan GPU. Sign the ARM64 IPA for your own iOS 16+ device using eSign or another signing tool. The IPA contains no personal certificate or provisioning profile. `SHA256SUMS.txt` covers both downloads.\n\n**ROM:** supply your own Mega Man 64 USA ROM through the launcher. `.z64`, `.v64`, and `.n64` byte orders are accepted. Japanese Rockman DASH gameplay is not supported by this USA recompilation; the loader reports that limitation. No ROM or save data is bundled.\n\n**Existing saves:** the new IDs create separate app storage. Back up the old app's `config/saves` folder before changing builds, preserve filenames, and keep the old app installed until the backup is safe. Storage locations and restoration limits are described in MOBILE.md. Saves are not automatically migrated between different IDs.\n\nThe repository starts with a clean source history and pinned dependencies. It excludes ROM-derived generated sources, ROMs, saves, logs, SDKs, local build folders, personal paths, and signing keys. Required build scripts, application assets, licenses, and upstream attribution remain available.\n\nValidation: source privacy and whitespace checks; dependency patches applied against pinned revisions; APK signature and 16 KB alignment; ARM64 package structure; ROM/private-path scans; icon pixel checks, application IDs, Android Java class and all renamed JNI entry points. Rendering/gameplay had been confirmed on iOS and Adreno 710 Android before these icon/ID/publication changes. Installation of this newly packaged release still needs verification on devices.\n\nUpstream: https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
-      "downloadURL": "https://github.com/DevZer0D4Y/MegaMan64Recompiled-Mobile/releases/download/v0.9.1-mobile.1/MegaMan64-iOS-v0.9.1-mobile.1.ipa",
-      "size": 15317212
-    },
-    {
-      "name": "NBA Hangtime",
-      "bundleIdentifier": "com.devz.nbahangtime",
-      "developerName": "DevZer0D4Y",
-      "subtitle": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlaySta",
-      "localizedDescription": "NBA Hangtime (Midway arcade, 1996) for iPhone, iPad and Windows: true widescreen, big head modes, touch and Xbox/PlayStation controller support. Bring your own ROMs.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/NBAHangtime-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.nbahangtime-935432208d3c.png",
-      "tintColor": "#C45629",
-      "category": "games",
-      "screenshots": [],
-      "versions": [
-        {
-          "version": "0.4.4",
-          "buildVersion": "9",
-          "marketingVersion": "NBA Hangtime 0.4.4",
-          "date": "2026-10-13T05:39:25Z",
-          "localizedDescription": "# NBA Hangtime 0.4.4\n\niOS build 9 · Windows x64 · iOS 16 or later\n\n## Changes\n\n- Match CRT curvature to the corrected ports: CURVATURE 1.0 with a 40% blend toward the flat image.\n- Remove frame-artwork overscan and prevent outermost pixels from smearing beyond the curved screen.\n- Fade the tube boundary into black with a 1.5-pixel edge mask.\n- Generate the iOS and Windows CRT shaders from the same math.\n\n## Downloads\n\n- `NBA-Hangtime-iOS.ipa` — unsigned; sign with your sideloading tool.\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-0.4.4-source.zip` — matching port and patched core source.\n\nCompanion SHA-256 checksums are included. Game ROMs are not included; the complete L1.1 arcade set is required. See `SOURCE.md` for source and license notices.\n\n## Validation\n\nGeometry regression checks cover the curvature values, symmetry, all four borders and edge fade. Windows and iOS release builds passed. OpenGL and Metal GPU tests passed shader compilation, rendering passes, black corners, image orientation, toggles and resizing. Package integrity and privacy checks passed before publication.\n\nGPU tests ran on the Mac host. Visual confirmation on physical iOS and Windows devices remains pending.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.4/NBA-Hangtime-iOS.ipa",
-          "size": 5910890,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.4.3",
-          "buildVersion": "8",
-          "marketingVersion": "NBA Hangtime 0.4.3 - CRT filter",
-          "date": "2026-10-11T15:37:59Z",
-          "localizedDescription": "# NBA Hangtime 0.4.3\n\niOS build 8 · Windows x64 · iOS 16 or later\n\n## New in 0.4.3\n\n- Add the NewPixie CRT filter on iOS and Windows. Enable or disable CRT FILTER from the iOS Display menu or Windows pause menu.\n- Save the setting across launches; default to OFF. Apply changes immediately without restarting the game.\n- Preserve the original pixel display with CRT off, and reset feedback when toggling or switching widescreen frame sizes.\n\n## Changes since 0.4.0\n\n- Fix Windows Xbox input by reading buttons, sticks and triggers through XInput. Gameplay, controller setup and menus use the same polled input state.\n- Improve iOS controller event delivery, including Menu/Start and gamepad routing on iOS 18 and later.\n- Keep controller slots stable across reordering and disconnects. Controllers join as Player 1, Player 3, Player 2 and Player 4.\n- Align Player 1 and Player 4 possession indicators and scoring flashes with their status plates.\n- Restore camera tracking at both near-side corners. Limit the inbound view separately so it stays inside the available scenery at both court ends.\n- Preserve live settings changes, including switching head size during gameplay. Normal, big and huge head settings apply to all four players.\n- Strip private build paths and debug metadata from release binaries. Check packages for ROMs, signing credentials and development artifacts.\n- Include license notices and matching source references in both binary packages.\n\n## Downloads\n\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-iOS.ipa` (unsigned; sign using your sideloading tool)\n- `NBA-Hangtime-0.4.3-source.zip`\n\nEach archive has a companion SHA-256 checksum. Game ROMs are not included; the complete arcade L1.1 set is required. See `SOURCE.md` for source and distribution notices.\n\n## Validation\n\nWindows and iOS release builds succeeded. ROM importer, controller routing, native XInput decoding, controller remapping, camera bounds, live widescreen switching, core bridge and release hygiene tests passed.\n\nPhysical Xbox testing, visual confirmation of the revised inbound view and GPU rendering of the CRT effect remain unverified on Windows and iOS. The local build environment has no GPU/display access, so the graphics test harnesses could compile but could not run. If CRT is unavailable, the normal picture remains available.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.3/NBA-Hangtime-iOS.ipa",
-          "size": 5911243,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.4.2",
-          "buildVersion": "7",
-          "marketingVersion": "Release v0.4.2",
-          "date": "2026-10-10T21:04:19Z",
-          "localizedDescription": "# Changelog v0.4.2\n\n- Updated Xbox controller input on Windows and controller event handling on iOS.\n- Improved controller setup, remapping, menu navigation, and reconnect handling.\n- Kept player assignments stable in **P1 → P3 → P2 → P4** order.\n- Fixed Player 1 and Player 4 possession indicator alignment.\n- Improved camera tracking so players remain visible at the court corners.\n- Adjusted the inbound camera at both ends to avoid exposing missing scenery.\n- Removed private build paths and debug metadata from release binaries.\n- Added license notices, release notes, and matching source code packaging.",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R2/NBA-Hangtime-iOS.ipa",
-          "size": 5895580,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.4.0",
-          "buildVersion": "5",
-          "marketingVersion": "First release!!",
-          "date": "2026-10-10T15:13:26Z",
-          "localizedDescription": "First release",
-          "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/R1/NBA-Hangtime-iOS.ipa",
-          "size": 5968054,
-          "minOSVersion": "16.0"
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "0.4.4",
-      "versionDate": "2026-10-13T05:39:25Z",
-      "versionDescription": "# NBA Hangtime 0.4.4\n\niOS build 9 · Windows x64 · iOS 16 or later\n\n## Changes\n\n- Match CRT curvature to the corrected ports: CURVATURE 1.0 with a 40% blend toward the flat image.\n- Remove frame-artwork overscan and prevent outermost pixels from smearing beyond the curved screen.\n- Fade the tube boundary into black with a 1.5-pixel edge mask.\n- Generate the iOS and Windows CRT shaders from the same math.\n\n## Downloads\n\n- `NBA-Hangtime-iOS.ipa` — unsigned; sign with your sideloading tool.\n- `NBA-Hangtime-Windows-x64.zip`\n- `NBA-Hangtime-0.4.4-source.zip` — matching port and patched core source.\n\nCompanion SHA-256 checksums are included. Game ROMs are not included; the complete L1.1 arcade set is required. See `SOURCE.md` for source and license notices.\n\n## Validation\n\nGeometry regression checks cover the curvature values, symmetry, all four borders and edge fade. Windows and iOS release builds passed. OpenGL and Metal GPU tests passed shader compilation, rendering passes, black corners, image orientation, toggles and resizing. Package integrity and privacy checks passed before publication.\n\nGPU tests ran on the Mac host. Visual confirmation on physical iOS and Windows devices remains pending.",
-      "downloadURL": "https://github.com/DevZer0D4Y/NBAHangtime-iOS/releases/download/v0.4.4/NBA-Hangtime-iOS.ipa",
-      "size": 5910890
     },
     {
       "name": "Sonic Unleashed",
@@ -1098,16 +933,6 @@
       "tintColor": "#4F5634"
     },
     {
-      "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9 (build 5)",
-      "identifier": "release-ProjectReignition-iOS-1.0.9",
-      "caption": "1.0.9 (build 5)",
-      "date": "2026-10-16T14:17:17Z",
-      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9",
-      "appID": "com.devz.projectreignition",
-      "notify": false,
-      "tintColor": "#A5743B"
-    },
-    {
       "title": "COD4iOS R5-beta.2 — iOS build 12: fog fix and crash diagnostics",
       "identifier": "release-COD4iOS-COD4NS-R5-beta.2",
       "caption": "COD4iOS 1.0.4 build 12 — fog fix and crash diagnostics",
@@ -1168,6 +993,15 @@
       "tintColor": "#C36810"
     },
     {
+      "title": "In development: ProjectReignition-iOS",
+      "identifier": "upcoming-ProjectReignition-iOS",
+      "caption": "The Sonic and the Secret Rings fan-remake.",
+      "date": "2026-10-16T09:23:03Z",
+      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
       "title": "Sonic (2006) Sonic (2006) — mod manager layout fix, build 1.0.10",
       "identifier": "release-MarathonRecompilediOS-ios-2026-10-16-b",
       "caption": "Build 1.0.10. Install over the existing Sonic (2006) app and keep the bundle ID com.devz.sonic2006. The IPA is unsigned and contains no game",
@@ -1188,14 +1022,13 @@
       "tintColor": "#304278"
     },
     {
-      "title": "NFSU2 NFSU2 iOS 0.3",
-      "identifier": "release-nfsu2-ios-v0.3",
-      "caption": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching Europe",
-      "date": "2026-10-15T18:19:52Z",
-      "url": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/tag/v0.3",
-      "appID": "com.devz.nfsu2",
+      "title": "In development: nfsu2-ios",
+      "identifier": "upcoming-nfsu2-ios",
+      "caption": "Need For Speed Underground 2 Xbox Original port for iPhone, iPad and macOS. Native Metal renderer, touch, controller and keyboard controls.",
+      "date": "2026-10-15T17:58:20Z",
+      "url": "https://github.com/DevZer0D4Y/nfsu2-ios",
       "notify": false,
-      "tintColor": "#878D4F"
+      "tintColor": "#2F6FEB"
     },
     {
       "title": "Super Smash Flash 2 SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
