@@ -8,13 +8,83 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.thechoicervoicer",
+    "com.ut3ios.app",
     "com.devz.nbashowt",
     "com.devz.slamjam96",
-    "com.devz.ssf2t",
-    "com.devz.thps2",
-    "com.devz.umk3"
+    "com.devz.ssf2t"
   ],
   "apps": [
+    {
+      "name": "The Choicer Voicer",
+      "bundleIdentifier": "com.devz.thechoicervoicer",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial iPhone and iPad port of The Choicer Voicer that runs the game from your own copy, built on a patched Godot 4.",
+      "localizedDescription": "Unofficial iPhone and iPad port of The Choicer Voicer that runs the game from your own copy, built on a patched Godot 4.4.1\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thechoicervoicer-8ffce0b29df9.png",
+      "tintColor": "#93E7E7",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1",
+          "marketingVersion": "The Choicer Voicer for iOS 1.0.0",
+          "date": "2026-10-23T16:41:25Z",
+          "localizedDescription": "## 1.0.0\n\nFirst iOS release, for The Choicer Voicer versions made with Godot 4.0 to 4.4 (tested with 0.5.1).\n\n**The game is not included.** Buy it from YeahMaybe on itch.io (https://yeahmaybe.itch.io/the-choicer-voicer), then copy the Windows version's `.exe` into **Files → On My iPhone → The Choicer Voicer** and reopen the app.\n\n- Runs the game from your own `.exe` or `.pck`, read straight from the file.\n- Microphone input works on iOS, with the permission requested at launch.\n- Full screen on every iPhone and iPad, in either landscape orientation; dub mode's TV and remote keep their PC layout and pack videos keep their proportions.\n- Two-finger tap as right click.\n- The game's \"open folder\" buttons open the folder in the Files app.\n- Packs, recordings and saves in the app's folder in the Files app.\n\nKnown issues: the 3D studio's lighting is flatter than on PC (no VoxelGI on Godot's Mobile renderer), and versions of the game made with Godot 4.5 or later don't load yet.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+.\n\nUnofficial fan project, not affiliated with or endorsed by YeahMaybe. Apart from the game's logo as its icon, it contains no part of the game; it must not be sold.",
+          "downloadURL": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS/releases/download/1.0.0/TheChoicerVoicer-iOS.ipa",
+          "size": 28257735,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "",
+          "NSMicrophoneUsageDescription": "The Choicer Voicer listens to your voice to score how well you match each clip.",
+          "NSPhotoLibraryUsageDescription": ""
+        }
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-23T16:41:25Z",
+      "versionDescription": "## 1.0.0\n\nFirst iOS release, for The Choicer Voicer versions made with Godot 4.0 to 4.4 (tested with 0.5.1).\n\n**The game is not included.** Buy it from YeahMaybe on itch.io (https://yeahmaybe.itch.io/the-choicer-voicer), then copy the Windows version's `.exe` into **Files → On My iPhone → The Choicer Voicer** and reopen the app.\n\n- Runs the game from your own `.exe` or `.pck`, read straight from the file.\n- Microphone input works on iOS, with the permission requested at launch.\n- Full screen on every iPhone and iPad, in either landscape orientation; dub mode's TV and remote keep their PC layout and pack videos keep their proportions.\n- Two-finger tap as right click.\n- The game's \"open folder\" buttons open the folder in the Files app.\n- Packs, recordings and saves in the app's folder in the Files app.\n\nKnown issues: the 3D studio's lighting is flatter than on PC (no VoxelGI on Godot's Mobile renderer), and versions of the game made with Godot 4.5 or later don't load yet.\n\nInstall: sign and install the IPA with ESign, AltStore, SideStore or Sideloadly. Needs iOS 15+.\n\nUnofficial fan project, not affiliated with or endorsed by YeahMaybe. Apart from the game's logo as its icon, it contains no part of the game; it must not be sold.",
+      "downloadURL": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS/releases/download/1.0.0/TheChoicerVoicer-iOS.ipa",
+      "size": 28257735
+    },
+    {
+      "name": "UT3",
+      "bundleIdentifier": "com.ut3ios.app",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unreal Tournament 3 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.",
+      "localizedDescription": "Unreal Tournament 3 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UT3-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.ut3ios.app-4f0441332ffc.png",
+      "tintColor": "#E95A28",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "17",
+          "marketingVersion": "UT3 for iOS 0.1.0",
+          "date": "2026-10-23T15:22:08Z",
+          "localizedDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `0985662072480921bc387131a13e0ac590cab89da85aee391e94225e3a597a79`",
+          "downloadURL": "https://github.com/DevZer0D4Y/UT3-iOS/releases/download/v0.1.0/UT3-iOS.ipa",
+          "size": 27588658,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "0.1.0",
+      "versionDate": "2026-10-23T15:22:08Z",
+      "versionDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `0985662072480921bc387131a13e0ac590cab89da85aee391e94225e3a597a79`",
+      "downloadURL": "https://github.com/DevZer0D4Y/UT3-iOS/releases/download/v0.1.0/UT3-iOS.ipa",
+      "size": 27588658
+    },
     {
       "name": "NBA Showtime - NBA on NBC",
       "bundleIdentifier": "com.devz.nbashowt",
@@ -1018,6 +1088,26 @@
   ],
   "news": [
     {
+      "title": "The Choicer Voicer The Choicer Voicer for iOS 1.0.0",
+      "identifier": "release-TheChoicerVoicer-iOS-1.0.0",
+      "caption": "1.0.0",
+      "date": "2026-10-23T16:41:25Z",
+      "url": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS/releases/tag/1.0.0",
+      "appID": "com.devz.thechoicervoicer",
+      "notify": false,
+      "tintColor": "#93E7E7"
+    },
+    {
+      "title": "UT3 UT3 for iOS 0.1.0",
+      "identifier": "release-UT3-iOS-v0.1.0",
+      "caption": "First release of Unreal Tournament 3 for iPhone and iPad.",
+      "date": "2026-10-23T15:22:08Z",
+      "url": "https://github.com/DevZer0D4Y/UT3-iOS/releases/tag/v0.1.0",
+      "appID": "com.ut3ios.app",
+      "notify": false,
+      "tintColor": "#E95A28"
+    },
+    {
       "title": "NBA Showtime - NBA on NBC NativePorts 0.4.6 — Arcade Showtime, iPhone speed and audio",
       "identifier": "release-NativePorts-v0.4.6",
       "caption": "NBA Showtime now uses the arcade/MAME edition on iOS and Windows, replacing the previous PlayStation edition. Import your own nbashowt.zip a",
@@ -1196,26 +1286,6 @@
       "appID": "com.devz.nfsu2",
       "notify": false,
       "tintColor": "#878D4F"
-    },
-    {
-      "title": "Super Smash Flash 2 SSF2 iOS 1.1.9 — Full key bindings and C-stick controls",
-      "identifier": "release-SSF2-iOS-v1.1.9",
-      "caption": "Adds the missing game-input bindings and dedicated C-stick controls.",
-      "date": "2026-10-15T13:20:30Z",
-      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.9",
-      "appID": "com.devz.supersmashflash2",
-      "notify": false,
-      "tintColor": "#AF0F02"
-    },
-    {
-      "title": "Super Smash Flash 2 SSF2 iOS 1.1.8 — Sequential loading and binary sprite cache",
-      "identifier": "release-SSF2-iOS-v1.1.8",
-      "caption": "Addresses startup memory pressure, loading stalls and audio interruptions following version 1.1.7.",
-      "date": "2026-10-15T04:48:31Z",
-      "url": "https://github.com/DevZer0D4Y/SSF2-iOS/releases/tag/v1.1.8",
-      "appID": "com.devz.supersmashflash2",
-      "notify": false,
-      "tintColor": "#AF0F02"
     }
   ]
 }

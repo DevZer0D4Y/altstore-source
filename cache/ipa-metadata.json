@@ -993,5 +993,41 @@
     "name": "Super Street Fighter II Turbo",
     "privacy": {},
     "version": "0.4.2"
+  },
+  "669525165:2026-10-23T15:22:08Z:27588658": {
+    "buildVersion": "17",
+    "bundleIdentifier": "com.ut3ios.app",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.ut3ios.app-4f0441332ffc.png",
+      "tint": "#E95A28",
+      "width": 512
+    },
+    "minOSVersion": "15.0",
+    "name": "UT3",
+    "privacy": {},
+    "version": "0.1.0"
+  },
+  "669757559:2026-10-23T16:49:26Z:28257735": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.devz.thechoicervoicer",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.thechoicervoicer-8ffce0b29df9.png",
+      "tint": "#93E7E7",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "The Choicer Voicer",
+    "privacy": {
+      "NSCameraUsageDescription": "",
+      "NSMicrophoneUsageDescription": "The Choicer Voicer listens to your voice to score how well you match each clip.",
+      "NSPhotoLibraryUsageDescription": ""
+    },
+    "version": "1.0.0"
   }
 }

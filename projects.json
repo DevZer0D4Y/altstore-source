@@ -1,7 +1,55 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-23T11:57:24.291143Z",
+  "generated": "2026-10-23T16:53:05.961333Z",
   "projects": [
+    {
+      "repo": "TheChoicerVoicer-iOS",
+      "url": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS",
+      "description": "Unofficial iPhone and iPad port of The Choicer Voicer that runs the game from your own copy, built on a patched Godot 4.4.1",
+      "language": "GDScript",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-23T16:40:57Z",
+      "firstRelease": "2026-10-23T16:41:25Z",
+      "latestRelease": {
+        "tag": "1.0.0",
+        "name": "The Choicer Voicer for iOS 1.0.0",
+        "date": "2026-10-23T16:41:25Z",
+        "url": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS/releases/tag/1.0.0"
+      },
+      "released": "2026-10-23T16:41:25Z",
+      "app": {
+        "name": "The Choicer Voicer",
+        "bundleIdentifier": "com.devz.thechoicervoicer",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.thechoicervoicer-8ffce0b29df9.png",
+        "tintColor": "#93E7E7"
+      }
+    },
+    {
+      "repo": "UT3-iOS",
+      "url": "https://github.com/DevZer0D4Y/UT3-iOS",
+      "description": "Unreal Tournament 3 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.",
+      "language": "C",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-23T15:15:58Z",
+      "firstRelease": "2026-10-23T15:22:08Z",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "name": "UT3 for iOS 0.1.0",
+        "date": "2026-10-23T15:22:08Z",
+        "url": "https://github.com/DevZer0D4Y/UT3-iOS/releases/tag/v0.1.0"
+      },
+      "released": "2026-10-23T15:22:08Z",
+      "app": {
+        "name": "UT3",
+        "bundleIdentifier": "com.ut3ios.app",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.ut3ios.app-4f0441332ffc.png",
+        "tintColor": "#E95A28"
+      }
+    },
     {
       "repo": "ProjectReignition-iOS",
       "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS",
