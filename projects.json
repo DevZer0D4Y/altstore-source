@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-23T20:13:58.844201Z",
+  "generated": "2026-10-23T23:20:46.900031Z",
   "projects": [
     {
       "repo": "TheChoicerVoicer-iOS",
@@ -45,9 +45,9 @@
       "released": "2026-10-23T15:22:08Z",
       "app": {
         "name": "UT3",
-        "bundleIdentifier": "com.ut3ios.app",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.ut3ios.app-4f0441332ffc.png",
-        "tintColor": "#E95A28"
+        "bundleIdentifier": "com.devz.ut3",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ut3-5181fc72370a.png",
+        "tintColor": "#982925"
       }
     },
     {

@@ -9,7 +9,7 @@
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
     "com.devz.thechoicervoicer",
-    "com.ut3ios.app",
+    "com.devz.ut3",
     "com.devz.nbashowt",
     "com.devz.slamjam96",
     "com.devz.ssf2t"
@@ -53,12 +53,12 @@
     },
     {
       "name": "UT3",
-      "bundleIdentifier": "com.ut3ios.app",
+      "bundleIdentifier": "com.devz.ut3",
       "developerName": "DevZer0D4Y",
       "subtitle": "Unreal Tournament 3 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.",
       "localizedDescription": "Unreal Tournament 3 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UT3-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.ut3ios.app-4f0441332ffc.png",
-      "tintColor": "#E95A28",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ut3-5181fc72370a.png",
+      "tintColor": "#982925",
       "category": "games",
       "screenshots": [],
       "versions": [
@@ -67,9 +67,9 @@
           "buildVersion": "17",
           "marketingVersion": "UT3 for iOS 0.1.0",
           "date": "2026-10-23T15:22:08Z",
-          "localizedDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `0985662072480921bc387131a13e0ac590cab89da85aee391e94225e3a597a79`",
+          "localizedDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `1140f82eea83e8595bdb96dda0fe997d4a0a91dbee14d7b9acabd64e487b4feb`",
           "downloadURL": "https://github.com/DevZer0D4Y/UT3-iOS/releases/download/v0.1.0/UT3-iOS.ipa",
-          "size": 27588658,
+          "size": 28522420,
           "minOSVersion": "15.0"
         }
       ],
@@ -81,9 +81,9 @@
       },
       "version": "0.1.0",
       "versionDate": "2026-10-23T15:22:08Z",
-      "versionDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `0985662072480921bc387131a13e0ac590cab89da85aee391e94225e3a597a79`",
+      "versionDescription": "First release of Unreal Tournament 3 for iPhone and iPad.\n\n**No game content is included: you need your own Xbox 360 copy of Unreal Tournament 3.**\n\n## How to play\n\n1. Download `UT3-iOS.ipa` below.\n2. Install it with AltStore, SideStore, Sideloadly, ESign or TrollStore (the IPA is unsigned; the tool signs it).\n3. Dump your own Unreal Tournament 3 disc to an ISO/XISO and put it in the Files app.\n4. Open UT3, tap **Choose ISO** and pick the image. It is checked, then copied into the app (a few minutes).\n5. Play with a Bluetooth controller (Xbox, PlayStation, MFi) or the on-screen controls, which hide while a controller is connected.\n\n## Requirements\n\n- iPhone or iPad with an A15 Bionic or newer, iOS 15 or later.\n- The region-free Xbox 360 disc (English, French, German, Spanish, Italian). Other releases with a different game executable are detected and refused.\n- Free space for the disc image.\n\n## Notes\n\n- Up to 60 FPS, with a steady 30 FPS fallback when the device cannot keep up (a warm phone, heavy scenes).\n- The first matches can stutter while effects are prepared for the GPU; later sessions are smoother.\n- Settings are in `ut3.toml` in the app's folder in Files. See the README for details.\n\nSHA-256 of `UT3-iOS.ipa`: `1140f82eea83e8595bdb96dda0fe997d4a0a91dbee14d7b9acabd64e487b4feb`",
       "downloadURL": "https://github.com/DevZer0D4Y/UT3-iOS/releases/download/v0.1.0/UT3-iOS.ipa",
-      "size": 27588658
+      "size": 28522420
     },
     {
       "name": "NBA Showtime - NBA on NBC",
@@ -1103,9 +1103,9 @@
       "caption": "First release of Unreal Tournament 3 for iPhone and iPad.",
       "date": "2026-10-23T15:22:08Z",
       "url": "https://github.com/DevZer0D4Y/UT3-iOS/releases/tag/v0.1.0",
-      "appID": "com.ut3ios.app",
+      "appID": "com.devz.ut3",
       "notify": false,
-      "tintColor": "#E95A28"
+      "tintColor": "#982925"
     },
     {
       "title": "NBA Showtime - NBA on NBC NativePorts 0.4.6 — Arcade Showtime, iPhone speed and audio",

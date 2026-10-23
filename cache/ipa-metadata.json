@@ -994,23 +994,6 @@
     "privacy": {},
     "version": "0.4.2"
   },
-  "669525165:2026-10-23T15:22:08Z:27588658": {
-    "buildVersion": "17",
-    "bundleIdentifier": "com.ut3ios.app",
-    "cacheVersion": 4,
-    "entitlements": [
-      "com.apple.developer.kernel.increased-memory-limit"
-    ],
-    "icon": {
-      "file": "com.ut3ios.app-4f0441332ffc.png",
-      "tint": "#E95A28",
-      "width": 512
-    },
-    "minOSVersion": "15.0",
-    "name": "UT3",
-    "privacy": {},
-    "version": "0.1.0"
-  },
   "669757559:2026-10-23T16:49:26Z:28257735": {
     "buildVersion": "1",
     "bundleIdentifier": "com.devz.thechoicervoicer",
@@ -1029,5 +1012,22 @@
       "NSPhotoLibraryUsageDescription": ""
     },
     "version": "1.0.0"
+  },
+  "670306656:2026-10-23T20:24:45Z:28522420": {
+    "buildVersion": "17",
+    "bundleIdentifier": "com.devz.ut3",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.ut3-5181fc72370a.png",
+      "tint": "#982925",
+      "width": 512
+    },
+    "minOSVersion": "15.0",
+    "name": "UT3",
+    "privacy": {},
+    "version": "0.1.0"
   }
 }
