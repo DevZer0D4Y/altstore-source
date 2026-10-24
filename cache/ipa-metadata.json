@@ -1029,5 +1029,22 @@
     "name": "UT3",
     "privacy": {},
     "version": "0.1.0"
+  },
+  "672093574:2026-10-24T11:29:28Z:29098040": {
+    "buildVersion": "5",
+    "bundleIdentifier": "com.devz.skate2",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.skate2-fcafbfdc5326.png",
+      "tint": "#B6764D",
+      "width": 512
+    },
+    "minOSVersion": "15.0",
+    "name": "Skate 2",
+    "privacy": {},
+    "version": "1.0.0"
   }
 }

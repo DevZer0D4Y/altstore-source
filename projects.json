@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-24T06:56:24.326774Z",
+  "generated": "2026-10-24T11:54:26.440943Z",
   "projects": [
+    {
+      "repo": "Skate2-iOS",
+      "url": "https://github.com/DevZer0D4Y/Skate2-iOS",
+      "description": "Skate 2 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.",
+      "language": "C",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-24T11:27:52Z",
+      "firstRelease": "2026-10-24T11:29:29Z",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "name": "Skate 2 for iOS 1.0.0",
+        "date": "2026-10-24T11:29:29Z",
+        "url": "https://github.com/DevZer0D4Y/Skate2-iOS/releases/tag/v1.0.0"
+      },
+      "released": "2026-10-24T11:29:29Z",
+      "app": {
+        "name": "Skate 2",
+        "bundleIdentifier": "com.devz.skate2",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.skate2-fcafbfdc5326.png",
+        "tintColor": "#B6764D"
+      }
+    },
     {
       "repo": "TheChoicerVoicer-iOS",
       "url": "https://github.com/DevZer0D4Y/TheChoicerVoicer-iOS",

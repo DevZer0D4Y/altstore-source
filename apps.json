@@ -8,13 +8,47 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.skate2",
     "com.devz.thechoicervoicer",
     "com.devz.ut3",
     "com.devz.nbashowt",
-    "com.devz.slamjam96",
-    "com.devz.ssf2t"
+    "com.devz.slamjam96"
   ],
   "apps": [
+    {
+      "name": "Skate 2",
+      "bundleIdentifier": "com.devz.skate2",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Skate 2 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.",
+      "localizedDescription": "Skate 2 (Xbox 360) recompiled for iPhone and iPad. Bring your own disc.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/Skate2-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.skate2-fcafbfdc5326.png",
+      "tintColor": "#B6764D",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "5",
+          "marketingVersion": "Skate 2 for iOS 1.0.0",
+          "date": "2026-10-24T11:29:29Z",
+          "localizedDescription": "*Skate 2* (Xbox 360) for iPhone and iPad.\n\n**No game content is included.** Copy your own extracted disc into the app's `game` folder, or pick a disc image with **Choose ISO**. See the README (https://github.com/DevZer0D4Y/Skate2-iOS#how-to-play) for the supported disc and the setup.\n\n- Install `Skate2-iOS.ipa` with AltStore, SideStore, Sideloadly, ESign or TrollStore; the IPA is unsigned and the tool signs it.\n- Runs at the console's 30 FPS on an A15 or newer.\n- On-screen gamepad with a Flick-It right stick, hidden while a controller is connected.\n\nSHA-256: `ce56ddba3e471f41a2d5d0b99956aacc3c5f8caa733aa5ddbc2c8f3d634c5d93`",
+          "downloadURL": "https://github.com/DevZer0D4Y/Skate2-iOS/releases/download/v1.0.0/Skate2-iOS.ipa",
+          "size": 29098040,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-24T11:29:29Z",
+      "versionDescription": "*Skate 2* (Xbox 360) for iPhone and iPad.\n\n**No game content is included.** Copy your own extracted disc into the app's `game` folder, or pick a disc image with **Choose ISO**. See the README (https://github.com/DevZer0D4Y/Skate2-iOS#how-to-play) for the supported disc and the setup.\n\n- Install `Skate2-iOS.ipa` with AltStore, SideStore, Sideloadly, ESign or TrollStore; the IPA is unsigned and the tool signs it.\n- Runs at the console's 30 FPS on an A15 or newer.\n- On-screen gamepad with a Flick-It right stick, hidden while a controller is connected.\n\nSHA-256: `ce56ddba3e471f41a2d5d0b99956aacc3c5f8caa733aa5ddbc2c8f3d634c5d93`",
+      "downloadURL": "https://github.com/DevZer0D4Y/Skate2-iOS/releases/download/v1.0.0/Skate2-iOS.ipa",
+      "size": 29098040
+    },
     {
       "name": "The Choicer Voicer",
       "bundleIdentifier": "com.devz.thechoicervoicer",
@@ -1088,6 +1122,16 @@
   ],
   "news": [
     {
+      "title": "Skate 2 Skate 2 for iOS 1.0.0",
+      "identifier": "release-Skate2-iOS-v1.0.0",
+      "caption": "Skate 2 (Xbox 360) for iPhone and iPad.",
+      "date": "2026-10-24T11:29:29Z",
+      "url": "https://github.com/DevZer0D4Y/Skate2-iOS/releases/tag/v1.0.0",
+      "appID": "com.devz.skate2",
+      "notify": false,
+      "tintColor": "#B6764D"
+    },
+    {
       "title": "The Choicer Voicer The Choicer Voicer for iOS 1.0.0",
       "identifier": "release-TheChoicerVoicer-iOS-1.0.0",
       "caption": "1.0.0",
@@ -1276,16 +1320,6 @@
       "appID": "com.devz.sonic2006",
       "notify": false,
       "tintColor": "#304278"
-    },
-    {
-      "title": "NFSU2 NFSU2 iOS 0.3",
-      "identifier": "release-nfsu2-ios-v0.3",
-      "caption": "Unsigned PAL build for iPhone and iPad. Sign the IPA with your preferred sideloading tool before installing. Supply your own matching Europe",
-      "date": "2026-10-15T18:19:52Z",
-      "url": "https://github.com/DevZer0D4Y/nfsu2-ios/releases/tag/v0.3",
-      "appID": "com.devz.nfsu2",
-      "notify": false,
-      "tintColor": "#878D4F"
     }
   ]
 }
