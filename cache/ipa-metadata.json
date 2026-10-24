@@ -1046,5 +1046,22 @@
     "name": "Skate 2",
     "privacy": {},
     "version": "1.0.0"
+  },
+  "672502382:2026-10-24T14:41:24Z:28855977": {
+    "buildVersion": "21",
+    "bundleIdentifier": "com.devz.freeridersrecompiled",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.freeridersrecompiled-c575024a9f66.png",
+      "tint": "#6CB0B9",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "Free Riders",
+    "privacy": {},
+    "version": "1.0.0"
   }
 }

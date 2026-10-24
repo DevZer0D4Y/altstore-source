@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-24T11:54:26.440943Z",
+  "generated": "2026-10-24T15:31:25.901892Z",
   "projects": [
+    {
+      "repo": "SonicFreeRiders-iOS",
+      "url": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS",
+      "description": "Sonic Free Riders (Xbox 360) recompiled for iPhone and iPad, with touch, tilt and controller support. Bring your own disc.",
+      "language": "C++",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-24T14:40:50Z",
+      "firstRelease": "2026-10-24T14:41:25Z",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "name": "Sonic Free Riders for iOS 1.0.0",
+        "date": "2026-10-24T14:41:25Z",
+        "url": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS/releases/tag/v1.0.0"
+      },
+      "released": "2026-10-24T14:41:25Z",
+      "app": {
+        "name": "Free Riders",
+        "bundleIdentifier": "com.devz.freeridersrecompiled",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.freeridersrecompiled-c575024a9f66.png",
+        "tintColor": "#6CB0B9"
+      }
+    },
     {
       "repo": "Skate2-iOS",
       "url": "https://github.com/DevZer0D4Y/Skate2-iOS",

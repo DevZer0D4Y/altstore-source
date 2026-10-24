@@ -8,13 +8,47 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.freeridersrecompiled",
     "com.devz.skate2",
     "com.devz.thechoicervoicer",
     "com.devz.ut3",
-    "com.devz.nbashowt",
-    "com.devz.slamjam96"
+    "com.devz.nbashowt"
   ],
   "apps": [
+    {
+      "name": "Free Riders",
+      "bundleIdentifier": "com.devz.freeridersrecompiled",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Sonic Free Riders (Xbox 360) recompiled for iPhone and iPad, with touch, tilt and controller support. Bring your own dis",
+      "localizedDescription": "Sonic Free Riders (Xbox 360) recompiled for iPhone and iPad, with touch, tilt and controller support. Bring your own disc.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/SonicFreeRiders-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.freeridersrecompiled-c575024a9f66.png",
+      "tintColor": "#6CB0B9",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "21",
+          "marketingVersion": "Sonic Free Riders for iOS 1.0.0",
+          "date": "2026-10-24T14:41:25Z",
+          "localizedDescription": "The first release of Sonic Free Riders for iPhone and iPad.\n\n**No game content is included.** You need your own *Sonic Free Riders (USA, Europe)* Xbox 360 disc image or the disc's files.\n\n## Install\n\n1. Install `SonicFreeRiders-iOS-1.0.0.ipa` with AltStore, SideStore, Sideloadly, ESign or TrollStore.\n2. Copy your disc image or folder to the device, open the app, choose **Install from a disc image or folder**, and pick it.\n3. Press **Start game**.\n\nNeeds an A15 Bionic or newer and iOS 15 or later. See the README (https://github.com/DevZer0D4Y/SonicFreeRiders-iOS#readme) for controls and settings.\n\n## What's in it\n\n- Full races at 60 fps on recent iPhones; on slower devices races keep real time by drawing fewer frames.\n- Touch controls for every race action (left stick, A/B/X/Y, LB/RB, RT, right stick, START), tilt to steer, and MFi, Xbox and PlayStation controllers.\n- The race map lines up with the racers on wide phone screens.\n- Racers no longer fall short on Dolphin Resort's big jump or fall out of Metropolis Speedway when frames are skipped.\n- The launcher scrolls with a swipe and keeps its layout after switching apps.\n\nBased on Free Riders Recompiled (https://github.com/YuutaTsubasa/Free-Riders-Recompiled) by YuutaTsubasa.\n\nSHA-256 of the IPA: `b64947df0aadc9aa00322ae74039f045f07c11a848feab44bde4380e4335da6d`",
+          "downloadURL": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS/releases/download/v1.0.0/SonicFreeRiders-iOS-1.0.0.ipa",
+          "size": 28855977,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-10-24T14:41:25Z",
+      "versionDescription": "The first release of Sonic Free Riders for iPhone and iPad.\n\n**No game content is included.** You need your own *Sonic Free Riders (USA, Europe)* Xbox 360 disc image or the disc's files.\n\n## Install\n\n1. Install `SonicFreeRiders-iOS-1.0.0.ipa` with AltStore, SideStore, Sideloadly, ESign or TrollStore.\n2. Copy your disc image or folder to the device, open the app, choose **Install from a disc image or folder**, and pick it.\n3. Press **Start game**.\n\nNeeds an A15 Bionic or newer and iOS 15 or later. See the README (https://github.com/DevZer0D4Y/SonicFreeRiders-iOS#readme) for controls and settings.\n\n## What's in it\n\n- Full races at 60 fps on recent iPhones; on slower devices races keep real time by drawing fewer frames.\n- Touch controls for every race action (left stick, A/B/X/Y, LB/RB, RT, right stick, START), tilt to steer, and MFi, Xbox and PlayStation controllers.\n- The race map lines up with the racers on wide phone screens.\n- Racers no longer fall short on Dolphin Resort's big jump or fall out of Metropolis Speedway when frames are skipped.\n- The launcher scrolls with a swipe and keeps its layout after switching apps.\n\nBased on Free Riders Recompiled (https://github.com/YuutaTsubasa/Free-Riders-Recompiled) by YuutaTsubasa.\n\nSHA-256 of the IPA: `b64947df0aadc9aa00322ae74039f045f07c11a848feab44bde4380e4335da6d`",
+      "downloadURL": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS/releases/download/v1.0.0/SonicFreeRiders-iOS-1.0.0.ipa",
+      "size": 28855977
+    },
     {
       "name": "Skate 2",
       "bundleIdentifier": "com.devz.skate2",
@@ -1122,6 +1156,16 @@
   ],
   "news": [
     {
+      "title": "Free Riders Sonic Free Riders for iOS 1.0.0",
+      "identifier": "release-SonicFreeRiders-iOS-v1.0.0",
+      "caption": "The first release of Sonic Free Riders for iPhone and iPad.",
+      "date": "2026-10-24T14:41:25Z",
+      "url": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS/releases/tag/v1.0.0",
+      "appID": "com.devz.freeridersrecompiled",
+      "notify": false,
+      "tintColor": "#6CB0B9"
+    },
+    {
       "title": "Skate 2 Skate 2 for iOS 1.0.0",
       "identifier": "release-Skate2-iOS-v1.0.0",
       "caption": "Skate 2 (Xbox 360) for iPhone and iPad.",
@@ -1307,16 +1351,6 @@
       "caption": "Build 1.0.10. Install over the existing Sonic (2006) app and keep the bundle ID com.devz.sonic2006. The IPA is unsigned and contains no game",
       "date": "2026-10-16T05:16:04Z",
       "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-b",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
-    },
-    {
-      "title": "Sonic (2006) Sonic (2006) — floating stick, 120 FPS cap and mod crash fix, build 1.0.9",
-      "identifier": "release-MarathonRecompilediOS-ios-2026-10-16",
-      "caption": "Build 1.0.9. Install over the existing Sonic (2006) app with your sideloading tool and keep the bundle ID com.devz.sonic2006, so your game f",
-      "date": "2026-10-16T04:44:26Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16",
       "appID": "com.devz.sonic2006",
       "notify": false,
       "tintColor": "#304278"
