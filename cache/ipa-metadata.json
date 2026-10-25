@@ -1063,5 +1063,22 @@
     "name": "Free Riders",
     "privacy": {},
     "version": "1.0.0"
+  },
+  "674802208:2026-10-25T10:57:00Z:43488206": {
+    "buildVersion": "14",
+    "bundleIdentifier": "com.devz.sonicgenerations",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.sonicgenerations-494a8fd67cd6.png",
+      "tint": "#79807A",
+      "width": 512
+    },
+    "minOSVersion": "15.0",
+    "name": "Sonic Generations",
+    "privacy": {},
+    "version": "1.0.0"
   }
 }

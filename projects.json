@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-25T08:59:22.267077Z",
+  "generated": "2026-10-25T13:40:49.275251Z",
   "projects": [
+    {
+      "repo": "SonicGenerations-iOS",
+      "url": "https://github.com/DevZer0D4Y/SonicGenerations-iOS",
+      "description": "Sonic Generations (Xbox 360) recompiled for iPhone and iPad: 60 FPS, touch controls, HedgeModManager mods",
+      "language": "C",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-25T10:56:25Z",
+      "firstRelease": "2026-10-25T10:57:01Z",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "name": "Sonic Generations for iOS 1.0.0",
+        "date": "2026-10-25T10:57:01Z",
+        "url": "https://github.com/DevZer0D4Y/SonicGenerations-iOS/releases/tag/v1.0.0"
+      },
+      "released": "2026-10-25T10:57:01Z",
+      "app": {
+        "name": "Sonic Generations",
+        "bundleIdentifier": "com.devz.sonicgenerations",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.sonicgenerations-494a8fd67cd6.png",
+        "tintColor": "#79807A"
+      }
+    },
     {
       "repo": "SonicFreeRiders-iOS",
       "url": "https://github.com/DevZer0D4Y/SonicFreeRiders-iOS",
