@@ -1080,5 +1080,23 @@
     "name": "Sonic Generations",
     "privacy": {},
     "version": "1.0.0"
+  },
+  "678199575:2026-10-26T13:07:39Z:17063142": {
+    "buildVersion": "6",
+    "bundleIdentifier": "com.devz.persona4golden",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.extended-virtual-addressing",
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.persona4golden-6808454f303a.png",
+      "tint": "#FAE100",
+      "width": 180
+    },
+    "minOSVersion": "16.0",
+    "name": "Persona 4 Golden",
+    "privacy": {},
+    "version": "0.1.0"
   }
 }

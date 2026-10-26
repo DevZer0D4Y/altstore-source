@@ -8,13 +8,48 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.persona4golden",
     "com.devz.sonicgenerations",
     "com.devz.freeridersrecompiled",
     "com.devz.skate2",
-    "com.devz.thechoicervoicer",
-    "com.devz.ut3"
+    "com.devz.thechoicervoicer"
   ],
   "apps": [
+    {
+      "name": "Persona 4 Golden",
+      "bundleIdentifier": "com.devz.persona4golden",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Persona 4 Golden (Switch) statically recompiled to a native iOS app. Bring your own game files.",
+      "localizedDescription": "Persona 4 Golden (Switch) statically recompiled to a native iOS app. Bring your own game files.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/P4G-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-6808454f303a.png",
+      "tintColor": "#FAE100",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "6",
+          "marketingVersion": "v0.1.0",
+          "date": "2026-10-26T12:36:59Z",
+          "localizedDescription": "First public version of the Persona 4 Golden iOS port.\n\nFollow the steps in the README: extract your game with `tools/nsz_extract.py`, then run `ios/build.sh`, sideload the IPA, and copy `exefs/` and `romfs/` into the app.\n\n## What works\n- Boots and plays on iPhone (tested on iPhone 16 Pro Max, iOS 27) at a locked 60 fps, or 30 fps if you pick it in the launcher\n- On-screen controls in the game's yellow-and-black style; game controllers are supported\n- A launcher that checks your game files and joins split files copied over USB\n- Your save in a Files-visible `Save/` folder, so you can bring a save over from MeloNX / Ryujinx\n- Opening movies and audio\n\n## Notes\n- Needs a sideloading tool that keeps the *Increased Memory Limit* and *Extended Virtual Addressing* entitlements (ESign, AltStore, SideStore, Sideloadly)\n- The first run compiles shaders, so expect short hitches the first time you see each effect",
+          "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/v0.1.0/Persona4Golden-iOS-0.1.0.ipa",
+          "size": 17063142,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "0.1.0",
+      "versionDate": "2026-10-26T12:36:59Z",
+      "versionDescription": "First public version of the Persona 4 Golden iOS port.\n\nFollow the steps in the README: extract your game with `tools/nsz_extract.py`, then run `ios/build.sh`, sideload the IPA, and copy `exefs/` and `romfs/` into the app.\n\n## What works\n- Boots and plays on iPhone (tested on iPhone 16 Pro Max, iOS 27) at a locked 60 fps, or 30 fps if you pick it in the launcher\n- On-screen controls in the game's yellow-and-black style; game controllers are supported\n- A launcher that checks your game files and joins split files copied over USB\n- Your save in a Files-visible `Save/` folder, so you can bring a save over from MeloNX / Ryujinx\n- Opening movies and audio\n\n## Notes\n- Needs a sideloading tool that keeps the *Increased Memory Limit* and *Extended Virtual Addressing* entitlements (ESign, AltStore, SideStore, Sideloadly)\n- The first run compiles shaders, so expect short hitches the first time you see each effect",
+      "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/v0.1.0/Persona4Golden-iOS-0.1.0.ipa",
+      "size": 17063142
+    },
     {
       "name": "Sonic Generations",
       "bundleIdentifier": "com.devz.sonicgenerations",
@@ -1190,6 +1225,16 @@
   ],
   "news": [
     {
+      "title": "Persona 4 Golden v0.1.0",
+      "identifier": "release-P4G-iOS-v0.1.0",
+      "caption": "First public version of the Persona 4 Golden iOS port.",
+      "date": "2026-10-26T12:36:59Z",
+      "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/v0.1.0",
+      "appID": "com.devz.persona4golden",
+      "notify": false,
+      "tintColor": "#FAE100"
+    },
+    {
       "title": "Sonic Generations Sonic Generations for iOS 1.0.0",
       "identifier": "release-SonicGenerations-iOS-v1.0.0",
       "caption": "Sonic Generations (Xbox 360) for iPhone and iPad.",
@@ -1378,16 +1423,6 @@
       "appID": "com.devz.thps2",
       "notify": false,
       "tintColor": "#687185"
-    },
-    {
-      "title": "Ultimate Mortal Kombat 3 NativePorts 0.3.0 — NBA Showtime and rendering fixes",
-      "identifier": "release-NativePorts-v0.3.0",
-      "caption": "NBA Showtime (PlayStation USA) joins the four existing ports. All five iOS apps and Windows executables are version 0.3.0.",
-      "date": "2026-10-16T09:29:41Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.3.0",
-      "appID": "com.devz.umk3",
-      "notify": false,
-      "tintColor": "#C36810"
     }
   ]
 }

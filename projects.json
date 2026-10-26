@@ -1,7 +1,31 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-26T12:25:00.158522Z",
+  "generated": "2026-10-26T18:49:47.935679Z",
   "projects": [
+    {
+      "repo": "P4G-iOS",
+      "url": "https://github.com/DevZer0D4Y/P4G-iOS",
+      "description": "Persona 4 Golden (Switch) statically recompiled to a native iOS app. Bring your own game files.",
+      "language": "C",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-10-26T11:46:04Z",
+      "firstRelease": "2026-10-26T12:36:59Z",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "name": "v0.1.0",
+        "date": "2026-10-26T12:36:59Z",
+        "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/v0.1.0"
+      },
+      "released": "2026-10-26T12:36:59Z",
+      "app": {
+        "name": "Persona 4 Golden",
+        "bundleIdentifier": "com.devz.persona4golden",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-6808454f303a.png",
+        "tintColor": "#FAE100"
+      }
+    },
     {
       "repo": "SonicGenerations-iOS",
       "url": "https://github.com/DevZer0D4Y/SonicGenerations-iOS",
