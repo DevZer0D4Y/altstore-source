@@ -1098,5 +1098,23 @@
     "name": "Persona 4 Golden",
     "privacy": {},
     "version": "0.1.0"
+  },
+  "682255508:2026-10-27T17:00:53Z:17253509": {
+    "buildVersion": "8",
+    "bundleIdentifier": "com.devz.persona4golden",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.extended-virtual-addressing",
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.persona4golden-d3bc320153cd.png",
+      "tint": "#F6E408",
+      "width": 180
+    },
+    "minOSVersion": "16.0",
+    "name": "Persona 4 Golden",
+    "privacy": {},
+    "version": "0.1.0"
   }
 }

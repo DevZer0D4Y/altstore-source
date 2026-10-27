@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-10-27T14:49:33.359778Z",
+  "generated": "2026-10-27T19:52:15.906680Z",
   "projects": [
     {
       "repo": "P4G-iOS",
@@ -13,17 +13,17 @@
       "created": "2026-10-26T11:46:04Z",
       "firstRelease": "2026-10-26T12:36:59Z",
       "latestRelease": {
-        "tag": "v0.1.0",
-        "name": "v0.1.0",
-        "date": "2026-10-26T12:36:59Z",
-        "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/v0.1.0"
+        "tag": "build2",
+        "name": "Persona 4 Golden for iOS — Build 8 (0.1.1)",
+        "date": "2026-10-27T17:00:53Z",
+        "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/build2"
       },
       "released": "2026-10-26T12:36:59Z",
       "app": {
         "name": "Persona 4 Golden",
         "bundleIdentifier": "com.devz.persona4golden",
-        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-6808454f303a.png",
-        "tintColor": "#FAE100"
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-d3bc320153cd.png",
+        "tintColor": "#F6E408"
       }
     },
     {

@@ -21,11 +21,21 @@
       "developerName": "DevZer0D4Y",
       "subtitle": "Persona 4 Golden (Switch) statically recompiled to a native iOS app. Bring your own game files.",
       "localizedDescription": "Persona 4 Golden (Switch) statically recompiled to a native iOS app. Bring your own game files.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/P4G-iOS",
-      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-6808454f303a.png",
-      "tintColor": "#FAE100",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.persona4golden-d3bc320153cd.png",
+      "tintColor": "#F6E408",
       "category": "games",
       "screenshots": [],
       "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "8",
+          "marketingVersion": "Persona 4 Golden for iOS — Build 8 (0.1.1)",
+          "date": "2026-10-27T17:00:53Z",
+          "localizedDescription": "Persona 4 Golden for iOS — Build 8 (0.1.1)\n\nNew\n- Import the game on the phone. Tap Import on the start screen and pick your own Persona 4 Golden dump (NSP, NSZ, XCI or XCZ, version 1.0.0) together with your prod.keys. Or put both in Files → On My iPhone → Persona 4 Golden. No computer needed.\n- Touch pad opacity setting. A \"Pad opacity\" slider in the start screen's settings sets the on-screen controller from 10% to 100%.\n- Show FPS setting. A frame-rate counter in the game's yellow, next to ZL.\n- New app icon.\n\nFixes\n- Fixed a crash shortly after loading a save. The recompiler had built some of the game's switch statements wrong; when the game took certain cases, it shut down. The same fix covers 7 more switch statements broken the same way, so it should also prevent crashes later in the game.\n- Correct crash messages. Every crash used to say \"Your game files are incomplete\" by mistake. Your files were fine. Crash messages now describe the real problem.\n- Colours look right on iPhone. The game's image is now colour-matched to the screen. Before, colours were too saturated and shifted on iPhone displays.\n\nImprovements\n- Smoother camera control (right stick):\n  - A resting thumb no longer makes the camera drift.\n  - Small drags turn slowly for fine adjustments. A full drag still turns at full speed.\n  - Reversing direction turns back straight away instead of carrying on the old way first.\n  - Touches near R / ZR and the date no longer grab the camera by accident.\n- Better crash reports. The log now records how much memory iOS gives the game and warns when it runs low. If anything goes wrong, please send log.txt and log.prev.txt from Files → On My iPhone → Persona 4 Golden.\n\nInstalling: install over your current version. Your saves and game files are kept.",
+          "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/build2/Persona4Golden-iOS-0.1.1.ipa",
+          "size": 17253509,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.1.0",
           "buildVersion": "6",
@@ -45,10 +55,10 @@
         "privacy": {}
       },
       "version": "0.1.0",
-      "versionDate": "2026-10-26T12:36:59Z",
-      "versionDescription": "First public version of the Persona 4 Golden iOS port.\n\nFollow the steps in the README: extract your game with `tools/nsz_extract.py`, then run `ios/build.sh`, sideload the IPA, and copy `exefs/` and `romfs/` into the app.\n\n## What works\n- Boots and plays on iPhone (tested on iPhone 16 Pro Max, iOS 27) at a locked 60 fps, or 30 fps if you pick it in the launcher\n- On-screen controls in the game's yellow-and-black style; game controllers are supported\n- A launcher that checks your game files and joins split files copied over USB\n- Your save in a Files-visible `Save/` folder, so you can bring a save over from MeloNX / Ryujinx\n- Opening movies and audio\n\n## Notes\n- Needs a sideloading tool that keeps the *Increased Memory Limit* and *Extended Virtual Addressing* entitlements (ESign, AltStore, SideStore, Sideloadly)\n- The first run compiles shaders, so expect short hitches the first time you see each effect",
-      "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/v0.1.0/Persona4Golden-iOS-0.1.0.ipa",
-      "size": 17063142
+      "versionDate": "2026-10-27T17:00:53Z",
+      "versionDescription": "Persona 4 Golden for iOS — Build 8 (0.1.1)\n\nNew\n- Import the game on the phone. Tap Import on the start screen and pick your own Persona 4 Golden dump (NSP, NSZ, XCI or XCZ, version 1.0.0) together with your prod.keys. Or put both in Files → On My iPhone → Persona 4 Golden. No computer needed.\n- Touch pad opacity setting. A \"Pad opacity\" slider in the start screen's settings sets the on-screen controller from 10% to 100%.\n- Show FPS setting. A frame-rate counter in the game's yellow, next to ZL.\n- New app icon.\n\nFixes\n- Fixed a crash shortly after loading a save. The recompiler had built some of the game's switch statements wrong; when the game took certain cases, it shut down. The same fix covers 7 more switch statements broken the same way, so it should also prevent crashes later in the game.\n- Correct crash messages. Every crash used to say \"Your game files are incomplete\" by mistake. Your files were fine. Crash messages now describe the real problem.\n- Colours look right on iPhone. The game's image is now colour-matched to the screen. Before, colours were too saturated and shifted on iPhone displays.\n\nImprovements\n- Smoother camera control (right stick):\n  - A resting thumb no longer makes the camera drift.\n  - Small drags turn slowly for fine adjustments. A full drag still turns at full speed.\n  - Reversing direction turns back straight away instead of carrying on the old way first.\n  - Touches near R / ZR and the date no longer grab the camera by accident.\n- Better crash reports. The log now records how much memory iOS gives the game and warns when it runs low. If anything goes wrong, please send log.txt and log.prev.txt from Files → On My iPhone → Persona 4 Golden.\n\nInstalling: install over your current version. Your saves and game files are kept.",
+      "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/build2/Persona4Golden-iOS-0.1.1.ipa",
+      "size": 17253509
     },
     {
       "name": "Sonic Generations",
@@ -1225,6 +1235,16 @@
   ],
   "news": [
     {
+      "title": "Persona 4 Golden Persona 4 Golden for iOS — Build 8 (0.1.1)",
+      "identifier": "release-P4G-iOS-build2",
+      "caption": "Persona 4 Golden for iOS — Build 8 (0.1.1)",
+      "date": "2026-10-27T17:00:53Z",
+      "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/build2",
+      "appID": "com.devz.persona4golden",
+      "notify": false,
+      "tintColor": "#F6E408"
+    },
+    {
       "title": "Persona 4 Golden v0.1.0",
       "identifier": "release-P4G-iOS-v0.1.0",
       "caption": "First public version of the Persona 4 Golden iOS port.",
@@ -1232,7 +1252,7 @@
       "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/v0.1.0",
       "appID": "com.devz.persona4golden",
       "notify": false,
-      "tintColor": "#FAE100"
+      "tintColor": "#F6E408"
     },
     {
       "title": "Sonic Generations Sonic Generations for iOS 1.0.0",
@@ -1413,16 +1433,6 @@
       "appID": "com.devz.ssf2t",
       "notify": false,
       "tintColor": "#AF4A58"
-    },
-    {
-      "title": "Tony Hawk’s Pro Skater 2 NativePorts 0.3.0 — NBA Showtime and rendering fixes",
-      "identifier": "release-NativePorts-v0.3.0",
-      "caption": "NBA Showtime (PlayStation USA) joins the four existing ports. All five iOS apps and Windows executables are version 0.3.0.",
-      "date": "2026-10-16T09:29:41Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.3.0",
-      "appID": "com.devz.thps2",
-      "notify": false,
-      "tintColor": "#687185"
     }
   ]
 }
