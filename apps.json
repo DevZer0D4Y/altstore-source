@@ -28,6 +28,16 @@
       "versions": [
         {
           "version": "0.1.0",
+          "buildVersion": "12",
+          "marketingVersion": "v0.1.1",
+          "date": "2026-10-29T06:14:01Z",
+          "localizedDescription": "Bug fixes and performance fixes, solved several crashes and visual/graphical glitches.",
+          "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/build2_1/Persona4Golden-iOS-0.1.1.ipa",
+          "size": 17250693,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.1.0",
           "buildVersion": "8",
           "marketingVersion": "Persona 4 Golden for iOS — Build 8 (0.1.1)",
           "date": "2026-10-27T17:00:53Z",
@@ -55,10 +65,10 @@
         "privacy": {}
       },
       "version": "0.1.0",
-      "versionDate": "2026-10-27T17:00:53Z",
-      "versionDescription": "Persona 4 Golden for iOS — Build 8 (0.1.1)\n\n### Fixes\n- **Colours are correct now.** Everything looked too bright and washed out: menus, 3D scenes and movies. The game draws into sRGB images, and the renderer brightened every pixel on the way in, which on the Switch only happens when a separate hardware switch is on. P4G leaves it off, so colours were effectively brightened twice. The game's colours are now written unchanged, and the Load screen's yellow, the shadows and the movies match the original.\n- **Fixed a crash shortly after loading a save.** The recompiler took some of the game's switch statements for plain jumps, because it confused a vector register with the jump's register. When the game took certain cases of such a switch, it stopped with \"no function at …\". Eight switches were affected, the crashing one included, and all of them are fixed.\n- **Crash messages tell the truth.** Every crash used to say \"Your game files are incomplete\", because the check expected the wrong number of game files. Crash messages now describe the real problem.\n- **Colour-managed display.** The image is now tagged as sRGB, so iOS maps it correctly to wide-colour (P3) screens.\n\n### New\n- **Resolution slider (50–150%).** Sets the resolution relative to the screen's own. Above 100%, 3D scenes are drawn sharper than the screen and scaled down, at extra GPU cost.\n- **Sharpness slider (0–100%).** Optional contrast-adaptive sharpening of the final image, without halos around edges. Off by default.\n- **Camera speed slider (25–200%)** for the touch pad's camera stick.\n- **Pad opacity slider (10–100%)** for the on-screen controller.\n- **Import the game on the device.** Tap **Import** on the start screen and pick your own dump (NSP, NSZ, XCI or XCZ, version 1.0.0) together with your `prod.keys`. Or put both in Files → On My iPhone → Persona 4 Golden.\n- **Show FPS** counter, next to ZL.\n\n### Improvements\n- **Camera stick:**\n  - A resting thumb no longer makes the camera drift.\n  - Small drags turn slowly, and a full drag still turns at full speed.\n  - Reversing direction responds straight away.\n  - Touches near R / ZR and the date no longer grab the camera by accident.\n- **Memory diagnostics.** `log.txt` now records how much memory iOS allows the app and warns when it's running low.\n\n### For builders\n- `ios/build.sh` takes `ICON=` to use your own app icon. The icon isn't stored in the repository.\n- Rerun `make gen` (or `ios/build.sh` without `SKIP_GEN`) to pick up the recompiler fix in `tools/gen.py`.\n- The Makefiles now rebuild the game library's version ID when the code generator changes. Before, a stale ID made the Mac build refuse to start with \"built for another version\".\n- New settings in `p4g.ini`: `resolution_scale`, `sharpness`, `camera_sensitivity`.\n\n### Installing\nInstall over your current version. Your saves and game files are kept.",
-      "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/build2/Persona4Golden-iOS-0.1.1.ipa",
-      "size": 17251061
+      "versionDate": "2026-10-29T06:14:01Z",
+      "versionDescription": "Bug fixes and performance fixes, solved several crashes and visual/graphical glitches.",
+      "downloadURL": "https://github.com/DevZer0D4Y/P4G-iOS/releases/download/build2_1/Persona4Golden-iOS-0.1.1.ipa",
+      "size": 17250693
     },
     {
       "name": "Sonic Generations",
@@ -1235,6 +1245,16 @@
   ],
   "news": [
     {
+      "title": "Persona 4 Golden v0.1.1",
+      "identifier": "release-P4G-iOS-build2_1",
+      "caption": "Bug fixes and performance fixes, solved several crashes and visual/graphical glitches.",
+      "date": "2026-10-29T06:14:01Z",
+      "url": "https://github.com/DevZer0D4Y/P4G-iOS/releases/tag/build2_1",
+      "appID": "com.devz.persona4golden",
+      "notify": false,
+      "tintColor": "#F6E408"
+    },
+    {
       "title": "Persona 4 Golden Persona 4 Golden for iOS — Build 8 (0.1.1)",
       "identifier": "release-P4G-iOS-build2",
       "caption": "Persona 4 Golden for iOS — Build 8 (0.1.1)",
@@ -1423,16 +1443,6 @@
       "appID": "com.devz.slamjam96",
       "notify": false,
       "tintColor": "#4E4A69"
-    },
-    {
-      "title": "Super Street Fighter II Turbo NativePorts 0.3.0 — NBA Showtime and rendering fixes",
-      "identifier": "release-NativePorts-v0.3.0",
-      "caption": "NBA Showtime (PlayStation USA) joins the four existing ports. All five iOS apps and Windows executables are version 0.3.0.",
-      "date": "2026-10-16T09:29:41Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.3.0",
-      "appID": "com.devz.ssf2t",
-      "notify": false,
-      "tintColor": "#AF4A58"
     }
   ]
 }
