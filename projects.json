@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-02T04:51:20.466500Z",
+  "generated": "2026-11-02T13:11:49.565359Z",
   "projects": [
     {
       "repo": "P4G-iOS",
@@ -378,9 +378,9 @@
       }
     },
     {
-      "repo": "COD4iOS-COD4NS",
-      "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS",
-      "description": "Call of Duty 4 port for iOS and Nintendo Switch",
+      "repo": "ReCoD4",
+      "url": "https://github.com/DevZer0D4Y/ReCoD4",
+      "description": "Call of Duty 4 port for iOS, Android, Nintendo Switch and New Nintendo 3DS.",
       "language": "C++",
       "topics": [],
       "fork": true,
@@ -394,7 +394,7 @@
         "tag": "R6-beta.1",
         "name": "R6-beta.1 — Clean and Performance Stats Enabled",
         "date": "2026-10-16T17:42:31Z",
-        "url": "https://github.com/DevZer0D4Y/COD4iOS-COD4NS/releases/tag/R6-beta.1"
+        "url": "https://github.com/DevZer0D4Y/ReCoD4/releases/tag/R6-beta.1"
       },
       "released": "2026-10-03T06:49:12Z",
       "app": {
