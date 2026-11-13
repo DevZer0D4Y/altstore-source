@@ -8,13 +8,48 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.mcsm",
     "com.devz.persona4golden",
     "com.devz.sonicgenerations",
     "com.devz.freeridersrecompiled",
-    "com.devz.skate2",
-    "com.devz.thechoicervoicer"
+    "com.devz.skate2"
   ],
   "apps": [
+    {
+      "name": "MCSM",
+      "bundleIdentifier": "com.devz.mcsm",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Minecraft: Story Mode (Switch) recompiled for iPhone and iPad. Bring your own game.",
+      "localizedDescription": "Minecraft: Story Mode (Switch) recompiled for iPhone and iPad. Bring your own game.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.mcsm-47377513627a.png",
+      "tintColor": "#647D9D",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "7",
+          "marketingVersion": "MCSM 0.1.0",
+          "date": "2026-11-13T18:03:00Z",
+          "localizedDescription": "Minecraft: Story Mode recompiled for iPhone and iPad. No game files included: bring your own game and prod.keys. Bundle ID com.devz.mcsm.",
+          "downloadURL": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS/releases/download/v0.1.0/MCSM-iOS.ipa",
+          "size": 17903749,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "0.1.0",
+      "versionDate": "2026-11-13T18:03:00Z",
+      "versionDescription": "Minecraft: Story Mode recompiled for iPhone and iPad. No game files included: bring your own game and prod.keys. Bundle ID com.devz.mcsm.",
+      "downloadURL": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS/releases/download/v0.1.0/MCSM-iOS.ipa",
+      "size": 17903749
+    },
     {
       "name": "Persona 4 Golden",
       "bundleIdentifier": "com.devz.persona4golden",
@@ -1245,13 +1280,14 @@
   ],
   "news": [
     {
-      "title": "In development: MinecraftStoryMode-iOS",
-      "identifier": "upcoming-MinecraftStoryMode-iOS",
-      "caption": "Minecraft: Story Mode (Switch) recompiled for iPhone and iPad. Bring your own game.",
-      "date": "2026-11-13T15:25:28Z",
-      "url": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS",
+      "title": "MCSM MCSM 0.1.0",
+      "identifier": "release-MinecraftStoryMode-iOS-v0.1.0",
+      "caption": "Minecraft: Story Mode recompiled for iPhone and iPad. No game files included: bring your own game and prod.keys. Bundle ID com.devz.mcsm.",
+      "date": "2026-11-13T18:03:00Z",
+      "url": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS/releases/tag/v0.1.0",
+      "appID": "com.devz.mcsm",
       "notify": false,
-      "tintColor": "#2F6FEB"
+      "tintColor": "#647D9D"
     },
     {
       "title": "Persona 4 Golden v0.1.1",

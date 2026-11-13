@@ -1,6 +1,6 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-13T15:57:23.271047Z",
+  "generated": "2026-11-13T21:52:49.973972Z",
   "projects": [
     {
       "repo": "MinecraftStoryMode-iOS",
@@ -11,10 +11,20 @@
       "fork": false,
       "parent": null,
       "created": "2026-11-13T15:25:28Z",
-      "firstRelease": null,
-      "latestRelease": null,
-      "released": "2026-11-13T15:25:28Z",
-      "app": null
+      "firstRelease": "2026-11-13T18:03:00Z",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "name": "MCSM 0.1.0",
+        "date": "2026-11-13T18:03:00Z",
+        "url": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS/releases/tag/v0.1.0"
+      },
+      "released": "2026-11-13T18:03:00Z",
+      "app": {
+        "name": "MCSM",
+        "bundleIdentifier": "com.devz.mcsm",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.mcsm-47377513627a.png",
+        "tintColor": "#647D9D"
+      }
     },
     {
       "repo": "P4G-iOS",
@@ -399,8 +409,8 @@
       "topics": [],
       "fork": true,
       "parent": {
-        "name": "SwagSoftware/KisakCOD",
-        "url": "https://github.com/SwagSoftware/KisakCOD"
+        "name": "kiwidoggie/KisakCOD",
+        "url": "https://github.com/kiwidoggie/KisakCOD"
       },
       "created": "2026-09-09T09:59:59Z",
       "firstRelease": "2026-10-03T06:49:12Z",

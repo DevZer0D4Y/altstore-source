@@ -1134,5 +1134,23 @@
     "name": "Persona 4 Golden",
     "privacy": {},
     "version": "0.1.0"
+  },
+  "744638000:2026-11-13T18:02:59Z:17903749": {
+    "buildVersion": "7",
+    "bundleIdentifier": "com.devz.mcsm",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.extended-virtual-addressing",
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.mcsm-47377513627a.png",
+      "tint": "#647D9D",
+      "width": 180
+    },
+    "minOSVersion": "16.0",
+    "name": "MCSM",
+    "privacy": {},
+    "version": "0.1.0"
   }
 }
