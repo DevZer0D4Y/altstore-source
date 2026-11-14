@@ -1,7 +1,55 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-14T08:52:50.264679Z",
+  "generated": "2026-11-14T15:37:32.894406Z",
   "projects": [
+    {
+      "repo": "UT2004-iOS",
+      "url": "https://github.com/DevZer0D4Y/UT2004-iOS",
+      "description": "Unreal Tournament 2004 running natively on iPhone/iPad (OldUnreal patch 3374, no emulation)",
+      "language": "Objective-C",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-11-14T12:56:56Z",
+      "firstRelease": "2026-11-14T13:43:31Z",
+      "latestRelease": {
+        "tag": "v0.1.0-7",
+        "name": "UT2004 iOS 0.1.0 (build 7)",
+        "date": "2026-11-14T13:43:31Z",
+        "url": "https://github.com/DevZer0D4Y/UT2004-iOS/releases/tag/v0.1.0-7"
+      },
+      "released": "2026-11-14T13:43:31Z",
+      "app": {
+        "name": "UT2004",
+        "bundleIdentifier": "com.devz.ut04",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ut04-517d7ccab8f6.png",
+        "tintColor": "#96723B"
+      }
+    },
+    {
+      "repo": "BeatSaber-iOS",
+      "url": "https://github.com/DevZer0D4Y/BeatSaber-iOS",
+      "description": "Unofficial non-VR port of Beat Saber 1.29.1 for iPhone and iPad, with touch controls and custom songs. Built from your own Steam copy; no game files included.",
+      "language": "C#",
+      "topics": [],
+      "fork": false,
+      "parent": null,
+      "created": "2026-11-09T20:44:10Z",
+      "firstRelease": "2026-11-14T12:59:15Z",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "name": "v1.0.0",
+        "date": "2026-11-14T12:59:15Z",
+        "url": "https://github.com/DevZer0D4Y/BeatSaber-iOS/releases/tag/v1.0.0"
+      },
+      "released": "2026-11-14T12:59:15Z",
+      "app": {
+        "name": "Beat Saber",
+        "bundleIdentifier": "com.devz.beatsaber",
+        "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+        "tintColor": "#2F6FEB"
+      }
+    },
     {
       "repo": "MinecraftStoryMode-iOS",
       "url": "https://github.com/DevZer0D4Y/MinecraftStoryMode-iOS",
@@ -404,7 +452,7 @@
     {
       "repo": "ReCoD4",
       "url": "https://github.com/DevZer0D4Y/ReCoD4",
-      "description": "Call of Duty 4 port for iOS, Android, Nintendo Switch and New Nintendo 3DS.",
+      "description": "Call of Duty 4 port for iOS, Android and Nintendo Switch.",
       "language": "C++",
       "topics": [],
       "fork": true,

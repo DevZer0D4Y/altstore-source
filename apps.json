@@ -8,13 +8,82 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.ut04",
+    "com.devz.beatsaber",
     "com.devz.mcsm",
     "com.devz.persona4golden",
-    "com.devz.sonicgenerations",
-    "com.devz.freeridersrecompiled",
-    "com.devz.skate2"
+    "com.devz.sonicgenerations"
   ],
   "apps": [
+    {
+      "name": "UT2004",
+      "bundleIdentifier": "com.devz.ut04",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unreal Tournament 2004 running natively on iPhone/iPad (OldUnreal patch 3374, no emulation)",
+      "localizedDescription": "Unreal Tournament 2004 running natively on iPhone/iPad (OldUnreal patch 3374, no emulation)\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/UT2004-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.ut04-517d7ccab8f6.png",
+      "tintColor": "#96723B",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "7",
+          "marketingVersion": "UT2004 iOS 0.1.0 (build 7)",
+          "date": "2026-11-14T13:43:31Z",
+          "localizedDescription": "Unreal Tournament 2004 running natively on iPhone/iPad, built from OldUnreal's patch 3374.\n\n**Install:** sideload `UT2004-iOS-0.1.0-7.ipa` (it is ad-hoc signed; re-sign with your own certificate).\n\n**Game data is not included.** Copy Animations, KarmaData, Maps, Music, Sounds, StaticMeshes and Textures (Help and Speech optional) into Files > On My iPhone > UT2004 > UT2004. Do not copy the original System folder.\n\nChanges in this build:\n- Fixed the crash when joining online servers (voice chat opened the microphone without permission; voice chat is now off)\n- Full-screen rendering at 2/3 of native resolution, with the whole frame visible\n- Track Stats enabled by default (most servers require it) and internet net speed raised to 20000 (online frame rate is no longer held near 60)\n- Metal pipeline cache moved out of the read-only app bundle (fixed map-load crashes)\n- New app icon; bundle ID is now com.devz.ut04 (installs as a new app; copy the game data again)",
+          "downloadURL": "https://github.com/DevZer0D4Y/UT2004-iOS/releases/download/v0.1.0-7/UT2004-iOS-0.1.0-7.ipa",
+          "size": 47939681,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Used to find and join UT2004 LAN games.",
+          "NSMicrophoneUsageDescription": "UT2004 voice chat in online games."
+        }
+      },
+      "version": "0.1.0",
+      "versionDate": "2026-11-14T13:43:31Z",
+      "versionDescription": "Unreal Tournament 2004 running natively on iPhone/iPad, built from OldUnreal's patch 3374.\n\n**Install:** sideload `UT2004-iOS-0.1.0-7.ipa` (it is ad-hoc signed; re-sign with your own certificate).\n\n**Game data is not included.** Copy Animations, KarmaData, Maps, Music, Sounds, StaticMeshes and Textures (Help and Speech optional) into Files > On My iPhone > UT2004 > UT2004. Do not copy the original System folder.\n\nChanges in this build:\n- Fixed the crash when joining online servers (voice chat opened the microphone without permission; voice chat is now off)\n- Full-screen rendering at 2/3 of native resolution, with the whole frame visible\n- Track Stats enabled by default (most servers require it) and internet net speed raised to 20000 (online frame rate is no longer held near 60)\n- Metal pipeline cache moved out of the read-only app bundle (fixed map-load crashes)\n- New app icon; bundle ID is now com.devz.ut04 (installs as a new app; copy the game data again)",
+      "downloadURL": "https://github.com/DevZer0D4Y/UT2004-iOS/releases/download/v0.1.0-7/UT2004-iOS-0.1.0-7.ipa",
+      "size": 47939681
+    },
+    {
+      "name": "Beat Saber",
+      "bundleIdentifier": "com.devz.beatsaber",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Unofficial non-VR port of Beat Saber 1.29.1 for iPhone and iPad, with touch controls and custom songs. Built from your o",
+      "localizedDescription": "Unofficial non-VR port of Beat Saber 1.29.1 for iPhone and iPad, with touch controls and custom songs. Built from your own Steam copy; no game files included.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/BeatSaber-iOS",
+      "iconURL": "https://github.com/DevZer0D4Y.png?size=512",
+      "tintColor": "#2F6FEB",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.29.1",
+          "buildVersion": "1",
+          "marketingVersion": "v1.0.0",
+          "date": "2026-11-14T12:59:15Z",
+          "localizedDescription": "First release of the unofficial, non-VR iPhone and iPad port of Beat Saber 1.29.1.\n\n**This app contains no game files.** It needs your own copy of Beat Saber 1.29.1 from Steam, converted on a Mac with `tools/import_game.sh` and copied to the device as the `GameData` folder. See the README for the steps.\n\n- Touch controls (swipe to swing the sabers), a fixed menu camera, custom songs with an in-game BeatSaver browser\n- The game's code runs from your files in the HybridCLR interpreter; Unity's engine runs natively\n- Install `BeatSaber.ipa` with your sideloading tool (AltStore, SideStore, ...)\n\nThe app contains runtime parts of Unity 2019.4.28f1 and HybridCLR (MIT); see Credits in the README. Unofficial fan project, not affiliated with Beat Games, Meta or Unity. Use at your own risk.",
+          "downloadURL": "https://github.com/DevZer0D4Y/BeatSaber-iOS/releases/download/v1.0.0/BeatSaber.ipa",
+          "size": 24245891,
+          "minOSVersion": "12.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.29.1",
+      "versionDate": "2026-11-14T12:59:15Z",
+      "versionDescription": "First release of the unofficial, non-VR iPhone and iPad port of Beat Saber 1.29.1.\n\n**This app contains no game files.** It needs your own copy of Beat Saber 1.29.1 from Steam, converted on a Mac with `tools/import_game.sh` and copied to the device as the `GameData` folder. See the README for the steps.\n\n- Touch controls (swipe to swing the sabers), a fixed menu camera, custom songs with an in-game BeatSaver browser\n- The game's code runs from your files in the HybridCLR interpreter; Unity's engine runs natively\n- Install `BeatSaber.ipa` with your sideloading tool (AltStore, SideStore, ...)\n\nThe app contains runtime parts of Unity 2019.4.28f1 and HybridCLR (MIT); see Credits in the README. Unofficial fan project, not affiliated with Beat Games, Meta or Unity. Use at your own risk.",
+      "downloadURL": "https://github.com/DevZer0D4Y/BeatSaber-iOS/releases/download/v1.0.0/BeatSaber.ipa",
+      "size": 24245891
+    },
     {
       "name": "MCSM",
       "bundleIdentifier": "com.devz.mcsm",
@@ -725,8 +794,8 @@
       "name": "COD4iOS",
       "bundleIdentifier": "com.devz.cod4ios",
       "developerName": "DevZer0D4Y",
-      "subtitle": "Call of Duty 4 port for iOS, Android, Nintendo Switch and New Nintendo 3DS.",
-      "localizedDescription": "Call of Duty 4 port for iOS, Android, Nintendo Switch and New Nintendo 3DS.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ReCoD4",
+      "subtitle": "Call of Duty 4 port for iOS, Android and Nintendo Switch.",
+      "localizedDescription": "Call of Duty 4 port for iOS, Android and Nintendo Switch.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/ReCoD4",
       "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.cod4ios-3d1d5fd18e9e.png",
       "tintColor": "#4F5634",
       "category": "games",
@@ -1280,6 +1349,26 @@
   ],
   "news": [
     {
+      "title": "UT2004 UT2004 iOS 0.1.0 (build 7)",
+      "identifier": "release-UT2004-iOS-v0.1.0-7",
+      "caption": "Unreal Tournament 2004 running natively on iPhone/iPad, built from OldUnreal's patch 3374.",
+      "date": "2026-11-14T13:43:31Z",
+      "url": "https://github.com/DevZer0D4Y/UT2004-iOS/releases/tag/v0.1.0-7",
+      "appID": "com.devz.ut04",
+      "notify": false,
+      "tintColor": "#96723B"
+    },
+    {
+      "title": "Beat Saber v1.0.0",
+      "identifier": "release-BeatSaber-iOS-v1.0.0",
+      "caption": "First release of the unofficial, non-VR iPhone and iPad port of Beat Saber 1.29.1.",
+      "date": "2026-11-14T12:59:15Z",
+      "url": "https://github.com/DevZer0D4Y/BeatSaber-iOS/releases/tag/v1.0.0",
+      "appID": "com.devz.beatsaber",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
       "title": "MCSM MCSM 0.1.0",
       "identifier": "release-MinecraftStoryMode-iOS-v0.1.0",
       "caption": "Minecraft: Story Mode recompiled for iPhone and iPad. No game files included: bring your own game and prod.keys. Bundle ID com.devz.mcsm.",
@@ -1458,26 +1547,6 @@
       "appID": "com.devz.projectreignition",
       "notify": false,
       "tintColor": "#A5743B"
-    },
-    {
-      "title": "COD4iOS R5-beta.2 — iOS build 12: fog fix and crash diagnostics",
-      "identifier": "release-ReCoD4-R5-beta.2",
-      "caption": "COD4iOS 1.0.4 build 12 — fog fix and crash diagnostics",
-      "date": "2026-10-16T09:47:41Z",
-      "url": "https://github.com/DevZer0D4Y/ReCoD4/releases/tag/R5-beta.2",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
-    },
-    {
-      "title": "NBA Showtime - NBA on NBC NativePorts 0.3.0 — NBA Showtime and rendering fixes",
-      "identifier": "release-NativePorts-v0.3.0",
-      "caption": "NBA Showtime (PlayStation USA) joins the four existing ports. All five iOS apps and Windows executables are version 0.3.0.",
-      "date": "2026-10-16T09:29:41Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.3.0",
-      "appID": "com.devz.nbashowt",
-      "notify": false,
-      "tintColor": "#432FAB"
     }
   ]
 }

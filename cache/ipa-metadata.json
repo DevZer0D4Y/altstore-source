@@ -1152,5 +1152,35 @@
     "name": "MCSM",
     "privacy": {},
     "version": "0.1.0"
+  },
+  "747501126:2026-11-14T12:59:14Z:24245891": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.devz.beatsaber",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "minOSVersion": "12.0",
+    "name": "Beat Saber",
+    "privacy": {},
+    "version": "1.29.1"
+  },
+  "747617400:2026-11-14T13:43:31Z:47939681": {
+    "buildVersion": "7",
+    "bundleIdentifier": "com.devz.ut04",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "com.devz.ut04-517d7ccab8f6.png",
+      "tint": "#96723B",
+      "width": 152
+    },
+    "minOSVersion": "16.0",
+    "name": "UT2004",
+    "privacy": {
+      "NSLocalNetworkUsageDescription": "Used to find and join UT2004 LAN games.",
+      "NSMicrophoneUsageDescription": "UT2004 voice chat in online games."
+    },
+    "version": "0.1.0"
   }
 }
