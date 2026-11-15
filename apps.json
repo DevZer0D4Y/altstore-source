@@ -8,13 +8,47 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "org.nxnative.0100a3f00c536000",
     "com.devz.ut04",
     "com.devz.beatsaber",
     "com.devz.mcsm",
-    "com.devz.persona4golden",
-    "com.devz.sonicgenerations"
+    "com.devz.persona4golden"
   ],
   "apps": [
+    {
+      "name": "KILL la KILL IF",
+      "bundleIdentifier": "org.nxnative.0100a3f00c536000",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "KILL la KILL -IF- on iPhone and Mac, natively through nxnative: resolution up to 200 %, fixed fades, and importing your ",
+      "localizedDescription": "KILL la KILL -IF- on iPhone and Mac, natively through nxnative: resolution up to 200 %, fixed fades, and importing your own dump on the iPhone\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/klk-ios",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/org.nxnative.0100a3f00c536000-1aa550baa4f3.png",
+      "tintColor": "#7A1111",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.0",
+          "marketingVersion": "KILL la KILL -IF- 1.0",
+          "date": "2026-11-14T21:29:12Z",
+          "localizedDescription": "KILL la KILL -IF- (`0100A3F00C536000`, 1.0.0) on iPhone and Mac, on top of nxnative.\n\n**What's new**\n- **Resolution from 50 % to 200 %** (up to 3840x2160 docked, 2560x1440 handheld). On the iPhone the launcher starts at 85 %, which runs cooler; 100 % is the Switch's own size.\n- **Fades fixed above 100 %**: the menus, the intro logos and the opening fade over the whole screen instead of only its top-left part.\n- **Import on the iPhone**: the launcher opens without the game; under *Game files* pick your own `.nsp` / `.nsz` / `.xci` / `.xcz` and `prod.keys` together. The app unpacks the game into itself (about 6.5 GB, keep the app open until it finishes) and Play turns on. A dump of another version is refused with a message.\n- The launcher in the game's colours, with its title.\n\n## How to play\n\n**You need**\n- An iPhone 15 Pro or newer, or an iPad with an M1 chip or newer, on **iOS 26** or later (the game needs the GPU features those chips have).\n- Your own copy of the game: the **Japanese release, base game 1.0.0** (title ID `0100A3F00C536000`), dumped from your Switch as `.nsp`, `.nsz`, `.xci` or `.xcz`. Other regions, updates and DLC files are refused.\n- Your console's **`prod.keys`**.\n- About **7 GB free** on the device besides the dump (the game data is 6.5 GB).\n\n**1. Install the app.** Download `KillLaKill-iOS.ipa` below and sideload it with ESign, AltStore, SideStore, Sideloadly or a similar tool. Keep the *Increased Memory Limit* entitlement if your tool asks: the game needs it.\n\n**2. Dump the game and keys from your Switch** (a console that runs homebrew):\n- `prod.keys`: with Lockpick_RCM; it is saved to `switch/prod.keys` on the SD card.\n- The game: with nxdumptool, as an NSP or XCI. If the app later says the dump has a *personalized ticket*, dump it again with the ticket made common (nxdumptool's *remove console specific data* option).\n\n**3. Put both files on the iPhone**: in the Files app (iCloud Drive, On My iPhone, or a USB drive all work). AirDrop from a Mac also works: save them to Files.\n\n**4. Import them in the app.** Open *KILL la KILL IF*. The launcher opens without the game; scroll to **Game files** and tap **Choose your game dump and prod.keys…**. In the picker tap *Select*, choose **both** the dump and `prod.keys`, and confirm. The app reads the dump where it is and unpacks the game into itself: keep the app open and the screen on until the status says **Ready** (several minutes). Then you can delete the dump from Files to get its space back.\n- Shortcut: put the dump and `prod.keys` in the app's own folder (Files → On My iPhone → KILL la KILL IF) and the launcher offers **Import … from this app's folder**.\n\n**5. Tap PLAY.** Controllers: any MFi / Xbox / PlayStation controller, or the on-screen buttons. *Resolution* in the launcher sets the render size (85 % by default; lower it if the phone runs hot, raise it for a sharper picture).\n\n**If something goes wrong**\n- *\"That isn't KILL la KILL IF (title …)\"*: the file is another game or another region's release.\n- *\"No program in that file\"*: you picked an update or DLC; pick the base game.\n- *\"prod.keys not found\"*: select `prod.keys` together with the dump in the same pick.\n- Installing a newer IPA over the old one keeps the imported game and your saves; deleting the app removes them.\n\nTested on the Mac (Apple silicon, 60 fps at 100 % and 130 %) and on iPhone.",
+          "downloadURL": "https://github.com/DevZer0D4Y/klk-ios/releases/download/klk-1.0/KillLaKill-iOS.ipa",
+          "size": 30520407,
+          "minOSVersion": "26.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.increased-memory-limit"
+        ],
+        "privacy": {}
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-11-14T21:29:12Z",
+      "versionDescription": "KILL la KILL -IF- (`0100A3F00C536000`, 1.0.0) on iPhone and Mac, on top of nxnative.\n\n**What's new**\n- **Resolution from 50 % to 200 %** (up to 3840x2160 docked, 2560x1440 handheld). On the iPhone the launcher starts at 85 %, which runs cooler; 100 % is the Switch's own size.\n- **Fades fixed above 100 %**: the menus, the intro logos and the opening fade over the whole screen instead of only its top-left part.\n- **Import on the iPhone**: the launcher opens without the game; under *Game files* pick your own `.nsp` / `.nsz` / `.xci` / `.xcz` and `prod.keys` together. The app unpacks the game into itself (about 6.5 GB, keep the app open until it finishes) and Play turns on. A dump of another version is refused with a message.\n- The launcher in the game's colours, with its title.\n\n## How to play\n\n**You need**\n- An iPhone 15 Pro or newer, or an iPad with an M1 chip or newer, on **iOS 26** or later (the game needs the GPU features those chips have).\n- Your own copy of the game: the **Japanese release, base game 1.0.0** (title ID `0100A3F00C536000`), dumped from your Switch as `.nsp`, `.nsz`, `.xci` or `.xcz`. Other regions, updates and DLC files are refused.\n- Your console's **`prod.keys`**.\n- About **7 GB free** on the device besides the dump (the game data is 6.5 GB).\n\n**1. Install the app.** Download `KillLaKill-iOS.ipa` below and sideload it with ESign, AltStore, SideStore, Sideloadly or a similar tool. Keep the *Increased Memory Limit* entitlement if your tool asks: the game needs it.\n\n**2. Dump the game and keys from your Switch** (a console that runs homebrew):\n- `prod.keys`: with Lockpick_RCM; it is saved to `switch/prod.keys` on the SD card.\n- The game: with nxdumptool, as an NSP or XCI. If the app later says the dump has a *personalized ticket*, dump it again with the ticket made common (nxdumptool's *remove console specific data* option).\n\n**3. Put both files on the iPhone**: in the Files app (iCloud Drive, On My iPhone, or a USB drive all work). AirDrop from a Mac also works: save them to Files.\n\n**4. Import them in the app.** Open *KILL la KILL IF*. The launcher opens without the game; scroll to **Game files** and tap **Choose your game dump and prod.keys…**. In the picker tap *Select*, choose **both** the dump and `prod.keys`, and confirm. The app reads the dump where it is and unpacks the game into itself: keep the app open and the screen on until the status says **Ready** (several minutes). Then you can delete the dump from Files to get its space back.\n- Shortcut: put the dump and `prod.keys` in the app's own folder (Files → On My iPhone → KILL la KILL IF) and the launcher offers **Import … from this app's folder**.\n\n**5. Tap PLAY.** Controllers: any MFi / Xbox / PlayStation controller, or the on-screen buttons. *Resolution* in the launcher sets the render size (85 % by default; lower it if the phone runs hot, raise it for a sharper picture).\n\n**If something goes wrong**\n- *\"That isn't KILL la KILL IF (title …)\"*: the file is another game or another region's release.\n- *\"No program in that file\"*: you picked an update or DLC; pick the base game.\n- *\"prod.keys not found\"*: select `prod.keys` together with the dump in the same pick.\n- Installing a newer IPA over the old one keeps the imported game and your saves; deleting the app removes them.\n\nTested on the Mac (Apple silicon, 60 fps at 100 % and 130 %) and on iPhone.",
+      "downloadURL": "https://github.com/DevZer0D4Y/klk-ios/releases/download/klk-1.0/KillLaKill-iOS.ipa",
+      "size": 30520407
+    },
     {
       "name": "UT2004",
       "bundleIdentifier": "com.devz.ut04",
@@ -1349,6 +1383,16 @@
   ],
   "news": [
     {
+      "title": "KILL la KILL IF KILL la KILL -IF- 1.0",
+      "identifier": "release-klk-ios-klk-1.0",
+      "caption": "KILL la KILL -IF- (0100A3F00C536000, 1.0.0) on iPhone and Mac, on top of nxnative.",
+      "date": "2026-11-14T21:29:12Z",
+      "url": "https://github.com/DevZer0D4Y/klk-ios/releases/tag/klk-1.0",
+      "appID": "org.nxnative.0100a3f00c536000",
+      "notify": false,
+      "tintColor": "#7A1111"
+    },
+    {
       "title": "UT2004 UT2004 iOS 0.1.0 (build 7)",
       "identifier": "release-UT2004-iOS-v0.1.0-7",
       "caption": "Unreal Tournament 2004 running natively on iPhone/iPad, built from OldUnreal's patch 3374.",
@@ -1537,16 +1581,6 @@
       "appID": "com.devz.cod4ios",
       "notify": false,
       "tintColor": "#4F5634"
-    },
-    {
-      "title": "Sonic and the Secret Rings Remake Project Reignition for iOS 1.0.9 (build 5)",
-      "identifier": "release-ProjectReignition-iOS-1.0.9",
-      "caption": "1.0.9 (build 5)",
-      "date": "2026-10-16T14:17:17Z",
-      "url": "https://github.com/DevZer0D4Y/ProjectReignition-iOS/releases/tag/1.0.9",
-      "appID": "com.devz.projectreignition",
-      "notify": false,
-      "tintColor": "#A5743B"
     }
   ]
 }

@@ -1182,5 +1182,22 @@
       "NSMicrophoneUsageDescription": "UT2004 voice chat in online games."
     },
     "version": "0.1.0"
+  },
+  "748872164:2026-11-14T21:46:55Z:30520407": {
+    "buildVersion": "1.0.0",
+    "bundleIdentifier": "org.nxnative.0100a3f00c536000",
+    "cacheVersion": 4,
+    "entitlements": [
+      "com.apple.developer.kernel.increased-memory-limit"
+    ],
+    "icon": {
+      "file": "org.nxnative.0100a3f00c536000-1aa550baa4f3.png",
+      "tint": "#7A1111",
+      "width": 152
+    },
+    "minOSVersion": "26.0",
+    "name": "KILL la KILL IF",
+    "privacy": {},
+    "version": "1.0.0"
   }
 }

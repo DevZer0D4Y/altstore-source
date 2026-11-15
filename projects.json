@@ -1,7 +1,38 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-14T20:28:34.704907Z",
+  "generated": "2026-11-15T00:09:25.954740Z",
   "projects": [
+    {
+      "repo": "klk-ios",
+      "url": "https://github.com/DevZer0D4Y/klk-ios",
+      "description": "KILL la KILL -IF- on iPhone and Mac, natively through nxnative: resolution up to 200 %, fixed fades, and importing your own dump on the iPhone",
+      "language": "Python",
+      "topics": [
+        "ios",
+        "kill-la-kill",
+        "nintendo-switch"
+      ],
+      "fork": true,
+      "parent": {
+        "name": "seedds/nxnative",
+        "url": "https://github.com/seedds/nxnative"
+      },
+      "created": "2026-11-14T20:58:54Z",
+      "firstRelease": "2026-11-14T21:29:12Z",
+      "latestRelease": {
+        "tag": "klk-1.0",
+        "name": "KILL la KILL -IF- 1.0",
+        "date": "2026-11-14T21:29:12Z",
+        "url": "https://github.com/DevZer0D4Y/klk-ios/releases/tag/klk-1.0"
+      },
+      "released": "2026-11-14T21:29:12Z",
+      "app": {
+        "name": "KILL la KILL IF",
+        "bundleIdentifier": "org.nxnative.0100a3f00c536000",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/org.nxnative.0100a3f00c536000-1aa550baa4f3.png",
+        "tintColor": "#7A1111"
+      }
+    },
     {
       "repo": "UT2004-iOS",
       "url": "https://github.com/DevZer0D4Y/UT2004-iOS",
