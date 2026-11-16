@@ -1,7 +1,58 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-16T07:05:29.566914Z",
+  "generated": "2026-11-16T17:18:24.707906Z",
   "projects": [
+    {
+      "repo": "gtav-iOS",
+      "url": "https://github.com/DevZer0D4Y/gtav-iOS",
+      "description": "GTA V (Xbox 360, TU27) static recompilation with ReXGlue",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "andrewnakas/gtav-recomp",
+        "url": "https://github.com/andrewnakas/gtav-recomp"
+      },
+      "created": "2026-11-16T09:42:38Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-16T09:42:38Z",
+      "app": null
+    },
+    {
+      "repo": "fifa09-iOS",
+      "url": "https://github.com/DevZer0D4Y/fifa09-iOS",
+      "description": "FIFA 09 PC Port based on Xbox 360 Version.",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "ChunchunQ/fifa09-recomp",
+        "url": "https://github.com/ChunchunQ/fifa09-recomp"
+      },
+      "created": "2026-11-16T09:41:20Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-16T09:41:20Z",
+      "app": null
+    },
+    {
+      "repo": "fifa-street-iOS",
+      "url": "https://github.com/DevZer0D4Y/fifa-street-iOS",
+      "description": "ReStreet: FIFA Street (2012) recompiled for Windows PC, with online play, a launcher with friends, chat and rooms. Bring your own game.",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "samuelit0davila/fifa-street-pc-port",
+        "url": "https://github.com/samuelit0davila/fifa-street-pc-port"
+      },
+      "created": "2026-11-16T09:40:50Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-16T09:40:50Z",
+      "app": null
+    },
     {
       "repo": "klk-ios",
       "url": "https://github.com/DevZer0D4Y/klk-ios",

@@ -1383,6 +1383,33 @@
   ],
   "news": [
     {
+      "title": "In development: gtav-iOS",
+      "identifier": "upcoming-gtav-iOS",
+      "caption": "GTA V (Xbox 360, TU27) static recompilation with ReXGlue",
+      "date": "2026-11-16T09:42:38Z",
+      "url": "https://github.com/DevZer0D4Y/gtav-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
+      "title": "In development: fifa09-iOS",
+      "identifier": "upcoming-fifa09-iOS",
+      "caption": "FIFA 09 PC Port based on Xbox 360 Version.",
+      "date": "2026-11-16T09:41:20Z",
+      "url": "https://github.com/DevZer0D4Y/fifa09-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
+      "title": "In development: fifa-street-iOS",
+      "identifier": "upcoming-fifa-street-iOS",
+      "caption": "ReStreet: FIFA Street (2012) recompiled for Windows PC, with online play, a launcher with friends, chat and rooms. Bring your own game.",
+      "date": "2026-11-16T09:40:50Z",
+      "url": "https://github.com/DevZer0D4Y/fifa-street-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
       "title": "KILL la KILL IF KILL la KILL -IF- 1.0",
       "identifier": "release-klk-ios-klk-1.0",
       "caption": "KILL la KILL -IF- (0100A3F00C536000, 1.0.0) on iPhone and Mac, on top of nxnative.",
@@ -1551,36 +1578,6 @@
       "appID": "com.devz.umk3",
       "notify": false,
       "tintColor": "#C36810"
-    },
-    {
-      "title": "Sonic (2006) Sonic (2006) — Sonic '06 Mod Manager patches, build 1.0.11",
-      "identifier": "release-MarathonRecompilediOS-ios-2026-10-16-c",
-      "caption": "Build 1.0.11. Install over the existing Sonic (2006) app and keep the bundle ID com.devz.sonic2006. The IPA is unsigned and contains no game",
-      "date": "2026-10-16T17:57:34Z",
-      "url": "https://github.com/DevZer0D4Y/MarathonRecompilediOS/releases/tag/ios-2026-10-16-c",
-      "appID": "com.devz.sonic2006",
-      "notify": false,
-      "tintColor": "#304278"
-    },
-    {
-      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
-      "identifier": "release-ReCoD4-R6-beta.1",
-      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
-      "date": "2026-10-16T17:42:31Z",
-      "url": "https://github.com/DevZer0D4Y/ReCoD4/releases/tag/R6-beta.1",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
-    },
-    {
-      "title": "COD4iOS R6-beta.1 — Clean and Performance Stats Enabled",
-      "identifier": "release-ReCoD4-R6-beta.1",
-      "caption": "R6-beta.1 — clean and performance-stats-enabled packages",
-      "date": "2026-10-16T17:42:31Z",
-      "url": "https://github.com/DevZer0D4Y/ReCoD4/releases/tag/R6-beta.1",
-      "appID": "com.devz.cod4ios",
-      "notify": false,
-      "tintColor": "#4F5634"
     }
   ]
 }
