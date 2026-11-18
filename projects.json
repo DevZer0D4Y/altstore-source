@@ -1,7 +1,34 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-17T18:26:27.575411Z",
+  "generated": "2026-11-18T01:11:49.368838Z",
   "projects": [
+    {
+      "repo": "neighbors-dark-riddle",
+      "url": "https://github.com/DevZer0D4Y/neighbors-dark-riddle",
+      "description": "Neighbor's Dark Riddle: an unofficial native C++ port of the Android Unity game Dark Riddle for Nintendo Switch (homebrew), Windows and Linux. Runs the original levels, models, animations, sounds and UI, converted from your own APK. No game assets included.",
+      "language": "C++",
+      "topics": [
+        "cpp",
+        "devkitpro",
+        "game-port",
+        "libnx",
+        "linux",
+        "nintendo-switch",
+        "opengl-es",
+        "reverse-engineering",
+        "sdl2",
+        "switch-homebrew",
+        "unity",
+        "windows"
+      ],
+      "fork": false,
+      "parent": null,
+      "created": "2026-11-17T21:07:23Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-17T21:07:23Z",
+      "app": null
+    },
     {
       "repo": "gtav-iOS",
       "url": "https://github.com/DevZer0D4Y/gtav-iOS",
