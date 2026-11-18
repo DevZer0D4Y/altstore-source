@@ -1,12 +1,29 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-18T08:56:09.946173Z",
+  "generated": "2026-11-18T17:52:32.933002Z",
   "projects": [
+    {
+      "repo": "Madeira",
+      "url": "https://github.com/DevZer0D4Y/Madeira",
+      "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "willfaust/Madeira",
+        "url": "https://github.com/willfaust/Madeira"
+      },
+      "created": "2026-11-18T11:14:24Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-18T11:14:24Z",
+      "app": null
+    },
     {
       "repo": "phonebox-iOS",
       "url": "https://github.com/DevZer0D4Y/phonebox-iOS",
       "description": "Turn an iPhone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
-      "language": null,
+      "language": "C#",
       "topics": [],
       "fork": true,
       "parent": {
@@ -14,10 +31,20 @@
         "url": "https://github.com/ersinkoc/phonebox"
       },
       "created": "2026-11-18T06:37:46Z",
-      "firstRelease": null,
-      "latestRelease": null,
-      "released": "2026-11-18T06:37:46Z",
-      "app": null
+      "firstRelease": "2026-11-18T11:00:53Z",
+      "latestRelease": {
+        "tag": "ios-latest",
+        "name": "iOS app (latest build)",
+        "date": "2026-11-18T11:00:53Z",
+        "url": "https://github.com/DevZer0D4Y/phonebox-iOS/releases/tag/ios-latest"
+      },
+      "released": "2026-11-18T11:00:53Z",
+      "app": {
+        "name": "PhoneBox",
+        "bundleIdentifier": "net.oxog.phonebox.deskpanel",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/net.oxog.phonebox.deskpanel-08599f82fb5a.png",
+        "tintColor": "#97A043"
+      }
     },
     {
       "repo": "neighbors-dark-riddle",

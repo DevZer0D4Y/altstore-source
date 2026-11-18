@@ -1199,5 +1199,47 @@
     "name": "KILL la KILL IF",
     "privacy": {},
     "version": "1.0.0"
+  },
+  "763102750:2026-11-18T11:19:07Z:448514": {
+    "buildVersion": "40",
+    "bundleIdentifier": "net.oxog.phonebox.deskpanel",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "net.oxog.phonebox.deskpanel-08599f82fb5a.png",
+      "tint": "#97A043",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "PhoneBox",
+    "privacy": {
+      "NSCameraUsageDescription": "With automatic brightness or \"night screen when the room is dark\" on, PhoneBox measures the room's light with the front camera's exposure meter. No picture is kept or sent.",
+      "NSLocalNetworkUsageDescription": "PhoneBox connects to the PhoneBox agent on your computer over Wi-Fi.",
+      "NSLocationWhenInUseUsageDescription": "The weather widgets show the weather where your phone is. Only an approximate location is used.",
+      "NSMicrophoneUsageDescription": "The Dictation widget listens while its microphone button is on, and types what you say on your computer.",
+      "NSSpeechRecognitionUsageDescription": "The Dictation widget turns what you say into text for your computer."
+    },
+    "version": "0.9.19"
+  },
+  "763102757:2026-11-18T11:19:07Z:461463": {
+    "buildVersion": "40",
+    "bundleIdentifier": "net.oxog.phonebox.deskpanel",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "net.oxog.phonebox.deskpanel-08599f82fb5a.png",
+      "tint": "#97A043",
+      "width": 152
+    },
+    "minOSVersion": "15.0",
+    "name": "PhoneBox",
+    "privacy": {
+      "NSCameraUsageDescription": "With automatic brightness or \"night screen when the room is dark\" on, PhoneBox measures the room's light with the front camera's exposure meter. No picture is kept or sent.",
+      "NSLocalNetworkUsageDescription": "PhoneBox connects to the PhoneBox agent on your computer over Wi-Fi.",
+      "NSLocationWhenInUseUsageDescription": "The weather widgets show the weather where your phone is. Only an approximate location is used.",
+      "NSMicrophoneUsageDescription": "The Dictation widget listens while its microphone button is on, and types what you say on your computer.",
+      "NSSpeechRecognitionUsageDescription": "The Dictation widget turns what you say into text for your computer."
+    },
+    "version": "0.9.19"
   }
 }
