@@ -1,7 +1,24 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-18T01:11:49.368838Z",
+  "generated": "2026-11-18T08:56:09.946173Z",
   "projects": [
+    {
+      "repo": "phonebox-iOS",
+      "url": "https://github.com/DevZer0D4Y/phonebox-iOS",
+      "description": "Turn an iPhone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
+      "language": null,
+      "topics": [],
+      "fork": true,
+      "parent": {
+        "name": "ersinkoc/phonebox",
+        "url": "https://github.com/ersinkoc/phonebox"
+      },
+      "created": "2026-11-18T06:37:46Z",
+      "firstRelease": null,
+      "latestRelease": null,
+      "released": "2026-11-18T06:37:46Z",
+      "app": null
+    },
     {
       "repo": "neighbors-dark-riddle",
       "url": "https://github.com/DevZer0D4Y/neighbors-dark-riddle",

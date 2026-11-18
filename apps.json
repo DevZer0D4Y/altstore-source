@@ -1383,6 +1383,15 @@
   ],
   "news": [
     {
+      "title": "In development: phonebox-iOS",
+      "identifier": "upcoming-phonebox-iOS",
+      "caption": "Turn an iPhone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, ",
+      "date": "2026-11-18T06:37:46Z",
+      "url": "https://github.com/DevZer0D4Y/phonebox-iOS",
+      "notify": false,
+      "tintColor": "#2F6FEB"
+    },
+    {
       "title": "In development: gtav-iOS",
       "identifier": "upcoming-gtav-iOS",
       "caption": "GTA V (Xbox 360, TU27) static recompilation with ReXGlue",
@@ -1568,16 +1577,6 @@
       "appID": "com.devz.thps2",
       "notify": false,
       "tintColor": "#687185"
-    },
-    {
-      "title": "Ultimate Mortal Kombat 3 NativePorts 0.4.6 — Arcade Showtime, iPhone speed and audio",
-      "identifier": "release-NativePorts-v0.4.6",
-      "caption": "NBA Showtime now uses the arcade/MAME edition on iOS and Windows, replacing the previous PlayStation edition. Import your own nbashowt.zip a",
-      "date": "2026-10-19T18:51:27Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.4.6",
-      "appID": "com.devz.umk3",
-      "notify": false,
-      "tintColor": "#C36810"
     }
   ]
 }
