@@ -8,13 +8,47 @@
   "tintColor": "#2F6FEB",
   "sourceURL": "https://devzer0d4y.github.io/altstore-source/apps.json",
   "featuredApps": [
+    "com.devz.berserk",
     "net.oxog.phonebox.deskpanel",
     "org.nxnative.0100a3f00c536000",
     "com.devz.ut04",
-    "com.devz.beatsaber",
-    "com.devz.mcsm"
+    "com.devz.beatsaber"
   ],
   "apps": [
+    {
+      "name": "Berserk",
+      "bundleIdentifier": "com.devz.berserk",
+      "developerName": "DevZer0D4Y",
+      "subtitle": "Native iPhone and iPad port of Berserk: Millennium Falcon Hen (PS2), built with PS2Apple's static recompiler. Bring your",
+      "localizedDescription": "Native iPhone and iPad port of Berserk: Millennium Falcon Hen (PS2), built with PS2Apple's static recompiler. Bring your own disc.\n\nSource code, game-file requirements and instructions: https://github.com/DevZer0D4Y/Berserk-iOS",
+      "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.berserk-ec5e19a0555b.png",
+      "tintColor": "#A73D3A",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "10",
+          "marketingVersion": "Berserk for iOS 1.0.0",
+          "date": "2026-11-19T19:19:40Z",
+          "localizedDescription": "Native iPhone and iPad port of *Berserk: Millennium Falcon Hen Seima Senki no Shou* (PS2, SLPM-65688). The game's code runs as compiled ARM64: no emulator, no interpreter, no JIT.\n\n- Widescreen 16:9 without stretching, with menus and HUD optionally kept at 4:3\n- Internal resolution 1×, 2× or 3×, fixed 30 FPS\n- On-screen controls you can move, resize and hide; Bluetooth controllers\n- Cheats: infinite health, infinite EXP\n\n**You need your own ISO of the Japanese release.** For English or Italian, apply Wesker90's v1.1 patch to your ISO and select the patched ISO.\n\nThe IPA is unsigned: sign and install it with AltStore, SideStore, Sideloadly, ESign or similar. Requires iOS or iPadOS 18 or later.\n\nApp name: Berserk · Bundle ID: `com.devz.berserk`\nSHA-256 of `Berserk-iOS-1.0.0.ipa`: `f7d19385ce833b7e5bcd60aebfbc5f85e248b7477420d21cb176d599776a4a00`",
+          "downloadURL": "https://github.com/DevZer0D4Y/Berserk-iOS/releases/download/v1.0.0/Berserk-iOS-1.0.0.ipa",
+          "size": 22557049,
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Find wireless gamepads so you can play with a controller."
+        }
+      },
+      "version": "1.0.0",
+      "versionDate": "2026-11-19T19:19:40Z",
+      "versionDescription": "Native iPhone and iPad port of *Berserk: Millennium Falcon Hen Seima Senki no Shou* (PS2, SLPM-65688). The game's code runs as compiled ARM64: no emulator, no interpreter, no JIT.\n\n- Widescreen 16:9 without stretching, with menus and HUD optionally kept at 4:3\n- Internal resolution 1×, 2× or 3×, fixed 30 FPS\n- On-screen controls you can move, resize and hide; Bluetooth controllers\n- Cheats: infinite health, infinite EXP\n\n**You need your own ISO of the Japanese release.** For English or Italian, apply Wesker90's v1.1 patch to your ISO and select the patched ISO.\n\nThe IPA is unsigned: sign and install it with AltStore, SideStore, Sideloadly, ESign or similar. Requires iOS or iPadOS 18 or later.\n\nApp name: Berserk · Bundle ID: `com.devz.berserk`\nSHA-256 of `Berserk-iOS-1.0.0.ipa`: `f7d19385ce833b7e5bcd60aebfbc5f85e248b7477420d21cb176d599776a4a00`",
+      "downloadURL": "https://github.com/DevZer0D4Y/Berserk-iOS/releases/download/v1.0.0/Berserk-iOS-1.0.0.ipa",
+      "size": 22557049
+    },
     {
       "name": "PhoneBox",
       "bundleIdentifier": "net.oxog.phonebox.deskpanel",
@@ -1421,6 +1455,16 @@
   ],
   "news": [
     {
+      "title": "Berserk Berserk for iOS 1.0.0",
+      "identifier": "release-Berserk-iOS-v1.0.0",
+      "caption": "Native iPhone and iPad port of Berserk: Millennium Falcon Hen Seima Senki no Shou (PS2, SLPM-65688). The game's code runs as compiled ARM64:",
+      "date": "2026-11-19T19:19:40Z",
+      "url": "https://github.com/DevZer0D4Y/Berserk-iOS/releases/tag/v1.0.0",
+      "appID": "com.devz.berserk",
+      "notify": false,
+      "tintColor": "#A73D3A"
+    },
+    {
       "title": "In development: Madeira",
       "identifier": "upcoming-Madeira",
       "caption": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
@@ -1605,16 +1649,6 @@
       "appID": "com.devz.slamjam96",
       "notify": false,
       "tintColor": "#4E4A69"
-    },
-    {
-      "title": "Super Street Fighter II Turbo NativePorts 0.4.6 — Arcade Showtime, iPhone speed and audio",
-      "identifier": "release-NativePorts-v0.4.6",
-      "caption": "NBA Showtime now uses the arcade/MAME edition on iOS and Windows, replacing the previous PlayStation edition. Import your own nbashowt.zip a",
-      "date": "2026-10-19T18:51:27Z",
-      "url": "https://github.com/DevZer0D4Y/NativePorts/releases/tag/v0.4.6",
-      "appID": "com.devz.ssf2t",
-      "notify": false,
-      "tintColor": "#AF4A58"
     }
   ]
 }

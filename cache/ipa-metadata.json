@@ -1241,5 +1241,22 @@
       "NSSpeechRecognitionUsageDescription": "The Dictation widget turns what you say into text for your computer."
     },
     "version": "0.9.19"
+  },
+  "768945593:2026-11-19T19:19:38Z:22557049": {
+    "buildVersion": "10",
+    "bundleIdentifier": "com.devz.berserk",
+    "cacheVersion": 4,
+    "entitlements": [],
+    "icon": {
+      "file": "com.devz.berserk-ec5e19a0555b.png",
+      "tint": "#A73D3A",
+      "width": 152
+    },
+    "minOSVersion": "18.0",
+    "name": "Berserk",
+    "privacy": {
+      "NSBluetoothAlwaysUsageDescription": "Find wireless gamepads so you can play with a controller."
+    },
+    "version": "1.0.0"
   }
 }

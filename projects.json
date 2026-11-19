@@ -1,23 +1,30 @@
 {
   "owner": "DevZer0D4Y",
-  "generated": "2026-11-19T16:43:04.441773Z",
+  "generated": "2026-11-19T23:26:08.315792Z",
   "projects": [
     {
-      "repo": "Madeira",
-      "url": "https://github.com/DevZer0D4Y/Madeira",
-      "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
-      "language": null,
+      "repo": "Berserk-iOS",
+      "url": "https://github.com/DevZer0D4Y/Berserk-iOS",
+      "description": "Native iPhone and iPad port of Berserk: Millennium Falcon Hen (PS2), built with PS2Apple's static recompiler. Bring your own disc.",
+      "language": "C++",
       "topics": [],
-      "fork": true,
-      "parent": {
-        "name": "willfaust/Madeira",
-        "url": "https://github.com/willfaust/Madeira"
+      "fork": false,
+      "parent": null,
+      "created": "2026-11-19T19:19:06Z",
+      "firstRelease": "2026-11-19T19:19:40Z",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "name": "Berserk for iOS 1.0.0",
+        "date": "2026-11-19T19:19:40Z",
+        "url": "https://github.com/DevZer0D4Y/Berserk-iOS/releases/tag/v1.0.0"
       },
-      "created": "2026-11-18T11:14:24Z",
-      "firstRelease": null,
-      "latestRelease": null,
-      "released": "2026-11-18T11:14:24Z",
-      "app": null
+      "released": "2026-11-19T19:19:40Z",
+      "app": {
+        "name": "Berserk",
+        "bundleIdentifier": "com.devz.berserk",
+        "iconURL": "https://devzer0d4y.github.io/altstore-source/icons/com.devz.berserk-ec5e19a0555b.png",
+        "tintColor": "#A73D3A"
+      }
     },
     {
       "repo": "phonebox-iOS",
